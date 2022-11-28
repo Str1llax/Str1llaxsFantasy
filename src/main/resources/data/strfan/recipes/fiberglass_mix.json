@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {"item": "strfan:mortar_and_pestle"},
+    {"item": "strfan:crushed_plastic"},
+    {"item": "strfan:crushed_plastic"},
+    {"item": "minecraft:sand"},
+    {"item": "minecraft:sand"}
+  ],
+  "result": {
+    "item": "strfan:fiberglass_mix",
+    "count": 1
+  }
+
+}

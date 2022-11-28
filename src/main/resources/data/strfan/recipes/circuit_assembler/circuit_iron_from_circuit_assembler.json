@@ -1,0 +1,23 @@
+{
+  "type": "strfan:circuit_assembling",
+  "ingredients": [
+    {
+      "item": "strfan:capacitor_base"
+    },
+    {
+      "item": "strfan:circuit_base"
+    },
+    {
+      "item": "strfan:circuit_silicon_chip"
+    },
+    {
+      "item": "strfan:circuit_iron_chip"
+    },
+    {
+      "item": "strfan:rosin"
+    }
+  ],
+  "output": {
+    "item": "strfan:circuit_iron"
+  }
+}

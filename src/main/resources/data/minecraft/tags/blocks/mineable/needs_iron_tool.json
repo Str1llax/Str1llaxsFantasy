@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "strfan:example_block",
+    "strfan:advanced_block",
+    "strfan:meat_grinder",
+    "strfan:titanium_ore",
+    "strfan:deepslate_titanium_ore",
+    "strfan:tungsten_ore",
+    "strfan:deepslate_tungsten_ore",
+    "strfan:uranium_ore",
+    "strfan:deepslate_uranium_ore",
+    "strfan:vanadium_ore",
+    "strfan:deepslate_vanadium_ore",
+    "strfan:palladium_ore",
+    "strfan:deepslate_palladium_ore",
+    "strfan:bismuth_ore",
+    "strfan:deepslate_bismuth_ore",
+    "strfan:iridium_ore",
+    "strfan:deepslate_iridium_ore",
+    "strfan:platinum_ore",
+    "strfan:deepslate_platinum_ore",
+    "strfan:chromium_ore",
+    "strfan:deepslate_chromium_ore",
+    "strfan:manganese_ore",
+    "strfan:deepslate_manganese_ore"
+  ]
+}

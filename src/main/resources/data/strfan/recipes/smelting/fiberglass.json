@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "strfan:fiberglass_mix"
+  },
+  "result": "strfan:fiberglass",
+  "experience": 0.1,
+  "cookingtime": 200
+}

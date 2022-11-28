@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "strfan:mortar_and_pestle"
+      },
+      {
+        "item": "minecraft:coal"
+      },
+      {
+        "item": "minecraft:coal"
+      }
+    ],
+    "result": {
+      "item": "strfan:crushed_coal",
+      "count": 1
+    }
+
+}

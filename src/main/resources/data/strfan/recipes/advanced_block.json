@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "strfan:example_block"
+  },
+  "result": "strfan:advanced_block",
+  "experience": 0.2,
+  "cookingtime": 200
+}

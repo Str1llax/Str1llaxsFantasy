@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_ingot",
+    "minecraft:gold_ingot",
+    "minecraft:netherite_ingot",
+    "minecraft:copper_ingot",
+    "strfan:bismuth_ingot",
+    "strfan:platinum_ingot",
+    "strfan:palladium_ingot"
+  ]
+}

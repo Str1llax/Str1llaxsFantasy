@@ -1,0 +1,9 @@
+{
+	"parent": "block/cube_all",
+	"textures": {
+		"all": "strfan:blocks/default_machine",
+		"north": "strfan:blocks/circuit_assembler",
+		"up": "strfan:blocks/circuit_assembler_top",
+		"down": "strfan:blocks/default_machine_down"
+	}
+}

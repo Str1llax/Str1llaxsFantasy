@@ -1,0 +1,14 @@
+{
+  "type": "strfan:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "strfan:fiberglass_mix"
+    }
+  ],
+  "output": {
+    "item": "strfan:fiberglass"
+  }
+}

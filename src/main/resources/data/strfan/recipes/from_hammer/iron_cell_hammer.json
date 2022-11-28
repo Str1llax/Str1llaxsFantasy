@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "strfan:hammer_tool"
+      },
+      {
+        "item": "strfan:plate_iron"
+      }
+    ],
+    "result": {
+      "item": "strfan:cell_iron",
+      "count": 2
+    }
+}

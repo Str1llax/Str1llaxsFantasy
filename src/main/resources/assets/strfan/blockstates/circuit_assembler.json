@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "strfan:block/circuit_assembler",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "strfan:block/circuit_assembler",
+      "y": 90
+
+    },
+    "facing=west": {
+      "model": "strfan:block/circuit_assembler",
+      "y": 270
+
+    },
+    "facing=south": {
+      "model": "strfan:block/circuit_assembler",
+      "y": 180
+
+    }
+  }
+}
