@@ -94,6 +94,8 @@
   "item.strfan.chromium_ingot": "Слиток Хрома",
   "item.strfan.raw_manganese": "Рудный Марганец",
   "item.strfan.manganese_ingot": "Слиток Марганца",
+  "item.strfan.raw_cobalt": "Рудный Кобальт",
+  "item.strfan.cobalt_ingot": "Слиток Кобальта",
 
   "block.strfan.example_block": "Простой блок",
   "block.strfan.advanced_block": "Продвинутый блок",
@@ -108,6 +110,8 @@
   "block.strfan.deepslate_chromium_ore": "Глубинная Хромовая руда",
   "block.strfan.manganese_ore": "Марганцевая руда",
   "block.strfan.deepslate_manganese_ore": "Глубинная Марганцевая руда",
+  "block.strfan.cobalt_ore": "Кобальтовая руда",
+  "block.strfan.deepslate_cobalt_ore": "Глубинная Кобальтовая руда",
 
   "block.strfan.palladium_ore": "Палладиевая руда",
   "block.strfan.deepslate_palladium_ore": "Глубинная Палладиевая руда",
@@ -136,5 +140,5 @@
   "block.strfan.meat_grinder": "Мясорубка",
   "block.strfan.circuit_assembler": "Сборщик микросхем",
   "block.strfan.mixer": "Смешиватель",
-  "block.strfan.generator": "Генератор"
+  "block.strfan.generator": "Генератор",
 }

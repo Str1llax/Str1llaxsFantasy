@@ -18,6 +18,7 @@ public class ModOreGeneration {
         base.add(ModPlacedFeatures.VANADIUM_ORE_PLACED);
         base.add(ModPlacedFeatures.CHROMIUM_ORE_PLACED);
         base.add(ModPlacedFeatures.MANGANESE_ORE_PLACED);
+        base.add(ModPlacedFeatures.COBALT_ORE_PLACED);
 
         base.add(ModPlacedFeatures.PALLADIUM_ORE_PLACED);
     }

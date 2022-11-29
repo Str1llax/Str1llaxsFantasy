@@ -57,7 +57,7 @@ public class MetalItemInit {
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)
             ));
-    //#6 COBALT
+    //DONE! #6 COBALT
     public static final RegistryObject<Item> RAW_COBALT = register("raw_cobalt",
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)

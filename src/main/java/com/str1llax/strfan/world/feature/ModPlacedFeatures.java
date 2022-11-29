@@ -42,6 +42,11 @@ public class ModPlacedFeatures {
             ModConfiguredFeatures.MANGANESE_ORE, ModOrePlacement.commonOrePlacement(7, // VeinsPerChunk
                     HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(80))));
 
+    //  COBALT ORE
+    public static final Holder<PlacedFeature> COBALT_ORE_PLACED = PlacementUtils.register("cobalt_ore_placed",
+            ModConfiguredFeatures.COBALT_ORE, ModOrePlacement.commonOrePlacement(7, // VeinsPerChunk
+                    HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-60), VerticalAnchor.aboveBottom(80))));
+
     //  PALLADIUM ORE
     public static final Holder<PlacedFeature> PALLADIUM_ORE_PLACED = PlacementUtils.register("palladium_ore_placed",
             ModConfiguredFeatures.PALLADIUM_ORE, ModOrePlacement.commonOrePlacement(7, // VeinsPerChunk
