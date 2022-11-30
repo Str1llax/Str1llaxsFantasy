@@ -66,7 +66,7 @@ public class MetalItemInit {
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)
             ));
-    //#7 NICKEL
+    //DONE! #7 NICKEL
     public static final RegistryObject<Item> RAW_NICKEL = register("raw_nickel",
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)

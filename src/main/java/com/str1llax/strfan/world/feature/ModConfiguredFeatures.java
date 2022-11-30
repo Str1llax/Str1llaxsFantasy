@@ -88,6 +88,14 @@ public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> COBALT_ORE = FeatureUtils.register("cobalt_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_COBALT_ORES, 7));
 
+    //  NICKEL ORE REPLACER
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_NICKEL_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.NICKEL_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, OreBlockInit.DEEPSLATE_NICKEL_ORE.get().defaultBlockState()));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> NICKEL_ORE = FeatureUtils.register("nickel_ore",
+            Feature.ORE, new OreConfiguration(OVERWORLD_NICKEL_ORES, 7));
+
     //  PALLADIUM ORE REPLACER
     public static final List<OreConfiguration.TargetBlockState> OVERWORLD_PALLADIUM_ORES = List.of(
             OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, OreBlockInit.PALLADIUM_ORE.get().defaultBlockState()),

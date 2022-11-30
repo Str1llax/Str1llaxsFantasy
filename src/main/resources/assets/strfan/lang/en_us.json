@@ -29,6 +29,8 @@
   "item.strfan.mighty_iron_ingot": "Mighty iron ingot",
   "item.strfan.crimson_energy_ingot": "Crimson energy ingot",
 
+  "item.strfan.crimson_extract": "Crimson extract",
+
   "item.strfan.mortar": "Mortar",
   "item.strfan.pestle": "Pestle",
   "item.strfan.mortar_and_pestle": "Mortar & Pestle",
@@ -96,6 +98,8 @@
   "item.strfan.manganese_ingot": "Manganese ingot",
   "item.strfan.raw_cobalt": "Raw Cobalt",
   "item.strfan.cobalt_ingot": "Cobalt ingot",
+  "item.strfan.raw_nickel": "Raw Nickel",
+  "item.strfan.nickel_ingot": "Nickel ingot",
 
   "block.strfan.example_block": "Example Block",
   "block.strfan.advanced_block": "Advanced Block",
@@ -112,6 +116,8 @@
   "block.strfan.deepslate_manganese_ore": "Deepslate Manganese ore",
   "block.strfan.cobalt_ore": "Cobalt ore",
   "block.strfan.deepslate_cobalt_ore": "Deepslate Cobalt ore",
+  "block.strfan.nickel_ore": "Nickel ore",
+  "block.strfan.deepslate_nickel_ore": "Deepslate Nickel ore",
 
   "block.strfan.palladium_ore": "Palladium ore",
   "block.strfan.deepslate_palladium_ore": "Deepslate Palladium ore",

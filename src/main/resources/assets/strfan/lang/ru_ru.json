@@ -29,6 +29,8 @@
   "item.strfan.mighty_iron_ingot": "Несокрушимый железный слиток",
   "item.strfan.crimson_energy_ingot": "Багряный энергетический слиток",
 
+  "item.strfan.crimson_extract": "Багряный экстракт",
+
   "item.strfan.mortar": "Ступка",
   "item.strfan.pestle": "Пестик",
   "item.strfan.mortar_and_pestle": "Ступка и пестик",
@@ -96,6 +98,8 @@
   "item.strfan.manganese_ingot": "Слиток Марганца",
   "item.strfan.raw_cobalt": "Рудный Кобальт",
   "item.strfan.cobalt_ingot": "Слиток Кобальта",
+  "item.strfan.raw_nickel": "Рудный Никель",
+  "item.strfan.nickel_ingot": "Слиток Никеля",
 
   "block.strfan.example_block": "Простой блок",
   "block.strfan.advanced_block": "Продвинутый блок",
@@ -112,6 +116,8 @@
   "block.strfan.deepslate_manganese_ore": "Глубинная Марганцевая руда",
   "block.strfan.cobalt_ore": "Кобальтовая руда",
   "block.strfan.deepslate_cobalt_ore": "Глубинная Кобальтовая руда",
+  "block.strfan.nickel_ore": "Никелевая руда",
+  "block.strfan.deepslate_nickel_ore": "Глубинная Никелевая руда",
 
   "block.strfan.palladium_ore": "Палладиевая руда",
   "block.strfan.deepslate_palladium_ore": "Глубинная Палладиевая руда",

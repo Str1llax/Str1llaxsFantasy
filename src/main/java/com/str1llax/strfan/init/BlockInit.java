@@ -141,6 +141,10 @@ public class BlockInit {
             () -> new Mixer(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_MACHINES)));
 
+    public static final RegistryObject<Block> EXTRACTOR = register("extractor",
+            () -> new Extractor(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_MACHINES)));
+
     //ENERGY GENERATION
     public static final RegistryObject<Block> GENERATOR = register("generator",
             () -> new Generator(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)),

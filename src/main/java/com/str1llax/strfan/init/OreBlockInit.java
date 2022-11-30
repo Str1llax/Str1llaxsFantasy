@@ -61,7 +61,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#6 COBALT
+    //DONE! #6 COBALT
     public static final RegistryObject<Block> COBALT_ORE = register("cobalt_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -70,7 +70,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#7 NICKEL
+    //DONE! #7 NICKEL
     public static final RegistryObject<Block> NICKEL_ORE = register("nickel_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));

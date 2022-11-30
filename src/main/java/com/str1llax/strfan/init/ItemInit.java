@@ -231,6 +231,12 @@ public class ItemInit extends Item {
                     .tab(TabInit.STRFANTAB_RESOURCES)
                     .stacksTo(64)
             ));
+
+    public static final RegistryObject<Item> CRIMSON_EXTRACT = register("crimson_extract",
+            () -> new Item(new Item.Properties()
+                    .tab(TabInit.STRFANTAB_RESOURCES)
+                    .stacksTo(64)
+            ));
     //END OF RESOURCES
     //MISC
     public static final RegistryObject<Item> CAST_FORM_FOR_CHIPS = register("cast_form_for_chips",

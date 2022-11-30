@@ -24,6 +24,8 @@
     "strfan:manganese_ore",
     "strfan:deepslate_manganese_ore",
     "strfan:cobalt_ore",
-    "strfan:deepslate_cobalt_ore"
+    "strfan:deepslate_cobalt_ore",
+    "strfan:nickel_ore",
+    "strfan:deepslate_nickel_ore"
   ]
 }
