@@ -7,6 +7,7 @@ import com.str1llax.strfan.init.MetalItemInit;
 import com.str1llax.strfan.init.OreBlockInit;
 import com.str1llax.strfan.recipe.ModRecipes;
 import com.str1llax.strfan.screen.CircuitAssemblerScreen;
+import com.str1llax.strfan.screen.ExtractorScreen;
 import com.str1llax.strfan.screen.MixerScreen;
 import com.str1llax.strfan.screen.ModMenuTypes;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -54,6 +55,7 @@ public class Str1llaxsFantasy
        ItemBlockRenderTypes.setRenderLayer(BlockInit.CIRCUIT_ASSEMBLER.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(BlockInit.MIXER.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(BlockInit.GENERATOR.get(), RenderType.cutout());
+       ItemBlockRenderTypes.setRenderLayer(BlockInit.EXTRACTOR.get(), RenderType.cutout());
 
        ItemBlockRenderTypes.setRenderLayer(BlockInit.CABLE_IRON.get(), RenderType.cutout());
 
@@ -66,6 +68,7 @@ public class Str1llaxsFantasy
 
        MenuScreens.register(ModMenuTypes.CIRCUIT_ASSEMBLER_MENU.get(), CircuitAssemblerScreen::new);
        MenuScreens.register(ModMenuTypes.MIXER_MENU.get(), MixerScreen::new);
+       MenuScreens.register(ModMenuTypes.EXTRACTOR_MENU.get(), ExtractorScreen::new);
    }
    private void setup(final FMLCommonSetupEvent event){
        event.enqueueWork(() -> {

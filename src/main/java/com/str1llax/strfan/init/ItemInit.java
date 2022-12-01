@@ -231,8 +231,19 @@ public class ItemInit extends Item {
                     .tab(TabInit.STRFANTAB_RESOURCES)
                     .stacksTo(64)
             ));
+    public static final RegistryObject<Item> S_CRIMSON_EXTRACT = register("s_crimson_extract",
+            () -> new Item(new Item.Properties()
+                    .tab(TabInit.STRFANTAB_RESOURCES)
+                    .stacksTo(64)
+            ));
 
     public static final RegistryObject<Item> CRIMSON_EXTRACT = register("crimson_extract",
+            () -> new Item(new Item.Properties()
+                    .tab(TabInit.STRFANTAB_RESOURCES)
+                    .stacksTo(64)
+            ));
+
+    public static final RegistryObject<Item> CNT_CRIMSON_EXTRACT = register("cnt_crimson_extract",
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)
                     .stacksTo(64)

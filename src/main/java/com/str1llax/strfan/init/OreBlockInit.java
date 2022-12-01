@@ -97,16 +97,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#10 YTTRIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> YTTRIUM_ORE = register("yttrium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_YTTRIUM_ORE = register("deepslate_yttrium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#11 ZIRCONIUM
+    //#10 ZIRCONIUM
     public static final RegistryObject<Block> ZIRCONIUM_ORE = register("zirconium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -115,54 +106,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-
-    //#12 NIOBIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> NIOBIUM_ORE = register("niobium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_NIOBIUM_ORE = register("deepslate_niobium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#13 MOLYBDENUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> MOLYBDENUM_ORE = register("molybdenum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_MOLYBDENUM_ORE = register("deepslate_molybdenum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#14 TECHNETIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> TECHNETIUM_ORE = register("technetium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_TECHNETIUM_ORE = register("deepslate_technetium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#15 RUTHENIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> RUTHENIUM_ORE = register("ruthenium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_RUTHENIUM_ORE = register("deepslate_ruthenium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#16 RHODIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> RHODIUM_ORE = register("rhodium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-
-    public static final RegistryObject<Block> DEEPSLATE_RHODIUM_ORE = register("deepslate_rhodium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //DONE! #17 PALLADIUM
+    //DONE! #11 PALLADIUM
     public static final RegistryObject<Block> PALLADIUM_ORE = register("palladium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(),  new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -171,7 +115,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#18 SILVER
+    //#12 SILVER
     public static final RegistryObject<Block> SILVER_ORE = register("silver_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -180,7 +124,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#19 CADMIUM || IDK ADD OR NOT
+    //#13 CADMIUM
     public static final RegistryObject<Block> CADMIUM_ORE = register("cadmium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -189,7 +133,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#20 INDIUM || IDK ADD OR NOT
+    //#14 INDIUM
     public static final RegistryObject<Block> INDIUM_ORE = register("indium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -198,80 +142,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#21 LANTHANUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> LANTHANUM_ORE = register("lanthanum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_LANTHANUM_ORE = register("deepslate_lanthanum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#22 CERIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> CERIUM_ORE = register("cerium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_CERIUM_ORE = register("deepslate_cerium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#23 PRASEODYMIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> PRASEODYMIUM_ORE = register("praseodymium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_PRASEODYMIUM_ORE = register("deepslate_praseodymium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#24 NEODYMIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> NEODYMIUM_ORE = register("neodymium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_NEODYMIUM_ORE = register("deepslate_neodymium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#25 PROMETHIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> PROMETHIUM_ORE = register("promethium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_PROMETHIUM_ORE = register("deepslate_promethium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#26 SAMARIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> SAMARIUM_ORE = register("samarium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_SAMARIUM_ORE = register("deepslate_samarium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-
-    //#27 EUROPIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> EUROPIUM_ORE = register("europium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_EUROPIUM_ORE = register("deepslate_europium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#28 GADOLINIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> GADOLINIUM_ORE = register("gadolinium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_GADOLINIUM_ORE = register("deepslate_gadolinium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#29 TERBIUM || IDK ADD OR NOT
+    //#15 TERBIUM || ДЛЯ СПЛАВА С ЖЕЛЕЗОМ ДЛЯ ДВИГАТЕЛЕЙ
     public static final RegistryObject<Block> TERBIUM_ORE = register("terbium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -280,61 +151,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#30 DYSPROSIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> DYSPROSIUM_ORE = register("dysprosium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_DYSPROSIUM_ORE = register("deepslate_dysprosium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#31 HOLMIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> HOLMIUM_ORE = register("holmium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_HOLMIUM_ORE = register("deepslate_holmium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#32 ERBIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> ERBIUM_ORE = register("erbium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_ERBIUM_ORE = register("deepslate_erbium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#33 THULIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> THULIUM_ORE = register("thulium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_THULIUM_ORE = register("deepslate_thulium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#34 YTTERBIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> YTTERBIUM_ORE = register("ytterbium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_YTTERBIUM_ORE = register("deepslate_ytterbium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#35 LUTETIUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> LUTETIUM_ORE = register("lutetium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_LUTETIUM_ORE = register("deepslate_lutetium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //#36 HAFNIUM || IDK ADD OR NOT
+    //#16 HAFNIUM || НА БУДУЩЕЕ ДЛЯ РАКЕТ
     public static final RegistryObject<Block> HAFNIUM_ORE = register("hafnium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -343,16 +160,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#37 TANTALUM || IDK ADD OR NOT
-    public static final RegistryObject<Block> TANTALUM_ORE = register("tantalum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    public static final RegistryObject<Block> DEEPSLATE_TANTALUM_ORE = register("deepslate_tantalum_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
-
-    //DONE! #38 TUNGSTEN
+    //DONE! #17 TUNGSTEN
     public static final RegistryObject<Block> TUNGSTEN_ORE = register("tungsten_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -361,7 +169,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#39 RHENIUM || IDK ADD OR NOT
+    //#18 RHENIUM || ТОЖЕ ДЛЯ РАКЕТ НАВЕРНОЕ
     public static final RegistryObject<Block> RHENIUM_ORE = register("rhenium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -370,7 +178,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#40 OSMIUM
+    //#19 OSMIUM
     public static final RegistryObject<Block> OSMIUM_ORE = register("osmium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -379,7 +187,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //DONE! #41 IRIDIUM
+    //DONE! #20 IRIDIUM
     public static final RegistryObject<Block> IRIDIUM_ORE = register("iridium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -388,7 +196,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //DONE! #42 PLATINUM
+    //DONE! #21 PLATINUM
     public static final RegistryObject<Block> PLATINUM_ORE = register("platinum_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -397,7 +205,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //#43 LEAD
+    //#22 LEAD
     public static final RegistryObject<Block> LEAD_ORE = register("lead_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -406,7 +214,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //DONE! #44 BISMUTH
+    //DONE! #23 BISMUTH
     public static final RegistryObject<Block> BISMUTH_ORE = register("bismuth_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -415,7 +223,7 @@ public class OreBlockInit {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
 
-    //DONE! #45 URANIUM
+    //DONE! #24 URANIUM
     public static final RegistryObject<Block> URANIUM_ORE = register("uranium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
@@ -423,6 +231,7 @@ public class OreBlockInit {
     public static final RegistryObject<Block> DEEPSLATE_URANIUM_ORE = register("deepslate_uranium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE)),
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_ORES)));
+    //END OF ORES
 
     private static <T extends Block> RegistryObject<T> registerOreBlock(final String name, final Supplier<? extends T> block, CreativeModeTab strfantab) {
         return BLOCKS.register(name, block);

@@ -2,6 +2,7 @@ package com.str1llax.strfan.block.entity;
 
 import com.str1llax.strfan.Str1llaxsFantasy;
 import com.str1llax.strfan.block.entity.custom.CircuitAssemblerBlockEntity;
+import com.str1llax.strfan.block.entity.custom.ExtractorBlockEntity;
 import com.str1llax.strfan.block.entity.custom.MixerBlockEntity;
 import com.str1llax.strfan.init.BlockInit;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -23,6 +24,11 @@ public class ModBlockEntities {
             BLOCK_ENTITIES.register("mixer_block_entity", () ->
                     BlockEntityType.Builder.of(MixerBlockEntity::new,
                             BlockInit.MIXER.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<ExtractorBlockEntity>> EXTRACTOR_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("extractor_block_entity", () ->
+                    BlockEntityType.Builder.of(ExtractorBlockEntity::new,
+                            BlockInit.EXTRACTOR.get()).build(null));
 
 
     public static void register(IEventBus eventBus) {

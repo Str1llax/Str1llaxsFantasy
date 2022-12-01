@@ -1,0 +1,11 @@
+{
+  "type": "strfan:extracting",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_fungus"
+    }
+  ],
+  "output": {
+    "item": "strfan:s_crimson_extract"
+  }
+}

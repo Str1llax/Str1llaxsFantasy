@@ -2,6 +2,7 @@ package com.str1llax.strfan.event;
 
 import com.str1llax.strfan.Str1llaxsFantasy;
 import com.str1llax.strfan.recipe.CircuitAssemblerRecipe;
+import com.str1llax.strfan.recipe.ExtractorRecipe;
 import com.str1llax.strfan.recipe.MixerRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -25,5 +26,6 @@ public class ModEventBusEvents {
     public static void registerRecipeTypes(final RegistryEvent.Register<RecipeSerializer<?>> event) {
         Registry.register(Registry.RECIPE_TYPE, CircuitAssemblerRecipe.Type.ID, CircuitAssemblerRecipe.Type.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, MixerRecipe.Type.ID, MixerRecipe.Type.INSTANCE);
+        Registry.register(Registry.RECIPE_TYPE, ExtractorRecipe.Type.ID, ExtractorRecipe.Type.INSTANCE);
     }
 }

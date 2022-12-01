@@ -37,6 +37,8 @@ public class ModTags {
                 = tag("bases");
         public static final TagKey<Item> MIXER
                 = forgeTag("mixer");
+        public static final TagKey<Item> EXTRACTOR
+                = forgeTag("extractor");
 
 
 

@@ -1,6 +1,7 @@
 package com.str1llax.strfan.block;
 
-import com.str1llax.strfan.block.entity.custom.MixerBlockEntity;
+import com.str1llax.strfan.block.entity.ModBlockEntities;
+import com.str1llax.strfan.block.entity.custom.ExtractorBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
@@ -12,6 +13,8 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -91,8 +94,8 @@ public class Extractor extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level level, BlockPos pos, BlockState state, boolean pIsMoving) {
         if (pState.getBlock() != state.getBlock()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof MixerBlockEntity) {
-                ((MixerBlockEntity) blockEntity).drops();
+            if (blockEntity instanceof ExtractorBlockEntity) {
+                ((ExtractorBlockEntity) blockEntity).drops();
             }
         }
         super.onRemove(pState, level, pos, state, pIsMoving);
@@ -103,8 +106,8 @@ public class Extractor extends BaseEntityBlock {
                                           @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
         if (!level.isClientSide()) {
             BlockEntity entity = level.getBlockEntity(pos);
-            if(entity instanceof MixerBlockEntity) {
-                NetworkHooks.openGui(((ServerPlayer)player), (MixerBlockEntity)entity, pos);
+            if(entity instanceof ExtractorBlockEntity) {
+                NetworkHooks.openGui(((ServerPlayer)player), (ExtractorBlockEntity)entity, pos);
             } else {
                 throw new IllegalStateException("Our Container provider is missing!");
             }
@@ -116,13 +119,13 @@ public class Extractor extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new MixerBlockEntity(pos, state);
+        return new ExtractorBlockEntity(pos, state);
     }
 
-    //@Nullable
-    //@Override
-    //public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> pBlockEntityType) {
-    //    return createTickerHelper(pBlockEntityType, ModBlockEntities.EXTRACTOR_BLOCK_ENTITY.get(),
-    //            MixerBlockEntity::tick);
-    //}
+    @Nullable
+    @Override
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state, BlockEntityType<T> pBlockEntityType) {
+        return createTickerHelper(pBlockEntityType, ModBlockEntities.EXTRACTOR_BLOCK_ENTITY.get(),
+                ExtractorBlockEntity::tick);
+    }
 }

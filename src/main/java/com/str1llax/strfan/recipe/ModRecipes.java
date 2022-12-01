@@ -18,6 +18,9 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<MixerRecipe>> MIXER_SERIALIZER =
             SERIALIZERS.register("mixing", () -> MixerRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<ExtractorRecipe>> EXTRACTORSERIALIZER =
+            SERIALIZERS.register("extracting", () -> ExtractorRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus bus) {
         SERIALIZERS.register(bus);
     }

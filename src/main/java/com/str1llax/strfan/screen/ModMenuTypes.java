@@ -18,6 +18,8 @@ public class ModMenuTypes {
             registerMenuType(CircuitAssemblerMenu::new, "circuit_assembler_menu");
     public static final RegistryObject<MenuType<MixerMenu>> MIXER_MENU =
             registerMenuType(MixerMenu::new, "mixer_menu");
+    public static final RegistryObject<MenuType<ExtractorMenu>> EXTRACTOR_MENU =
+            registerMenuType(ExtractorMenu::new, "extractor_menu");
 
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
                                                                                                   String name) {
