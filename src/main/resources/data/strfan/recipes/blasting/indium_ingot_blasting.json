@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "strfan:raw_indium"
+  },
+  "result": "strfan:indium_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

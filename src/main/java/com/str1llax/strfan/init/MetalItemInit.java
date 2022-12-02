@@ -134,6 +134,10 @@ public class MetalItemInit {
             () -> new Item(new Item.Properties()
                     .tab(TabInit.STRFANTAB_RESOURCES)
             ));
+    public static final RegistryObject<Item> INDIUM_INGOT = register("indium_ingot",
+            () -> new Item(new Item.Properties()
+                    .tab(TabInit.STRFANTAB_RESOURCES)
+            ));
     //#15 TERBIUM || IDK ADD OR NOT
     public static final RegistryObject<Item> RAW_TERBIUM = register("raw_terbium",
             () -> new Item(new Item.Properties()

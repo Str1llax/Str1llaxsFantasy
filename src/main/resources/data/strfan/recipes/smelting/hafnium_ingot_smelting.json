@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "strfan:raw_hafnium"
+  },
+  "result": "strfan:hafnium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

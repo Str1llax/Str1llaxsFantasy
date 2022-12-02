@@ -1,31 +1,76 @@
 {
   "replace": false,
   "values": [
-    "strfan:palladium_ore",
-    "strfan:deepslate_palladium_ore",
-    "strfan:bismuth_ore",
-    "strfan:deepslate_bismuth_ore",
-    "strfan:iridium_ore",
-    "strfan:deepslate_iridium_ore",
-    "strfan:platinum_ore",
-    "strfan:deepslate_platinum_ore",
     "strfan:tin_ore",
     "strfan:deepslate_tin_ore",
+
     "strfan:titanium_ore",
     "strfan:deepslate_titanium_ore",
-    "strfan:tungsten_ore",
-    "strfan:deepslate_tungsten_ore",
-    "strfan:uranium_ore",
-    "strfan:deepslate_uranium_ore",
+
     "strfan:vanadium_ore",
     "strfan:deepslate_vanadium_ore",
+
     "strfan:chromium_ore",
     "strfan:deepslate_chromium_ore",
+
     "strfan:manganese_ore",
     "strfan:deepslate_manganese_ore",
+
     "strfan:cobalt_ore",
     "strfan:deepslate_cobalt_ore",
+
     "strfan:nickel_ore",
-    "strfan:deepslate_nickel_ore"
+    "strfan:deepslate_nickel_ore",
+
+    "strfan:zinc_ore",
+    "strfan:deepslate_zinc_ore",
+
+    "strfan:germanium_ore",
+    "strfan:deepslate_germanium_ore",
+
+    "strfan:zirconium_ore",
+    "strfan:deepslate_zirconium_ore",
+
+    "strfan:palladium_ore",
+    "strfan:deepslate_palladium_ore",
+
+    "strfan:silver_ore",
+    "strfan:deepslate_silver_ore",
+
+    "strfan:cadmium_ore",
+    "strfan:deepslate_cadmium_ore",
+
+    "strfan:indium_ore",
+    "strfan:deepslate_indium_ore",
+
+    "strfan:terbium_ore",
+    "strfan:deepslate_terbium_ore",
+
+    "strfan:hafnium_ore",
+    "strfan:deepslate_hafnium_ore",
+
+    "strfan:tungsten_ore",
+    "strfan:deepslate_tungsten_ore",
+
+    "strfan:rhenium_ore",
+    "strfan:deepslate_rhenium_ore",
+
+    "strfan:osmium_ore",
+    "strfan:deepslate_osmium_ore",
+
+    "strfan:iridium_ore",
+    "strfan:deepslate_iridium_ore",
+
+    "strfan:platinum_ore",
+    "strfan:deepslate_platinum_ore",
+
+    "strfan:lead_ore",
+    "strfan:deepslate_lead_ore",
+
+    "strfan:bismuth_ore",
+    "strfan:deepslate_bismuth_ore",
+
+    "strfan:uranium_ore",
+    "strfan:deepslate_uranium_ore"
   ]
 }

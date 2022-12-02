@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "strfan:raw_zinc"
+  },
+  "result": "strfan:zinc_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}
