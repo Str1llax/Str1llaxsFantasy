@@ -60,7 +60,6 @@ public class AdvancedBlock extends Block
                     BooleanOp.OR),
             BooleanOp.OR);
 
-
     public AdvancedBlock(Properties properties)
     {
         super(properties.lightLevel(state ->

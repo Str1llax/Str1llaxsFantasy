@@ -2,10 +2,7 @@ package com.str1llax.strfan.item;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,14 +10,13 @@ import net.minecraft.world.entity.ai.attributes.Attribute;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.*;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
-
-import javax.annotation.Nullable;
-import java.util.List;
 
 public class Muramasa extends SwordItem {
     public Muramasa(Tier tier, int pint, float pfloat, Properties properties) {
@@ -30,16 +26,6 @@ public class Muramasa extends SwordItem {
         builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Weapon modifier", (double) attackDamage, AttributeModifier.Operation.ADDITION));
         builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Weapon modifier", (double)pfloat, AttributeModifier.Operation.ADDITION));
         Multimap<Attribute, AttributeModifier> defaultModifiers = builder.build();
-    }
-
-    //TOOLTIP IS NOT WORKING
-    @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.muramasa.tooltip.shift"));
-        } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.muramasa.tooltip"));
-        }
     }
 
     @Override
