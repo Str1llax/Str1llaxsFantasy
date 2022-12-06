@@ -32,12 +32,10 @@ public class Mixer extends BaseEntityBlock {
 
     public static final VoxelShape NORTH =
             Shapes.box(0,0,0,1,1,1);
-
     public static final VoxelShape EAST =
             Shapes.box(0,0,0,1,1,1);
     public static final VoxelShape SOUTH =
             Shapes.box(0,0,0,1,1,1);
-
     public static final VoxelShape WEST =
             Shapes.box(0,0,0,1,1,1);
 
@@ -48,8 +46,7 @@ public class Mixer extends BaseEntityBlock {
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context)
     {
-        switch (state.getValue(FACING))
-        {
+        switch (state.getValue(FACING)) {
 
             default:
                 return NORTH;

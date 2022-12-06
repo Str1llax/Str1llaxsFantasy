@@ -3,7 +3,6 @@
 	"textures": {
 		"all": "strfan:blocks/default_machine",
 		"north": "strfan:blocks/generator",
-		"up": "strfan:blocks/generator_top",
 		"down": "strfan:blocks/default_machine_down"
 	}
 }
