@@ -20,7 +20,22 @@ public class ModOreGeneration {
         base.add(ModPlacedFeatures.MANGANESE_ORE_PLACED);
         base.add(ModPlacedFeatures.COBALT_ORE_PLACED);
         base.add(ModPlacedFeatures.NICKEL_ORE_PLACED);
-
+        base.add(ModPlacedFeatures.ZINC_ORE_PLACED);
+        base.add(ModPlacedFeatures.GERMANIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.ZIRCONIUM_ORE_PLACED);
         base.add(ModPlacedFeatures.PALLADIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.SILVER_ORE_PLACED);
+        base.add(ModPlacedFeatures.CADMIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.INDIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.TERBIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.HAFNIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.TUNGSTEN_ORE_PLACED);
+        base.add(ModPlacedFeatures.RHENIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.OSMIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.IRIDIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.PLATINUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.LEAD_ORE_PLACED);
+        base.add(ModPlacedFeatures.BISMUTH_ORE_PLACED);
+        base.add(ModPlacedFeatures.URANIUM_ORE_PLACED);
     }
 }
