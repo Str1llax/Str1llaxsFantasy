@@ -27,8 +27,8 @@ import net.minecraft.world.level.material.Material;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class Muramasa extends SwordItem {
-    public Muramasa(Tier tier, int pint, float pfloat, Properties properties) {
+public class FistEnergy2 extends SwordItem {
+    public FistEnergy2(Tier tier, int pint, float pfloat, Properties properties) {
         super(tier, pint, pfloat, properties);
         float attackDamage = (float) pint + tier.getAttackDamageBonus();
         ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
@@ -39,9 +39,9 @@ public class Muramasa extends SwordItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.muramasa.tooltip.shift"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.fist_energy2.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.muramasa.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.fist_energy2.tooltip"));
         }
     }
     @Override
@@ -53,7 +53,6 @@ public class Muramasa extends SwordItem {
     public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
         return super.canAttackBlock(state, level, pos, player);
     }
-
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
         if (state.is(Blocks.COBWEB)) {
@@ -66,7 +65,8 @@ public class Muramasa extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity entity1, LivingEntity entity2) {
-        entity1.addEffect(new MobEffectInstance(MobEffects.HARM,100), entity2);
+        entity1.addEffect(new MobEffectInstance(MobEffects.HARM,10), entity2);
+        entity2.addEffect(new MobEffectInstance(MobEffects.REGENERATION,40));
         stack.hurtAndBreak(1, entity2, (a) -> {
             a.broadcastBreakEvent(EquipmentSlot.MAINHAND);
         });

@@ -1,9 +1,7 @@
 package com.str1llax.strfan.init;
 
 import com.str1llax.strfan.Str1llaxsFantasy;
-import com.str1llax.strfan.item.AdvancedItem;
-import com.str1llax.strfan.item.CuttersTool;
-import com.str1llax.strfan.item.HammerTool;
+import com.str1llax.strfan.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -306,18 +304,36 @@ public class ItemInit extends Item {
     //WEAPONS
     //MAGIC
     public static final RegistryObject<SwordItem> FIST_ENERGY = register("fist_energy",
-            () -> new SwordItem(TierInit.FIST_ENERGY, 20, -2.4f,
-                    new Item.Properties().rarity(Rarity.EPIC)
+            () -> new FistEnergy(TierInit.FIST_ENERGY, 20, -2.4f,
+                    new Item.Properties()
                             .tab(TabInit.STRFANTAB_WEAPONS)
                             .stacksTo(1)
                             .fireResistant()
                             .setNoRepair()
                             .durability(3)));
 
+    public static final RegistryObject<SwordItem> FIST_ENERGY2 = register("fist_energy2",
+            () -> new FistEnergy2(TierInit.FIST_ENERGY, 50, -1.4f,
+                    new Item.Properties()
+                            .tab(TabInit.STRFANTAB_WEAPONS)
+                            .stacksTo(1)
+                            .fireResistant()
+                            .setNoRepair()
+                            .durability(2)));
+
+    public static final RegistryObject<SwordItem> FIST_ENERGY3 = register("fist_energy3",
+            () -> new FistEnergy3(TierInit.FIST_ENERGY, 100, 0.4f,
+                    new Item.Properties()
+                            .tab(TabInit.STRFANTAB_WEAPONS)
+                            .stacksTo(1)
+                            .fireResistant()
+                            .setNoRepair()
+                            .durability(1)));
+
     //SWORDS
     public static final RegistryObject<SwordItem> MURAMASA = register("muramasa",
-            () -> new SwordItem(TierInit.MURAMASA, 3000, 5f,
-                    new Item.Properties().rarity(Rarity.EPIC)
+            () -> new Muramasa(TierInit.MURAMASA, 2999, 5f,
+                    new Item.Properties()
                             .tab(TabInit.STRFANTAB_WEAPONS)
                             .stacksTo(1)
                             .fireResistant()

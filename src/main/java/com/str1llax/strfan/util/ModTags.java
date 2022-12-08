@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> ORES
-                = tag("Ores");
+                = tag("ores");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(Str1llaxsFantasy.MOD_ID, name));

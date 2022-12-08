@@ -2,7 +2,10 @@ package com.str1llax.strfan.item;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -13,10 +16,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Material;
+
+import javax.annotation.Nullable;
+import java.util.List;
 
 public class FistEnergy extends SwordItem {
     public FistEnergy(Tier tier, int pint, float pfloat, Properties properties) {
@@ -27,7 +34,14 @@ public class FistEnergy extends SwordItem {
         builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Weapon modifier", (double)pfloat, AttributeModifier.Operation.ADDITION));
         Multimap<Attribute, AttributeModifier> defaultModifiers = builder.build();
     }
-
+    @Override
+    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        if(Screen.hasShiftDown()) {
+            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.fist_energy.tooltip.shift"));
+        } else {
+            pTooltipComponents.add(new TranslatableComponent("tooltip.strfan.fist_energy.tooltip"));
+        }
+    }
     @Override
     public int getDamage(ItemStack stack) {
         return super.getDamage(stack);
@@ -37,7 +51,6 @@ public class FistEnergy extends SwordItem {
     public boolean canAttackBlock(BlockState state, Level level, BlockPos pos, Player player) {
         return super.canAttackBlock(state, level, pos, player);
     }
-
     @Override
     public float getDestroySpeed(ItemStack stack, BlockState state) {
         if (state.is(Blocks.COBWEB)) {
@@ -50,7 +63,7 @@ public class FistEnergy extends SwordItem {
 
     @Override
     public boolean hurtEnemy(ItemStack stack, LivingEntity entity1, LivingEntity entity2) {
-        stack.hurtAndBreak(1, entity1, (a) -> {
+        stack.hurtAndBreak(1, entity2, (a) -> {
             a.broadcastBreakEvent(EquipmentSlot.MAINHAND);
         });
         return true;
