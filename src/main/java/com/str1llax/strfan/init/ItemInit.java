@@ -304,6 +304,16 @@ public class ItemInit extends Item {
     //END OF ADVANCED ITEMS
 
     //WEAPONS
+    //MAGIC
+    public static final RegistryObject<SwordItem> FIST_ENERGY = register("fist_energy",
+            () -> new SwordItem(TierInit.FIST_ENERGY, 20, -2.4f,
+                    new Item.Properties().rarity(Rarity.EPIC)
+                            .tab(TabInit.STRFANTAB_WEAPONS)
+                            .stacksTo(1)
+                            .fireResistant()
+                            .setNoRepair()
+                            .durability(3)));
+
     //SWORDS
     public static final RegistryObject<SwordItem> MURAMASA = register("muramasa",
             () -> new SwordItem(TierInit.MURAMASA, 3000, 5f,
@@ -313,12 +323,11 @@ public class ItemInit extends Item {
                             .fireResistant()
                             .durability(666666)));
 
-    public ItemInit(Properties p_41383_) {
-        super(p_41383_);
-    }
-
     //END OF WEAPONS
 
+    public ItemInit(Properties properties) {
+        super(properties);
+    }
     private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item)
     {
         return ITEMS.register(name, item);
