@@ -2,7 +2,7 @@ package com.str1llax.strfan.recipe;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -74,7 +74,7 @@ public class ExtractorRecipe implements Recipe<SimpleContainer> {
     public static class Serializer implements RecipeSerializer<ExtractorRecipe> {
         public static final Serializer INSTANCE = new Serializer();
         public static final ResourceLocation ID =
-                new ResourceLocation(Str1llaxsFantasy.MOD_ID,"extracting");
+                new ResourceLocation(StrFan.MOD_ID,"extracting");
 
         @Override
         public ExtractorRecipe fromJson(ResourceLocation id, JsonObject json) {

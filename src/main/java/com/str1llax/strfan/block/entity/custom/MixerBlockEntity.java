@@ -3,7 +3,7 @@ package com.str1llax.strfan.block.entity.custom;
 import com.str1llax.strfan.block.entity.ModBlockEntities;
 import com.str1llax.strfan.recipe.MixerRecipe;
 import com.str1llax.strfan.screen.MixerMenu;
-import com.str1llax.strfan.util.ModTags;
+import com.str1llax.strfan.init.TagInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -159,10 +159,10 @@ public class MixerBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private static boolean has1in1slot(MixerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(0).is(ModTags.Items.MIXER);
+        return entity.itemHandler.getStackInSlot(0).is(TagInit.Items.MIXER);
     }
     private static boolean has2in2slot(MixerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(1).is(ModTags.Items.MIXER);
+        return entity.itemHandler.getStackInSlot(1).is(TagInit.Items.MIXER);
     }
 
     private static void craftItem(MixerBlockEntity entity) {

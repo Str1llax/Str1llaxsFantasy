@@ -3,7 +3,7 @@ package com.str1llax.strfan.block.entity.custom;
 import com.str1llax.strfan.block.entity.ModBlockEntities;
 import com.str1llax.strfan.recipe.CircuitAssemblerRecipe;
 import com.str1llax.strfan.screen.CircuitAssemblerMenu;
-import com.str1llax.strfan.util.ModTags;
+import com.str1llax.strfan.init.TagInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -162,19 +162,19 @@ public class CircuitAssemblerBlockEntity extends BlockEntity implements MenuProv
     }
 
     private static boolean hasCapacitorInCapacitorSlot(CircuitAssemblerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(0).is(ModTags.Items.CAPACITORS);
+        return entity.itemHandler.getStackInSlot(0).is(TagInit.Items.CAPACITORS);
     }
     private static boolean hasCatInCatSlot(CircuitAssemblerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(1).is(ModTags.Items.BASES);
+        return entity.itemHandler.getStackInSlot(1).is(TagInit.Items.BASES);
     }
     private static boolean hasChipInChipSlot(CircuitAssemblerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(2).is(ModTags.Items.CHIPS);
+        return entity.itemHandler.getStackInSlot(2).is(TagInit.Items.CHIPS);
     }
     private static boolean hasChipIn2ChipSlot(CircuitAssemblerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(3).is(ModTags.Items.CHIPS);
+        return entity.itemHandler.getStackInSlot(3).is(TagInit.Items.CHIPS);
     }
     private static boolean hasCatIn2CatSlot(CircuitAssemblerBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(4).is(ModTags.Items.CATALYSTS);
+        return entity.itemHandler.getStackInSlot(4).is(TagInit.Items.CATALYSTS);
     }
 
     private static void craftItem(CircuitAssemblerBlockEntity entity) {

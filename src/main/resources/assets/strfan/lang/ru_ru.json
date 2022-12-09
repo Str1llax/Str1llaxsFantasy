@@ -190,6 +190,10 @@
 
   "block.strfan.hevea_log": "Бревно Гевеи",
   "block.strfan.hevea_planks": "Доски из Гевеи",
+  "block.strfan.hevea_stairs": "Ступеньки из Гевеи",
+  "block.strfan.hevea_slab": "Плита из Гевеи",
+  "block.strfan.hevea_fence": "Забор из Гевеи",
+  "block.strfan.hevea_fence_gate": "Калитка из Гевеи",
   "block.strfan.hevea_wood": "Гевея",
   "block.strfan.stripped_hevea_log": "Обтёсанное бревно Гевеи",
   "block.strfan.stripped_hevea_wood": "Обтёсанная Гевея",

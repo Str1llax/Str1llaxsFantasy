@@ -3,7 +3,7 @@ package com.str1llax.strfan.block.entity.custom;
 import com.str1llax.strfan.block.entity.ModBlockEntities;
 import com.str1llax.strfan.recipe.ExtractorRecipe;
 import com.str1llax.strfan.screen.ExtractorMenu;
-import com.str1llax.strfan.util.ModTags;
+import com.str1llax.strfan.init.TagInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -158,7 +158,7 @@ public class ExtractorBlockEntity extends BlockEntity implements MenuProvider {
     }
 
     private static boolean has1in1slot(ExtractorBlockEntity entity) {
-        return entity.itemHandler.getStackInSlot(0).is(ModTags.Items.EXTRACTOR);
+        return entity.itemHandler.getStackInSlot(0).is(TagInit.Items.EXTRACTOR);
     }
 
     private static void craftItem(ExtractorBlockEntity entity) {

@@ -4,7 +4,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import static com.str1llax.strfan.Str1llaxsFantasy.MOD_ID;
+import static com.str1llax.strfan.StrFan.MOD_ID;
 
 public class TabInit {
 

@@ -1,6 +1,6 @@
 package com.str1llax.strfan.init;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -10,7 +10,7 @@ import java.util.function.Supplier;
 
 public class MetalItemInit {
 
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Str1llaxsFantasy.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StrFan.MOD_ID);
     //INGOTS & METALS FROM ORES
     //DONE! #1 TIN
     public static final RegistryObject<Item> RAW_TIN = register("raw_tin",

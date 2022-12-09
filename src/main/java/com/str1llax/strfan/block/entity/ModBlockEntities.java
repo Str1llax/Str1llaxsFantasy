@@ -1,6 +1,6 @@
 package com.str1llax.strfan.block.entity;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import com.str1llax.strfan.block.entity.custom.CircuitAssemblerBlockEntity;
 import com.str1llax.strfan.block.entity.custom.ExtractorBlockEntity;
 import com.str1llax.strfan.block.entity.custom.MixerBlockEntity;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModBlockEntities {
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-            DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Str1llaxsFantasy.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, StrFan.MOD_ID);
 
     public static final RegistryObject<BlockEntityType<CircuitAssemblerBlockEntity>> CIRCUIT_ASSEMBLER_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("circuit_assembler_block_entity", () ->

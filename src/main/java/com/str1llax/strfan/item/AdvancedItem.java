@@ -1,6 +1,6 @@
 package com.str1llax.strfan.item;
 
-import com.str1llax.strfan.util.ModTags;
+import com.str1llax.strfan.init.TagInit;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
@@ -90,6 +90,6 @@ public class AdvancedItem extends Item
     }
 
     private boolean isValuableBlock(Block block) {
-        return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).is(ModTags.Blocks.ORES);
+        return Registry.BLOCK.getHolderOrThrow(Registry.BLOCK.getResourceKey(block).get()).is(TagInit.Blocks.ORES);
     }
 }

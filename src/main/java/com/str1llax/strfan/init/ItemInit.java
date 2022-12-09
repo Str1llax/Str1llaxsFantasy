@@ -1,6 +1,6 @@
 package com.str1llax.strfan.init;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import com.str1llax.strfan.item.*;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -13,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class ItemInit extends Item {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Str1llaxsFantasy.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StrFan.MOD_ID);
 
     //BASIC ITEMS
     public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
@@ -313,7 +313,7 @@ public class ItemInit extends Item {
                             .durability(3)));
 
     public static final RegistryObject<SwordItem> FIST_ENERGY2 = register("fist_energy2",
-            () -> new FistEnergy2(TierInit.FIST_ENERGY, 50, -1.4f,
+            () -> new FistEnergy2(TierInit.FIST_ENERGY, 49, -1.4f,
                     new Item.Properties()
                             .tab(TabInit.STRFANTAB_WEAPONS)
                             .stacksTo(1)
@@ -322,7 +322,7 @@ public class ItemInit extends Item {
                             .durability(2)));
 
     public static final RegistryObject<SwordItem> FIST_ENERGY3 = register("fist_energy3",
-            () -> new FistEnergy3(TierInit.FIST_ENERGY, 100, 0.4f,
+            () -> new FistEnergy3(TierInit.FIST_ENERGY, 99, 0.4f,
                     new Item.Properties()
                             .tab(TabInit.STRFANTAB_WEAPONS)
                             .stacksTo(1)

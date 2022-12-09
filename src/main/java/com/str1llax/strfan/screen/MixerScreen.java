@@ -2,7 +2,7 @@ package com.str1llax.strfan.screen;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
@@ -12,7 +12,7 @@ import net.minecraft.world.entity.player.Inventory;
 
 public class MixerScreen extends AbstractContainerScreen<MixerMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(Str1llaxsFantasy.MOD_ID, "textures/gui/mixer_gui.png");
+            new ResourceLocation(StrFan.MOD_ID, "textures/gui/mixer_gui.png");
 
     public MixerScreen(MixerMenu menu, Inventory inv, Component component) {
         super(menu, inv, component);

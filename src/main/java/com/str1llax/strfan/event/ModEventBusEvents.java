@@ -1,6 +1,6 @@
 package com.str1llax.strfan.event;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import com.str1llax.strfan.recipe.CircuitAssemblerRecipe;
 import com.str1llax.strfan.recipe.ExtractorRecipe;
 import com.str1llax.strfan.recipe.MixerRecipe;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 
 import javax.annotation.Nonnull;
 
-@Mod.EventBusSubscriber(modid = Str1llaxsFantasy.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@Mod.EventBusSubscriber(modid = StrFan.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModEventBusEvents {
 
     @SubscribeEvent

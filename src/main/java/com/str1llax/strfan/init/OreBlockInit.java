@@ -1,6 +1,6 @@
 package com.str1llax.strfan.init;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -15,7 +15,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 public class OreBlockInit {
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Str1llaxsFantasy.MOD_ID);
+    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, StrFan.MOD_ID);
     public static final DeferredRegister<Item> ITEMS = ItemInit.ITEMS;
 
     //ORES

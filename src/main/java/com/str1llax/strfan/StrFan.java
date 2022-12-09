@@ -23,13 +23,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("strfan")
-public class Str1llaxsFantasy
+public class StrFan
 {
     public static final String MOD_ID = "strfan";
 
 
 
-   public Str1llaxsFantasy()
+   public StrFan()
    {
        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 

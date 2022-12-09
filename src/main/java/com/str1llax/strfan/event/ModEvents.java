@@ -1,9 +1,9 @@
 package com.str1llax.strfan.event;
 
-import com.str1llax.strfan.Str1llaxsFantasy;
+import com.str1llax.strfan.StrFan;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod.EventBusSubscriber(modid = Str1llaxsFantasy.MOD_ID)
+@Mod.EventBusSubscriber(modid = StrFan.MOD_ID)
 public class ModEvents {
 
 }

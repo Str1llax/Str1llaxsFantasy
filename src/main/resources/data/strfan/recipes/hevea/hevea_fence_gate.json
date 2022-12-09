@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/S/",
+    "/S/"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "strfan:hevea_planks"
+    }
+  },
+  "result": {
+    "item": "strfan:hevea_fence_gate",
+    "count": 1
+  }
+}
