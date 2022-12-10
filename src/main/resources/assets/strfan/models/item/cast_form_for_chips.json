@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/cast_form_for_chips"
+    "layer0": "strfan:item/cast_form_for_chips"
   },
   "display": {
     "thirdperson_righthand": {

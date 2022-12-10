@@ -2,9 +2,12 @@ package com.str1llax.strfan.init;
 
 import com.str1llax.strfan.StrFan;
 import com.str1llax.strfan.item.*;
+import com.str1llax.strfan.util.ArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -16,32 +19,32 @@ public class ItemInit extends Item {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, StrFan.MOD_ID);
 
     //BASIC ITEMS
-    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",
-            () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB)
-            ));
+    public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item", () -> new Item(new Item.Properties().tab(TabInit.STRFANTAB)));
 
     //TOOLS
     public static final RegistryObject<Item> HAMMER_TOOL = register("hammer_tool", HammerTool::new);
 
     public static final RegistryObject<Item> CUTTERS_TOOL = register("cutters_tool", CuttersTool::new);
 
+    public static final RegistryObject<Item> DATA_TABLET = register("data_tablet",
+            () -> new DataTabletItem(new Item.Properties().tab(TabInit.STRFANTAB).stacksTo(1)));
+
     //FOOD INGREDIENTS
     public static final RegistryObject<Item> FLOUR = register("flour",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(TabInit.STRFANTAB_RESOURCES)
             ));
 
 
     public static final RegistryObject<Item> DOUGH = register("dough",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(TabInit.STRFANTAB_RESOURCES)
                     ));
 
     //FOOD
     public static final RegistryObject<Item> DUMPLING = register("dumpling",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(CreativeModeTab.TAB_FOOD)
                     .food(new FoodProperties.
                             Builder()
                             .nutrition(1)
@@ -51,7 +54,7 @@ public class ItemInit extends Item {
 
     public static final RegistryObject<Item> DUMPLINGS = register("dumplings",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(CreativeModeTab.TAB_FOOD)
                     .food(new FoodProperties.
                             Builder()
                             .nutrition(2)
@@ -63,21 +66,21 @@ public class ItemInit extends Item {
     //WEAPON PARTS
     public static final RegistryObject<Item> M_GUARD = register("m_guard",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_WEAPONS)
+                    .tab(TabInit.STRFANTAB_PARTS)
                     .stacksTo(1)
                     .fireResistant()
             ));
 
     public static final RegistryObject<Item> M_HANDLE = register("m_handle",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_WEAPONS)
+                    .tab(TabInit.STRFANTAB_PARTS)
                     .stacksTo(1)
                     .fireResistant()
             ));
 
     public static final RegistryObject<Item> M_BLADE = register("m_blade",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_WEAPONS)
+                    .tab(TabInit.STRFANTAB_PARTS)
                     .stacksTo(1)
                     .fireResistant()
             ));
@@ -167,6 +170,13 @@ public class ItemInit extends Item {
                     .tab(TabInit.STRFANTAB_RESOURCES)
                     .stacksTo(64)
                     .fireResistant()
+            ));
+
+    //GEMS
+    public static final RegistryObject<Item> RUBY = register("ruby",
+            () -> new Item(new Item.Properties()
+                    .tab(TabInit.STRFANTAB_FLORA)
+                    .stacksTo(64)
             ));
 
     //MATERIALS
@@ -268,19 +278,19 @@ public class ItemInit extends Item {
 
     public static final RegistryObject<Item> MORTAR = register("mortar",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(TabInit.STRFANTAB_TOOLS)
                     .stacksTo(16)
             ));
 
     public static final RegistryObject<Item> PESTLE = register("pestle",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(TabInit.STRFANTAB_TOOLS)
                     .stacksTo(16)
             ));
 
     public static final RegistryObject<Item> MORTAR_AND_PESTLE = register("mortar_and_pestle",
             () -> new Item(new Item.Properties()
-                    .tab(TabInit.STRFANTAB_FOOD)
+                    .tab(TabInit.STRFANTAB_TOOLS)
                     .stacksTo(1)
             ));
     //END OF MISC
@@ -331,6 +341,9 @@ public class ItemInit extends Item {
                             .durability(1)));
 
     //SWORDS
+    public static final RegistryObject<Item> RUBY_SWORD = register("ruby_sword",
+            () -> new RubySwordItem(TierInit.RUBY,3, -2.4F,new Item.Properties().tab(TabInit.STRFANTAB_WEAPONS)));
+
     public static final RegistryObject<SwordItem> MURAMASA = register("muramasa",
             () -> new Muramasa(TierInit.MURAMASA, 2999, 5f,
                     new Item.Properties()
@@ -338,9 +351,35 @@ public class ItemInit extends Item {
                             .stacksTo(1)
                             .fireResistant()
                             .durability(666666)));
+    //BOWS
+    public static final RegistryObject<Item> RUBY_BOW = register("ruby_bow",
+            () -> new BowItem(new Item.Properties().defaultDurability(800).tab(TabInit.STRFANTAB_WEAPONS)));
 
-    //END OF WEAPONS
+    //PICKAXES
+    public static final RegistryObject<Item> RUBY_PICKAXE = register("ruby_pickaxe",
+            () -> new PickaxeItem(TierInit.RUBY,1, -2.8F,new Item.Properties().tab(TabInit.STRFANTAB_TOOLS)));
+    //AXES
+    public static final RegistryObject<Item> RUBY_AXE = register("ruby_axe",
+            () -> new AxeItem(TierInit.RUBY,5.0F, -3.0F,new Item.Properties().tab(TabInit.STRFANTAB_TOOLS)));
+    //SHOVELS
+    public static final RegistryObject<Item> RUBY_SHOVEL = register("ruby_shovel",
+            () -> new ShovelItem(TierInit.RUBY,1.5F, -3.0F,new Item.Properties().tab(TabInit.STRFANTAB_TOOLS)));
+    //HOES
+    public static final RegistryObject<Item> RUBY_HOE = register("ruby_hoe",
+            () -> new HoeItem(TierInit.RUBY, -3, 0.0F,new Item.Properties().tab(TabInit.STRFANTAB_TOOLS)));
 
+    //HELMETS
+    public static final RegistryObject<Item> RUBY_HELMET = register("ruby_helmet",
+            () -> new ModArmorItem(ArmorMaterials.RUBY, EquipmentSlot.HEAD,new Item.Properties().tab(TabInit.STRFANTAB_ARMOR)));
+    //CHESTPLATES
+    public static final RegistryObject<Item> RUBY_CHESTPLATE = register("ruby_chestplate",
+            () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.CHEST,new Item.Properties().tab(TabInit.STRFANTAB_ARMOR)));
+    //LEGGINGS
+    public static final RegistryObject<Item> RUBY_LEGGINGS = register("ruby_leggings",
+            () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.LEGS,new Item.Properties().tab(TabInit.STRFANTAB_ARMOR)));
+    //BOOTS
+    public static final RegistryObject<Item> RUBY_BOOTS = register("ruby_boots",
+            () -> new ArmorItem(ArmorMaterials.RUBY, EquipmentSlot.FEET,new Item.Properties().tab(TabInit.STRFANTAB_ARMOR)));
     public ItemInit(Properties properties) {
         super(properties);
     }

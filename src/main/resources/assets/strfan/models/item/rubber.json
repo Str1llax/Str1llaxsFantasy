@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/rubber"
+    "layer0": "strfan:item/rubber"
   },
   "display": {
     "thirdperson_righthand": {

@@ -5,11 +5,13 @@ import com.str1llax.strfan.init.BlockInit;
 import com.str1llax.strfan.init.ItemInit;
 import com.str1llax.strfan.init.MetalItemInit;
 import com.str1llax.strfan.init.OreBlockInit;
+import com.str1llax.strfan.paintings.ModPaintings;
 import com.str1llax.strfan.recipe.ModRecipes;
 import com.str1llax.strfan.screen.CircuitAssemblerScreen;
 import com.str1llax.strfan.screen.ExtractorScreen;
 import com.str1llax.strfan.screen.MixerScreen;
 import com.str1llax.strfan.screen.ModMenuTypes;
+import com.str1llax.strfan.util.ModItemProperties;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
@@ -23,14 +25,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod("strfan")
-public class StrFan
-{
+public class StrFan {
     public static final String MOD_ID = "strfan";
-
-
-
-   public StrFan()
-   {
+   public StrFan() {
        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
        ItemInit.ITEMS.register(bus);
@@ -41,6 +38,7 @@ public class StrFan
        ModBlockEntities.register(bus);
        ModMenuTypes.register(bus);
        ModRecipes.register(bus);
+       ModPaintings.register(bus);
 
        bus.addListener(this::setup);
        bus.addListener(this::clientSetup);
@@ -62,6 +60,8 @@ public class StrFan
        ItemBlockRenderTypes.setRenderLayer(BlockInit.PINK_ROSE.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(BlockInit.POTTED_PINK_ROSE.get(), RenderType.cutout());
 
+       ItemBlockRenderTypes.setRenderLayer(BlockInit.HEVEA_DOOR.get(), RenderType.translucent());
+       ItemBlockRenderTypes.setRenderLayer(BlockInit.HEVEA_TRAPDOOR.get(), RenderType.translucent());
        ItemBlockRenderTypes.setRenderLayer(BlockInit.HEVEA_LEAVES.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(BlockInit.HEVEA_SAPLING.get(), RenderType.cutout());
 
@@ -69,6 +69,8 @@ public class StrFan
        MenuScreens.register(ModMenuTypes.CIRCUIT_ASSEMBLER_MENU.get(), CircuitAssemblerScreen::new);
        MenuScreens.register(ModMenuTypes.MIXER_MENU.get(), MixerScreen::new);
        MenuScreens.register(ModMenuTypes.EXTRACTOR_MENU.get(), ExtractorScreen::new);
+
+       ModItemProperties.addCustomItemProperties();
    }
    private void setup(final FMLCommonSetupEvent event){
        event.enqueueWork(() -> {

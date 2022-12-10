@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "strfan:blocks/deepslate_zinc_ore"
+    "all": "strfan:block/deepslate_zinc_ore"
   }
 }

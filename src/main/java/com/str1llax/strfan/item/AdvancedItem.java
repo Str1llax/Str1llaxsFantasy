@@ -1,9 +1,12 @@
 package com.str1llax.strfan.item;
 
+import com.str1llax.strfan.init.ItemInit;
 import com.str1llax.strfan.init.TagInit;
+import com.str1llax.strfan.util.InventoryUtil;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -67,6 +70,9 @@ public class AdvancedItem extends Item
                 if(isValuableBlock(blockBelow)) {
                     outputValuableCoordinates(positionClicked.below(i), player, blockBelow);
                     foundBlock = true;
+                    if(InventoryUtil.hasPlayerStackInInventory(player, ItemInit.DATA_TABLET.get())) {
+                        addNbtToDataTablet(player, positionClicked.below(i), blockBelow);
+                    }
                     break;
                 }
             }
@@ -81,6 +87,17 @@ public class AdvancedItem extends Item
                 (player) -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
         return super.useOn(pContext);
+    }
+
+    private void addNbtToDataTablet(Player player, BlockPos pos, Block blockBelow) {
+        ItemStack dataTablet =
+                player.getInventory().getItem(InventoryUtil.getFirstInventoryIndex(player, ItemInit.DATA_TABLET.get()));
+
+        CompoundTag nbtData = new CompoundTag();
+        nbtData.putString("strfan.last_ore", "Found " + blockBelow.asItem().getRegistryName().toString() + " at (" +
+                pos.getX() + ", "+ pos.getY() + ", "+ pos.getZ() + ")");
+
+        dataTablet.setTag(nbtData);
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {

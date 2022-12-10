@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "strfan:blocks/rhenium_ore"
+    "all": "strfan:block/rhenium_ore"
   }
 }

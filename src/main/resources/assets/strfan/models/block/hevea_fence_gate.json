@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/template_fence_gate",
   "textures": {
-    "texture": "strfan:blocks/hevea_planks"
+    "texture": "strfan:block/hevea_planks"
   }
 }

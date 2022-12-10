@@ -37,5 +37,6 @@ public class ModOreGeneration {
         base.add(ModPlacedFeatures.LEAD_ORE_PLACED);
         base.add(ModPlacedFeatures.BISMUTH_ORE_PLACED);
         base.add(ModPlacedFeatures.URANIUM_ORE_PLACED);
+        base.add(ModPlacedFeatures.RUBY_ORE_PLACED);
     }
 }

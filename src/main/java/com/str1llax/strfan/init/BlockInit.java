@@ -29,41 +29,31 @@ public class BlockInit {
 
     //  EXAMPLE BLOCKS
     public static final RegistryObject<Block> EXAMPLE_BLOCK = register("example_block",
-            () -> new Block(BlockBehaviour.Properties
-                    .of(Material.METAL, MaterialColor.COLOR_PURPLE)
-                    .strength(3.0f)
-                    .sound(SoundType.METAL)
-                    .requiresCorrectToolForDrops()
-                    .emissiveRendering((state, getter, pos) ->
-                    {
-                        return true;
-                    })
-                    .lightLevel(state -> 4)  ),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
             
     //  FLOWERS
     public static final RegistryObject<Block> PINK_ROSE = register("pink_rose",
             () -> new FlowerBlock(MobEffects.HEAL,8,BlockBehaviour.Properties.copy(Blocks.DANDELION).noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
     public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             () -> new FlowerPotBlock(null, BlockInit.PINK_ROSE, BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
     //  WOOD
     public static final RegistryObject<Block> HEVEA_LOG = register("hevea_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_WOOD = register("hevea_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> STRIPPED_HEVEA_LOG = register("stripped_hevea_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> STRIPPED_HEVEA_WOOD = register("stripped_hevea_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_PLANKS = register("hevea_planks",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
@@ -82,23 +72,39 @@ public class BlockInit {
                     return 5;
                 }
             },
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_STAIRS = register("hevea_stairs",
             () -> new StairBlock(() -> BlockInit.HEVEA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_SLAB = register("hevea_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_FENCE = register("hevea_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD, HEVEA_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_FENCE_GATE = register("hevea_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    public static final RegistryObject<Block> HEVEA_BUTTON = register("hevea_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    public static final RegistryObject<Block> HEVEA_PRESSURE_PLATE = register("hevea_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    public static final RegistryObject<Block> HEVEA_DOOR = register("hevea_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    public static final RegistryObject<Block> HEVEA_TRAPDOOR = register("hevea_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_LEAVES = register("hevea_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noOcclusion()) {
@@ -112,11 +118,25 @@ public class BlockInit {
                 }
                 @Override
                 public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-                    return 30;}}, object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+                    return 30;}}, object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     public static final RegistryObject<Block> HEVEA_SAPLING = register("hevea_sapling",
             () -> new SaplingBlock(new RubberTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    //  GEMS
+    public static final RegistryObject<Block> RUBY_BLOCK = register("ruby_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    //GEM ORES
+    //RUBY
+    public static final RegistryObject<Block> RUBY_ORE = register("ruby_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
+
+    public static final RegistryObject<Block> DEEPSLATE_RUBY_ORE = register("deepslate_ruby_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FLORA)));
 
     //  ADVANCED BLOCKS
     public static final RegistryObject<Block> ADVANCED_BLOCK = register("advanced_block",
@@ -130,12 +150,12 @@ public class BlockInit {
     //CABLES
     public static final RegistryObject<Block> CABLE_IRON = register("cable_iron",
             () -> new CableIron(BlockBehaviour.Properties.of(Material.WOOL, MaterialColor.COLOR_LIGHT_GRAY)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_MACHINES)));
 
     //MECHANISMS
     public static final RegistryObject<Block> MEAT_GRINDER = register("meat_grinder",
             () -> new MeatGrinder(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)),
-            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_FOOD)));
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(TabInit.STRFANTAB_MACHINES)));
 
     //MACHINES
     public static final RegistryObject<Block> CIRCUIT_ASSEMBLER = register("circuit_assembler",

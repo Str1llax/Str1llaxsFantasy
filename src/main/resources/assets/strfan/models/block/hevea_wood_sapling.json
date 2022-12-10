@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cross",
   "textures": {
-    "cross": "strfan:blocks/hevea_sapling"
+    "cross": "strfan:block/hevea_sapling"
   }
 }

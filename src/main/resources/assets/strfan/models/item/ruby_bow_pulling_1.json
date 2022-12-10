@@ -1,0 +1,6 @@
+{
+  "parent": "strfan:item/ruby_bow",
+  "textures": {
+    "layer0": "strfan:item/ruby_bow_pulling_1"
+  }
+}

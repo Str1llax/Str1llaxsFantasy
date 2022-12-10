@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/leaves",
   "textures": {
-    "all": "strfan:blocks/hevea_leaves"
+    "all": "strfan:block/hevea_leaves"
   }
 }

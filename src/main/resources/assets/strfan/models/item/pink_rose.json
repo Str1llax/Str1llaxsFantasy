@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:blocks/pink_rose"
+    "layer0": "strfan:block/pink_rose"
   }
 }

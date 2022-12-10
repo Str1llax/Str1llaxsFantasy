@@ -2,8 +2,8 @@
   "credit": "Made with Blockbench",
   "texture_size": [64, 64],
   "textures": {
-    "0": "strfan:blocks/meat_grinder",
-    "particle": "strfan:blocks/particle"
+    "0": "strfan:block/meat_grinder",
+    "particle": "strfan:block/particle"
   },
   "elements": [
     {

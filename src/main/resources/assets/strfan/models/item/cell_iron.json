@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/cell_iron"
+    "layer0": "strfan:item/cell_iron"
   }
 }

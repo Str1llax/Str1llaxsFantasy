@@ -71,6 +71,9 @@
     "strfan:deepslate_bismuth_ore",
 
     "strfan:uranium_ore",
-    "strfan:deepslate_uranium_ore"
+    "strfan:deepslate_uranium_ore",
+    
+    "strfan:ruby_ore",
+    "strfan:deepslate_ruby_ore"
   ]
 }

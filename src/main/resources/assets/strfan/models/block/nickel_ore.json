@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "strfan:blocks/nickel_ore"
+    "all": "strfan:block/nickel_ore"
   }
 }

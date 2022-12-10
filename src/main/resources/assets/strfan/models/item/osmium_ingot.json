@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/osmium_ingot"
+    "layer0": "strfan:item/osmium_ingot"
   }
 }

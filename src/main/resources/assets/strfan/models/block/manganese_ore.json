@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "strfan:blocks/manganese_ore"
+    "all": "strfan:block/manganese_ore"
   }
 }

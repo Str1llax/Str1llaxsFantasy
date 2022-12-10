@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "strfan:blocks/deepslate_titanium_ore"
+    "all": "strfan:block/deepslate_titanium_ore"
   }
 }

@@ -7,6 +7,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
@@ -21,16 +22,9 @@ import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> HEVEA_TREE =
-            FeatureUtils.register("hevea", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                    BlockStateProvider.simple(BlockInit.HEVEA_LOG.get()),
-                    new StraightTrunkPlacer(5, 6, 3),
-                    BlockStateProvider.simple(BlockInit.HEVEA_LEAVES.get()),
-                    new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 4),
-                    new TwoLayersFeatureSize(1, 0, 2)).build());
-
+            FeatureUtils.register("hevea", Feature.TREE, createHevea().build());
     public static final Holder<PlacedFeature> HEVEA_CHECKED = PlacementUtils.register("hevea_checked", HEVEA_TREE,
             PlacementUtils.filteredByBlockSurvival(BlockInit.HEVEA_SAPLING.get()));
-
     public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> HEVEA_SPAWN =
             FeatureUtils.register("hevea_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(HEVEA_CHECKED,
@@ -231,4 +225,22 @@ public class ModConfiguredFeatures {
 
     public static final Holder<ConfiguredFeature<OreConfiguration, ?>> URANIUM_ORE = FeatureUtils.register("uranium_ore",
             Feature.ORE, new OreConfiguration(OVERWORLD_URANIUM_ORES, 7));
+
+    //  RUBY ORE REPLACER
+    public static final List<OreConfiguration.TargetBlockState> OVERWORLD_RUBY_ORES = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, BlockInit.RUBY_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, BlockInit.DEEPSLATE_RUBY_ORE.get().defaultBlockState()));
+
+    public static final Holder<ConfiguredFeature<OreConfiguration, ?>> RUBY_ORE = FeatureUtils.register("ruby_ore",
+            Feature.ORE, new OreConfiguration(OVERWORLD_RUBY_ORES, 7));
+
+    //Need this because I want
+    private static TreeConfiguration.TreeConfigurationBuilder createStraightBlobTree(Block block, Block block1, int pBaseHeight, int pHeightRandA, int pHeightRandB, int i) {
+        return new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(block),
+                new StraightTrunkPlacer(pBaseHeight, pHeightRandA, pHeightRandB), BlockStateProvider.simple(block1),
+                new BlobFoliagePlacer(ConstantInt.of(i), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1));
+    }
+    private static TreeConfiguration.TreeConfigurationBuilder createHevea() {
+        return createStraightBlobTree(BlockInit.HEVEA_LOG.get(), BlockInit.HEVEA_LEAVES.get(), 4, 2, 0, 2).ignoreVines();
+    }
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/mortar"
+    "layer0": "strfan:item/mortar"
   }
 }

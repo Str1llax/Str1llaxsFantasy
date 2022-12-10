@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/circuit_diamond"
+    "layer0": "strfan:item/circuit_diamond"
   }
 }

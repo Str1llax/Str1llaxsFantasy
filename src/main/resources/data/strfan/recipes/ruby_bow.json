@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " rc",
+    "/ c",
+    " rc"
+  ],
+  "key": {
+    "r": {
+      "item": "strfan:ruby"
+    },
+    "c": {
+      "item": "minecraft:string"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "strfan:ruby_bow",
+    "count": 1
+  }
+}

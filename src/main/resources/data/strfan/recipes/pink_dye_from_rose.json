@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "strfan:pink_rose"
+      }
+    ],
+    "result": {
+      "item": "minecraft:pink_dye",
+      "count": 1
+    }
+
+}

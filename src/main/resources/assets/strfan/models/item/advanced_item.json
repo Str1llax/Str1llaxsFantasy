@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/advanced_item"
+    "layer0": "strfan:item/advanced_item"
   }
 }

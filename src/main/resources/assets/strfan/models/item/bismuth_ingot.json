@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/bismuth_ingot"
+    "layer0": "strfan:item/bismuth_ingot"
   }
 }

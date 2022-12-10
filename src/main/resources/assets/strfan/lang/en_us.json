@@ -1,10 +1,24 @@
 {
-  "itemGroup.strfan_tab": "Str1llax's Fantasy",
-  "itemGroup.strfan_food": "Str1llax's Food",
-  "itemGroup.strfan_machines": "Str1llax's Machines",
-  "itemGroup.strfan_weapons": "Str1llax's Weapons",
-  "itemGroup.strfan_resources": "Str1llax's Resources",
-  "itemGroup.strfan_ores": "Str1llax's Ores",
+  "itemGroup.strfan_tab": "§dS§aF§r: General",
+  "itemGroup.strfan_flora": "§dS§aF§r: Flora",
+  "itemGroup.strfan_fauna": "§dS§aF§r: Fauna",
+  "itemGroup.strfan_weapons": "§dS§aF§r: Weapons",
+  "itemGroup.strfan_tools": "§dS§aF§r: Tools",
+  "itemGroup.strfan_armor": "§dS§aF§r: Armor",
+  "itemGroup.strfan_resources": "§dS§aF§r: Resources",
+  "itemGroup.strfan_machines": "§dS§aF§r: Machines",
+  "itemGroup.strfan_ores": "§dS§aF§r: Ores",
+  "itemGroup.strfan_parts": "§dS§aF§r: Parts",
+
+  "button.displayText": "Baubles",
+  "keybind.baublesinventory": "Open Baubles Inventory",
+  "name.AMULET": "Amulet",
+  "name.RING": "Ring",
+  "name.BELT": "Belt",
+  "name.TRINKET": "Trinket",
+  "name.HEAD": "Head",
+  "name.BODY": "Body",
+  "name.CHARM": "Charm",
 
   "item.strfan.example_item": "Example Item",
   "item.strfan.advanced_item": "Advanced Item",
@@ -34,8 +48,23 @@
   "tooltip.strfan.hammer_tool.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.strfan.cutters_tool.tooltip.shift": "Can cut ur PP!",
   "tooltip.strfan.cutters_tool.tooltip": "Press §eSHIFT§r for more Information!",
+  "tooltip.strfan.ruby_sword.tooltip": "Some kind of ancient sword with small magical abilities!",
 
   "item.strfan.advanced_item.no_valuables": "No valuables found!",
+
+  "item.strfan.ruby": "§4Ruby",
+  "item.strfan.ruby_sword": "§4Ruby Sword",
+  "item.strfan.ruby_pickaxe": "§4Ruby Pickaxe",
+  "item.strfan.ruby_axe": "§4Ruby Axe",
+  "item.strfan.ruby_shovel": "§4Ruby Shovel",
+  "item.strfan.ruby_hoe": "§4Ruby Hoe",
+
+  "item.strfan.ruby_helmet": "§4Ruby Helmet",
+  "item.strfan.ruby_chestplate": "§4Ruby Chestplate",
+  "item.strfan.ruby_leggings": "§4Ruby Leggings",
+  "item.strfan.ruby_boots": "§4Ruby Boots",
+
+  "item.strfan.ruby_bow": "§4Ruby Bow",
 
   "item.strfan.mighty_iron_ingot": "Mighty iron ingot",
   "item.strfan.crimson_energy_ingot": "Crimson energy ingot",
@@ -47,6 +76,8 @@
   "item.strfan.mortar": "Mortar",
   "item.strfan.pestle": "Pestle",
   "item.strfan.mortar_and_pestle": "Mortar & Pestle",
+
+  "item.strfan.data_tablet": "Data Tablet",
 
   "item.strfan.m_blade": "Muramasa's blade",
   "item.strfan.m_handle": "Muramasa's handle",
@@ -188,6 +219,10 @@
   "block.strfan.uranium_ore": "Uranium ore",
   "block.strfan.deepslate_uranium_ore": "Deepslate Uranium ore",
 
+  "block.strfan.ruby_block": "Ruby block",
+  "block.strfan.ruby_ore": "Ruby ore",
+  "block.strfan.deepslate_ruby_ore": "Deepslate Ruby ore",
+
   "block.strfan.hevea_log": "Hevea Log",
   "block.strfan.hevea_planks": "Hevea Planks",
   "block.strfan.hevea_stairs": "Hevea Stairs",
@@ -199,6 +234,10 @@
   "block.strfan.stripped_hevea_wood": "Stripped Hevea Wood",
   "block.strfan.hevea_leaves": "Hevea Leaves",
   "block.strfan.hevea_sapling": "Hevea Sapling",
+  "block.strfan.hevea_button": "Hevea Button",
+  "block.strfan.hevea_pressure_plate": "Hevea Pressure Plate",
+  "block.strfan.hevea_door": "Hevea Door",
+  "block.strfan.hevea_trapdoor": "Hevea Trapdoor",
 
   "block.strfan.pink_rose": "Pink Rose",
   "block.strfan.potted_pink_rose": "Potted Pink Rose",

@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:block/cube_column",
   "textures": {
-    "end": "strfan:blocks/hevea_log_top",
-    "side": "strfan:blocks/hevea_log"
+    "end": "strfan:block/hevea_log_top",
+    "side": "strfan:block/hevea_log"
   }
 }

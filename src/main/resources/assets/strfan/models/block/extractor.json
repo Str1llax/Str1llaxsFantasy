@@ -1,9 +1,9 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "strfan:blocks/default_machine",
-		"north": "strfan:blocks/extractor",
-		"up": "strfan:blocks/extractor_top",
-		"down": "strfan:blocks/default_machine_down"
+		"all": "strfan:block/default_machine",
+		"north": "strfan:block/extractor",
+		"up": "strfan:block/extractor_top",
+		"down": "strfan:block/default_machine_down"
 	}
 }

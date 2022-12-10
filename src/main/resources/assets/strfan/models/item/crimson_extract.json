@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/crimson_extract"
+    "layer0": "strfan:item/crimson_extract"
   }
 }

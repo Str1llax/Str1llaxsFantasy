@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/pestle"
+    "layer0": "strfan:item/pestle"
   }
 }

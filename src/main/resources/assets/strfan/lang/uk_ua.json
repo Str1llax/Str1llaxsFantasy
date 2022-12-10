@@ -1,10 +1,14 @@
 {
-  "itemGroup.strfan_tab": "Фантазии Str1llax'а",
-  "itemGroup.strfan_food": "Еда из Фантазий Str1llax'а",
-  "itemGroup.strfan_machines": "Машины Str1llax'а",
-  "itemGroup.strfan_weapons": "Оружие Str1llax'а",
-  "itemGroup.strfan_resources": "Ресурсы Str1llax'а",
-  "itemGroup.strfan_ores": "Руды Str1llax'а",
+  "itemGroup.strfan_tab": "§dS§aF§r: Главная",
+  "itemGroup.strfan_flora": "§dS§aF§r: Флора",
+  "itemGroup.strfan_fauna": "§dS§aF§r: Фауна",
+  "itemGroup.strfan_weapons": "§dS§aF§r: Оружие",
+  "itemGroup.strfan_tools": "§dS§aF§r: Инструменты",
+  "itemGroup.strfan_armor": "§dS§aF§r: Броня",
+  "itemGroup.strfan_resources": "§dS§aF§r: Ресурсы",
+  "itemGroup.strfan_machines": "§dS§aF§r: Машины",
+  "itemGroup.strfan_ores": "§dS§aF§r: Руды",
+  "itemGroup.strfan_parts": "§dS§aF§r: Детали",
 
   "item.strfan.example_item": "Простой предмет",
   "item.strfan.advanced_item": "Продвинутый предмет",
@@ -34,8 +38,23 @@
   "tooltip.strfan.hammer_tool.tooltip": "Нажми §eSHIFT§r для большей информации!",
   "tooltip.strfan.cutters_tool.tooltip.shift": "Чик-чик и готово!",
   "tooltip.strfan.cutters_tool.tooltip": "Нажми §eSHIFT§r для большей информации!",
+  "tooltip.strfan.ruby_sword.tooltip": "Какой-то древний меч с небольшими магическими способностями!",
 
   "item.strfan.advanced_item.no_valuables": "Не найдено руд!",
+
+  "item.strfan.ruby": "§4Рубин",
+  "item.strfan.ruby_sword": "§4Рубиновый меч",
+  "item.strfan.ruby_pickaxe": "§4Рубиновая кирка",
+  "item.strfan.ruby_axe": "§4Рубиновый топор",
+  "item.strfan.ruby_shovel": "§4Рубиновая лопата",
+  "item.strfan.ruby_hoe": "§4Рубиновая мотыга",
+
+  "item.strfan.ruby_helmet": "§4Рубиновый шлем",
+  "item.strfan.ruby_chestplate": "§4Рубиновый нагрудник",
+  "item.strfan.ruby_leggings": "§4Рубиновые поножи",
+  "item.strfan.ruby_boots": "§4Рубиновые ботинки",
+
+  "item.strfan.ruby_bow": "§4Рубиновый лук",
 
   "item.strfan.mighty_iron_ingot": "Несокрушимый железный слиток",
   "item.strfan.crimson_energy_ingot": "Багровый энергетический слиток",
@@ -47,6 +66,8 @@
   "item.strfan.mortar": "Ступка",
   "item.strfan.pestle": "Пестик",
   "item.strfan.mortar_and_pestle": "Ступка и пестик",
+
+  "item.strfan.data_tablet": "Data Tablet",
 
   "item.strfan.m_blade": "Лезвие Мурамасы",
   "item.strfan.m_handle": "Ручка Мурамасы",
@@ -188,6 +209,10 @@
   "block.strfan.uranium_ore": "Урановая руда",
   "block.strfan.deepslate_uranium_ore": "Глубинная Урановая руда",
 
+  "block.strfan.ruby_block": "§4Рубиновый блок",
+  "block.strfan.ruby_ore": "§4Рубиновая руда",
+  "block.strfan.deepslate_ruby_ore": "§4Рубиноносный глубинный сланец",
+
   "block.strfan.hevea_log": "Бревно Гевеи",
   "block.strfan.hevea_planks": "Доски из Гевеи",
   "block.strfan.hevea_stairs": "Ступеньки из Гевеи",
@@ -199,6 +224,10 @@
   "block.strfan.stripped_hevea_wood": "Обтёсанная Гевея",
   "block.strfan.hevea_leaves": "Листва Гевеи",
   "block.strfan.hevea_sapling": "Саженец Гевеи",
+  "block.strfan.hevea_button": "Кнопка из Гевеи",
+  "block.strfan.hevea_pressure_plate": "Нажимная пластина из Гевеи",
+  "block.strfan.hevea_door": "Дверь из Гевеи",
+  "block.strfan.hevea_trapdoor": "Люк из Гевеи",
 
   "block.strfan.pink_rose": "Розовая роза",
   "block.strfan.potted_pink_rose": "Посаженная розовая роза",

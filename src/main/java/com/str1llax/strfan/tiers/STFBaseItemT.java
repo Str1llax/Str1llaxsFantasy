@@ -23,7 +23,7 @@ public class STFBaseItemT extends Item {
 
     public STFBaseItemT(Properties props)
     {
-        this(props, TabInit.STRFANTAB_MACHINES);
+        this(props, TabInit.STRFANTAB_TOOLS);
     }
 
     public STFBaseItemT(Properties props, CreativeModeTab group)

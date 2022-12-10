@@ -1,8 +1,8 @@
 {
 	"parent": "block/cube_all",
 	"textures": {
-		"all": "strfan:blocks/default_machine",
-		"north": "strfan:blocks/generator",
-		"down": "strfan:blocks/default_machine_down"
+		"all": "strfan:block/default_machine",
+		"north": "strfan:block/generator",
+		"down": "strfan:block/default_machine_down"
 	}
 }

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "strfan:items/mighty_iron_ingot"
+    "layer0": "strfan:item/mighty_iron_ingot"
   }
 }
