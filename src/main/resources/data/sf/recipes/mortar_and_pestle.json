@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:mortar"
+    },
+    {
+      "item": "sf:pestle"
+    }
+  ],
+  "result": {
+    "item": "sf:mortar_and_pestle",
+    "count": 1
+  }
+
+}

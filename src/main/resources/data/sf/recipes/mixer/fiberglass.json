@@ -1,0 +1,14 @@
+{
+  "type": "sf:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "item": "sf:fiberglass_mix"
+    }
+  ],
+  "output": {
+    "item": "sf:fiberglass"
+  }
+}

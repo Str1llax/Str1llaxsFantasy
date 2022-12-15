@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "strfan:circuit_iron_chip",
-    "strfan:circuit_gold_chip",
-    "strfan:circuit_diamond_chip"
+    "sf:circuit_iron_chip",
+    "sf:circuit_gold_chip",
+    "sf:circuit_diamond_chip"
   ]
 }

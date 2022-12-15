@@ -20,8 +20,8 @@ apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
 
 version = '0.1'
-group = 'com.str1llax.strfan'
-archivesBaseName = 'strfan'
+group = 'com.str1llax.sf'
+archivesBaseName = 'sf'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -119,7 +119,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.85'
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.86'
     // compile against the JEI API but do not include it at runtime
     compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api")
     // at runtime, use the full JEI jar
@@ -130,9 +130,9 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "Str1llaxFantasy",
+                "Specification-Title"     : "Str1llax's Fantasy",
                 "Specification-Vendor"    : "Str1llax",
-                "Specification-Version"   : "1",
+                "Specification-Version"   : "0.1",
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : "Str1llax",

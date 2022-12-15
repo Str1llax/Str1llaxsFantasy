@@ -1,0 +1,6 @@
+{
+  "parent": "sf:item/ruby_bow",
+  "textures": {
+    "layer0": "sf:item/ruby_bow_pulling_0"
+  }
+}

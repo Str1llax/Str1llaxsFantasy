@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "p p",
+    " p ",
+    "iri"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:iron_ingot"
+    },
+    "p": {
+      "item": "sf:plate_iron"
+    },
+    "r": {
+      "item": "sf:rubber"
+    }
+  },
+  "result": {
+    "item": "sf:cutters_tool",
+    "count": 1
+  }
+}

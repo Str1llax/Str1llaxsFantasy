@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "sf:cutters_tool"
+      },
+      {
+        "item": "sf:cell_iron"
+      }
+    ],
+    "result": {
+      "item": "sf:cable_iron",
+      "count": 2
+    }
+}

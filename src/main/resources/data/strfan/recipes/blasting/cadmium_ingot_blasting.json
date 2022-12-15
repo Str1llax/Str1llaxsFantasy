@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "strfan:raw_cadmium"
-  },
-  "result": "strfan:cadmium_ingot",
-  "experience": 1.0,
-  "cookingtime": 100
-}

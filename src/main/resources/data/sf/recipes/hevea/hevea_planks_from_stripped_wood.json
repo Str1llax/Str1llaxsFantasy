@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:stripped_hevea_wood"
+    }
+  ],
+  "result": {
+    "item": "sf:hevea_planks",
+    "count": 4}
+}

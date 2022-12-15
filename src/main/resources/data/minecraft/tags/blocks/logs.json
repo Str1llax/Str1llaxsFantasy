@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "#strfan:hevea_logs"
+    "#sf:hevea_logs",
+    "#sf:chestnut_logs"
   ]
 }

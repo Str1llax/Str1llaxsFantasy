@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "sf:raw_zinc"
+  },
+  "result": "sf:zinc_ingot",
+  "experience": 1.0,
+  "cookingtime": 100
+}

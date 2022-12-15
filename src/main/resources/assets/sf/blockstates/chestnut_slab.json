@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "sf:block/chestnut_slab"
+    },
+    "type=double": {
+      "model": "sf:block/chestnut_planks"
+    },
+    "type=top": {
+      "model": "sf:block/chestnut_slab_top"
+    }
+  }
+}

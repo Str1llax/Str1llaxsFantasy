@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "minecraft:redstone",
-    "minecraft:glowstone_dust",
-    "strfan:rosin"
-  ]
-}

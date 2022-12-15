@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:smelting",
-  "ingredient": {
-    "item": "strfan:raw_zirconium"
-  },
-  "result": "strfan:zirconium_ingot",
-  "experience": 1.0,
-  "cookingtime": 200
-}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sf:circuit_iron_chip",
+    "sf:circuit_gold_chip",
+    "sf:circuit_diamond_chip",
+    "sf:circuit_silicon_chip"
+  ]
+}

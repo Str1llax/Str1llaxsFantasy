@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "strfan:raw_cobalt"
-  },
-  "result": "strfan:cobalt_ingot",
-  "experience": 1.0,
-  "cookingtime": 100
-}

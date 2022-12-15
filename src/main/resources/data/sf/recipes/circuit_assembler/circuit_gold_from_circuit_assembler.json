@@ -1,0 +1,23 @@
+{
+  "type": "sf:circuit_assembling",
+  "ingredients": [
+    {
+      "item": "sf:capacitor_base"
+    },
+    {
+      "item": "sf:circuit_base"
+    },
+    {
+      "item": "sf:circuit_silicon_chip"
+    },
+    {
+      "item": "sf:circuit_gold_chip"
+    },
+    {
+      "item": "sf:rosin"
+    }
+  ],
+  "output": {
+    "item": "sf:circuit_gold"
+  }
+}

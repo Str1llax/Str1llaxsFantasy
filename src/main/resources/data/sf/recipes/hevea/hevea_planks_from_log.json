@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:hevea_log"
+    }
+  ],
+  "result": {
+    "item": "sf:hevea_planks",
+    "count": 4}
+}

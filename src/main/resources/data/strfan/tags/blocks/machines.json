@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "strfan:circuit_assembler",
-    "strfan:mixer",
-    "strfan:extractor"
-  ]
-}

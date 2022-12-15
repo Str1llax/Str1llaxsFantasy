@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "sf:raw_rhenium"
+  },
+  "result": "sf:rhenium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

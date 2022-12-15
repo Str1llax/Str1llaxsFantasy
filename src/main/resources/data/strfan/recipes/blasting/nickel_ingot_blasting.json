@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "strfan:raw_nickel"
-  },
-  "result": "strfan:nickel_ingot",
-  "experience": 1.0,
-  "cookingtime": 100
-}

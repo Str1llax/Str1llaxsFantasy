@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "sf:raw_germanium"
+  },
+  "result": "sf:germanium_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

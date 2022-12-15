@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "strfan:block/hevea_planks",
-    "top": "strfan:block/hevea_planks",
-    "side": "strfan:block/hevea_planks"
-  }
-}

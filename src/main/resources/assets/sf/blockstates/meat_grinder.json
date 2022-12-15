@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf:block/meat_grinder",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "sf:block/meat_grinder",
+      "y": 90
+
+    },
+    "facing=west": {
+      "model": "sf:block/meat_grinder",
+      "y": 270
+
+    },
+    "facing=south": {
+      "model": "sf:block/meat_grinder",
+      "y": 180
+
+    }
+  }
+}

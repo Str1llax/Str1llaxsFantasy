@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:hevea_planks"
+    }
+  ],
+  "result":
+    {
+      "item": "sf:hevea_button",
+      "count": 1
+    }
+}

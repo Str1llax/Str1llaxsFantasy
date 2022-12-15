@@ -2,17 +2,17 @@ modLoader="javafml"
 loaderVersion="[40,)"
 license="All rights reserved"
 [[mods]]
-modId="strfan"
+modId="sf"
 version="${file.jarVersion}"
 displayName="Str1llax's Fantasy"
-logoFile="strfan.png"
+logoFile="sf.png"
 credits="Str1llax's fantasies in this mod."
 authors="Str1llax"
 description='''
 In this Mod I'am trying to add everything I want to see in Minecraft.
 '''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.strfan]] #optional
+[[dependencies.sf]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -24,7 +24,7 @@ In this Mod I'am trying to add everything I want to see in Minecraft.
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.strfan]]
+[[dependencies.sf]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

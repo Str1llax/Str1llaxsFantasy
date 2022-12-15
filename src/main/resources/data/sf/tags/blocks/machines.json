@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sf:circuit_assembler",
+    "sf:mixer",
+    "sf:extractor"
+  ]
+}

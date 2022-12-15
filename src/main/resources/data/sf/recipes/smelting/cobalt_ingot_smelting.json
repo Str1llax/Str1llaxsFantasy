@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "sf:raw_cobalt"
+  },
+  "result": "sf:cobalt_ingot",
+  "experience": 1.0,
+  "cookingtime": 200
+}

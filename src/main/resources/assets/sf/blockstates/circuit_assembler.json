@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf:block/circuit_assembler",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "sf:block/circuit_assembler",
+      "y": 90
+
+    },
+    "facing=west": {
+      "model": "sf:block/circuit_assembler",
+      "y": 270
+
+    },
+    "facing=south": {
+      "model": "sf:block/circuit_assembler",
+      "y": 180
+
+    }
+  }
+}

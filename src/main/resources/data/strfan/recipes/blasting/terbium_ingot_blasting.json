@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "strfan:raw_terbium"
-  },
-  "result": "strfan:terbium_ingot",
-  "experience": 1.0,
-  "cookingtime": 100
-}

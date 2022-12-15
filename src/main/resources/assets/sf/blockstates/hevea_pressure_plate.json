@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "sf:block/hevea_pressure_plate" },
+    "powered=true": { "model": "sf:block/hevea_pressure_plate_down" }
+  }
+}

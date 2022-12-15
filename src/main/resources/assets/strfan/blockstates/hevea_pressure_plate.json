@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "powered=false": { "model": "strfan:block/hevea_pressure_plate" },
-    "powered=true": { "model": "strfan:block/hevea_pressure_plate_down" }
-  }
-}

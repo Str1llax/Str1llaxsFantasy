@@ -1,0 +1,11 @@
+{
+  "type": "sf:extracting",
+  "ingredients": [
+    {
+      "item": "minecraft:crimson_hyphae"
+    }
+  ],
+  "output": {
+    "item": "sf:s_crimson_extract"
+  }
+}

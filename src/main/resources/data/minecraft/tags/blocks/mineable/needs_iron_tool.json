@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "strfan:example_block",
-    "strfan:advanced_block",
-    "strfan:meat_grinder",
-    "#strfan:machines",
-    "#strfan:ores"
+    "sf:example_block",
+    "sf:advanced_block",
+    "sf:meat_grinder",
+    "#sf:machines",
+    "#sf:ores"
   ]
 }

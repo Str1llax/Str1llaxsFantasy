@@ -1,0 +1,40 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "sf:chestnut_leaves",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:match_tool",
+                            "predicate": {
+                                "items": [
+                                    "minecraft:shears"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sf:hevea_leaves",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:silk_touch": {
+                                    "type": "minecraft:constant",
+                                    "value": 1
+                                }
+                            },
+                            "add": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

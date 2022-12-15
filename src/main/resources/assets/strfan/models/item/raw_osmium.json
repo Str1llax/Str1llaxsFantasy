@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "strfan:item/raw_osmium"
-  }
-}

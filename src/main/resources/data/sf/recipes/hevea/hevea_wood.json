@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "sf:hevea_log"
+    }
+  },
+  "result": {
+    "item": "sf:hevea_wood",
+    "count": 3
+  }
+}

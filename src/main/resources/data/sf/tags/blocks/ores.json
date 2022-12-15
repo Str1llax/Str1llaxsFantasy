@@ -1,0 +1,79 @@
+{
+  "replace": false,
+  "values": [
+    "sf:tin_ore",
+    "sf:deepslate_tin_ore",
+
+    "sf:titanium_ore",
+    "sf:deepslate_titanium_ore",
+
+    "sf:vanadium_ore",
+    "sf:deepslate_vanadium_ore",
+
+    "sf:chromium_ore",
+    "sf:deepslate_chromium_ore",
+
+    "sf:manganese_ore",
+    "sf:deepslate_manganese_ore",
+
+    "sf:cobalt_ore",
+    "sf:deepslate_cobalt_ore",
+
+    "sf:nickel_ore",
+    "sf:deepslate_nickel_ore",
+
+    "sf:zinc_ore",
+    "sf:deepslate_zinc_ore",
+
+    "sf:germanium_ore",
+    "sf:deepslate_germanium_ore",
+
+    "sf:zirconium_ore",
+    "sf:deepslate_zirconium_ore",
+
+    "sf:palladium_ore",
+    "sf:deepslate_palladium_ore",
+
+    "sf:silver_ore",
+    "sf:deepslate_silver_ore",
+
+    "sf:cadmium_ore",
+    "sf:deepslate_cadmium_ore",
+
+    "sf:indium_ore",
+    "sf:deepslate_indium_ore",
+
+    "sf:terbium_ore",
+    "sf:deepslate_terbium_ore",
+
+    "sf:hafnium_ore",
+    "sf:deepslate_hafnium_ore",
+
+    "sf:tungsten_ore",
+    "sf:deepslate_tungsten_ore",
+
+    "sf:rhenium_ore",
+    "sf:deepslate_rhenium_ore",
+
+    "sf:osmium_ore",
+    "sf:deepslate_osmium_ore",
+
+    "sf:iridium_ore",
+    "sf:deepslate_iridium_ore",
+
+    "sf:platinum_ore",
+    "sf:deepslate_platinum_ore",
+
+    "sf:lead_ore",
+    "sf:deepslate_lead_ore",
+
+    "sf:bismuth_ore",
+    "sf:deepslate_bismuth_ore",
+
+    "sf:uranium_ore",
+    "sf:deepslate_uranium_ore",
+    
+    "sf:ruby_ore",
+    "sf:deepslate_ruby_ore"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r r",
+    "r r"
+  ],
+  "key": {
+    "r": {
+      "item": "sf:ruby"
+    }
+  },
+  "result": {
+    "item": "sf:ruby_boots",
+    "count": 1
+  }
+}

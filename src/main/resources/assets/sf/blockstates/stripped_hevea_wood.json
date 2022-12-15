@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "sf:block/stripped_hevea_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "sf:block/stripped_hevea_wood"
+    },
+    "axis=z": {
+      "model": "sf:block/stripped_hevea_wood",
+      "x": 90
+    }
+  }
+}

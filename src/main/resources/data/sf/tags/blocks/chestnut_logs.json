@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sf:chestnut_log",
+    "sf:chestnut_wood",
+    "sf:stripped_chestnut_log",
+    "sf:stripped_chestnut_wood"
+  ]
+}
