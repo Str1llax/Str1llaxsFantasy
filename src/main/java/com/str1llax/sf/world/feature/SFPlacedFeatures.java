@@ -16,7 +16,10 @@ public class SFPlacedFeatures {
     public static final Holder<PlacedFeature> CHESTNUT_PLACED = PlacementUtils.register("chestnut_placed",
             SFConfiguredFeatures.CHESTNUT_SPAWN, VegetationPlacements.treePlacement(
                     PlacementUtils.countExtra(0, 0.5f, 1)));
-
+    //  SAKURA TREE
+    public static final Holder<PlacedFeature> SAKURA_PLACED = PlacementUtils.register("sakura_placed",
+            SFConfiguredFeatures.SAKURA_SPAWN, VegetationPlacements.treePlacement(
+                    PlacementUtils.countExtra(0, 0.5f, 1)));
 
     //FLOWERS
     //  PINK ROSE

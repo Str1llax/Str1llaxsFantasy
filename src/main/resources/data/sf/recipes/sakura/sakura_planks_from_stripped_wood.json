@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:stripped_sakura_wood"
+    }
+  ],
+  "result": {
+    "item": "sf:sakura_planks",
+    "count": 4}
+}

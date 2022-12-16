@@ -49,6 +49,8 @@
   "tooltip.sf.cutters_tool.tooltip.shift": "Чик-чик и готово!",
   "tooltip.sf.cutters_tool.tooltip": "Нажми §eSHIFT§r для большей информации!",
   "tooltip.sf.ruby_sword.tooltip": "Какой-то древний меч с небольшими магическими способностями!",
+  "tooltip.sf.sakura.tooltip.shift": "В реальной жизни древесина §dСакуры §rкоричневая, поэтому я сделал её §dРОЗОВОЙ§r, чтобы она не была скучной.",
+  "tooltip.sf.sakura.tooltip": "Нажми §dSHIFT§r для большей информации!",
 
   "item.sf.advanced_item.no_valuables": "Не найдено руд!",
 
@@ -254,6 +256,22 @@
   "block.sf.chestnut_pressure_plate": "Каштановая нажимная плита",
   "block.sf.chestnut_door": "Каштановая дверь",
   "block.sf.chestnut_trapdoor": "Каштановый люк",
+
+  "block.sf.sakura_log": "Бревно §dСакуры",
+  "block.sf.sakura_planks": "Доски из §dСакуры",
+  "block.sf.sakura_stairs": "Ступеньки из §dСакуры",
+  "block.sf.sakura_slab": "Плита из §dСакуры",
+  "block.sf.sakura_fence": "Забор из §dСакуры",
+  "block.sf.sakura_fence_gate": "Калитка из §dСакуры",
+  "block.sf.sakura_wood": "§dСакура",
+  "block.sf.stripped_sakura_log": "Обтёсанное бревно §dСакуры",
+  "block.sf.stripped_sakura_wood": "Обтёсанная §dСакура",
+  "block.sf.sakura_leaves": "Листья §dСакуры",
+  "block.sf.sakura_sapling": "Саженец §dСакуры",
+  "block.sf.sakura_button": "Кнопка из §dСакуры",
+  "block.sf.sakura_pressure_plate": "Нажимная плита из §dСакуры",
+  "block.sf.sakura_door": "Дверь из §dСакуры",
+  "block.sf.sakura_trapdoor": "Люк из §dСакуры",
 
   "block.sf.pink_rose": "Розовая роза",
   "block.sf.potted_pink_rose": "Посаженная розовая роза",

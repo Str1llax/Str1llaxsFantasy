@@ -68,6 +68,11 @@ public class SF {
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.CHESTNUT_LEAVES.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.CHESTNUT_SAPLING.get(), RenderType.cutout());
 
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_DOOR.get(), RenderType.translucent());
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_TRAPDOOR.get(), RenderType.translucent());
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_LEAVES.get(), RenderType.cutout());
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_SAPLING.get(), RenderType.cutout());
+
 
        MenuScreens.register(SFMenuTypes.CIRCUIT_ASSEMBLER_MENU.get(), CircuitAssemblerScreen::new);
        MenuScreens.register(SFMenuTypes.MIXER_MENU.get(), MixerScreen::new);

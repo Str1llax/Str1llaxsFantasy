@@ -4,12 +4,14 @@ import com.str1llax.sf.SF;
 import com.str1llax.sf.block.*;
 import com.str1llax.sf.world.feature.tree.ChestnutTreeGrower;
 import com.str1llax.sf.world.feature.tree.HeveaTreeGrower;
+import com.str1llax.sf.world.feature.tree.SakuraTreeGrower;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -19,7 +21,9 @@ import net.minecraft.world.level.material.MaterialColor;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
@@ -201,6 +205,139 @@ public class SFBlocks {
 
     public static final RegistryObject<Block> CHESTNUT_SAPLING = register("chestnut_sapling",
             () -> new SaplingBlock(new ChestnutTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()),
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    // SAKURA
+    public static final RegistryObject<Block> SAKURA_LOG = register("sakura_log",
+            () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_WOOD = register("sakura_wood",
+            () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> STRIPPED_SAKURA_LOG = register("stripped_sakura_log",
+            () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> STRIPPED_SAKURA_WOOD = register("stripped_sakura_wood",
+            () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_PLANKS = register("sakura_planks",
+            () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return true;}
+                @Override
+                public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return 20;}
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return 5;}
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_STAIRS = register("sakura_stairs",
+            () -> new StairBlock(() -> SFBlocks.SAKURA_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_SLAB = register("sakura_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_FENCE = register("sakura_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of(Material.WOOD, SAKURA_PLANKS.get().defaultMaterialColor()).strength(2.0F, 3.0F).sound(SoundType.WOOD)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_FENCE_GATE = register("sakura_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_BUTTON = register("sakura_button",
+            () -> new WoodButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_PRESSURE_PLATE = register("sakura_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_DOOR = register("sakura_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_TRAPDOOR = register("sakura_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR)){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_LEAVES = register("sakura_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noOcclusion()) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return true;}
+                @Override
+                public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return 60;}
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction face) {return 30;}
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
+            object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
+
+    public static final RegistryObject<Block> SAKURA_SAPLING = register("sakura_sapling",
+            () -> new SaplingBlock(new SakuraTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING).noOcclusion()){
+                @Override
+                public void appendHoverText(ItemStack pStack, @Nullable BlockGetter pLevel, List<Component> pTooltip, TooltipFlag pFlag) {
+                    if(Screen.hasShiftDown()) {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip.shift"));}
+                    else {pTooltip.add(new TranslatableComponent("tooltip.sf.sakura.tooltip"));}}},
             object -> () -> new BlockItem(object.get(), new Item.Properties().tab(SFTabs.SFTAB_FLORA)));
 
     //  GEMS

@@ -49,6 +49,8 @@
   "tooltip.sf.cutters_tool.tooltip.shift": "Can cut ur PP!",
   "tooltip.sf.cutters_tool.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.sf.ruby_sword.tooltip": "Some kind of ancient sword with small magical abilities!",
+  "tooltip.sf.sakura.tooltip.shift": "In real life, §dSakura's§r wood is brown, so I made it §dPINK§r so it wouldn't be boring",
+  "tooltip.sf.sakura.tooltip": "Press §dSHIFT§r for more Information!",
 
   "item.sf.advanced_item.no_valuables": "No valuables found!",
 
@@ -254,6 +256,22 @@
   "block.sf.chestnut_pressure_plate": "Chestnut Pressure Plate",
   "block.sf.chestnut_door": "Chestnut Door",
   "block.sf.chestnut_trapdoor": "Chestnut Trapdoor",
+
+  "block.sf.sakura_log": "§dSakura §rLog",
+  "block.sf.sakura_planks": "§dSakura §rPlanks",
+  "block.sf.sakura_stairs": "§dSakura §rStairs",
+  "block.sf.sakura_slab": "§dSakura §rSlab",
+  "block.sf.sakura_fence": "§dSakura §rFence",
+  "block.sf.sakura_fence_gate": "§dSakura §rFence Gate",
+  "block.sf.sakura_wood": "§dSakura §rWood",
+  "block.sf.stripped_sakura_log": "Stripped §dSakura §rLog",
+  "block.sf.stripped_sakura_wood": "Stripped §dSakura §rWood",
+  "block.sf.sakura_leaves": "§dSakura §rLeaves",
+  "block.sf.sakura_sapling": "§dSakura §rSapling",
+  "block.sf.sakura_button": "§dSakura §rButton",
+  "block.sf.sakura_pressure_plate": "§dSakura Pressure §rPlate",
+  "block.sf.sakura_door": "§dSakura §rDoor",
+  "block.sf.sakura_trapdoor": "§dSakura §rTrapdoor",
 
   "block.sf.pink_rose": "Pink Rose",
   "block.sf.potted_pink_rose": "Potted Pink Rose",

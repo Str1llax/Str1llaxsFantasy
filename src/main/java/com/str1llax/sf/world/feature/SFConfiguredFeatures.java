@@ -12,10 +12,12 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
@@ -52,6 +54,22 @@ public class SFConfiguredFeatures {
             FeatureUtils.register("chestnut_spawn", Feature.RANDOM_SELECTOR,
                     new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(CHESTNUT_CHECKED,
                             0.5F)), CHESTNUT_CHECKED));
+        // SAKURA
+    public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> SAKURA_TREE =
+            FeatureUtils.register("sakura", Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
+                    BlockStateProvider.simple(SFBlocks.SAKURA_LOG.get()),
+                    new ForkingTrunkPlacer(5, 2, 2),
+                    BlockStateProvider.simple(SFBlocks.SAKURA_LEAVES.get()),
+                    new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)),
+                    new TwoLayersFeatureSize(1, 0, 2)).ignoreVines().build());
+    public static final Holder<PlacedFeature> SAKURA_CHECKED = PlacementUtils.register("sakura_checked", SAKURA_TREE,
+            PlacementUtils.filteredByBlockSurvival(SFBlocks.SAKURA_SAPLING.get()));
+    public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> SAKURA_SPAWN =
+            FeatureUtils.register("sakura_spawn", Feature.RANDOM_SELECTOR,
+                    new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(SAKURA_CHECKED,
+                            0.5F)), SAKURA_CHECKED));
+
+
     //  FLOWERS
     public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> PINK_ROSE =
             FeatureUtils.register("flower_pink_rose", Feature.FLOWER,

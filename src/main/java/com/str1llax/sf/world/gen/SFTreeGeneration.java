@@ -32,5 +32,12 @@ public class SFTreeGeneration {
 
             base.add(SFPlacedFeatures.CHESTNUT_PLACED);
         }
+
+        if(types.contains(BiomeDictionary.Type.FOREST)) {
+            List<Holder<PlacedFeature>> base =
+                    event.getGeneration().getFeatures(GenerationStep.Decoration.VEGETAL_DECORATION);
+
+            base.add(SFPlacedFeatures.SAKURA_PLACED);
+        }
     }
 }

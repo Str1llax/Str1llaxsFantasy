@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sf:sakura_log",
+    "sf:sakura_wood",
+    "sf:stripped_sakura_log",
+    "sf:stripped_sakura_wood"
+  ]
+}
