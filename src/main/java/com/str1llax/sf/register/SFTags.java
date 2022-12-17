@@ -13,14 +13,8 @@ public class SFTags {
         public static final TagKey<Block> ORES = tag("ores");
         public static final TagKey<Block> HEVEA_LOGS = tag("hevea_logs");
         public static final TagKey<Block> MACHINES = tag("machines");
-
-        private static TagKey<Block> tag(String name) {
-            return BlockTags.create(new ResourceLocation(SF.MOD_ID, name));
-        }
-        private static TagKey<Block> forgeTag(String name) {
-            return BlockTags.create(new ResourceLocation("forge", name));
-        }
-    }
+        private static TagKey<Block> tag(String name) {return BlockTags.create(new ResourceLocation(SF.MOD_ID, name));}
+        private static TagKey<Block> forgeTag(String name) {return BlockTags.create(new ResourceLocation("forge", name));}}
     public static class Items {
         public static final TagKey<Item> STONES = tag("stones");
         public static final TagKey<Item> METALS = tag("metals");
@@ -30,13 +24,8 @@ public class SFTags {
         public static final TagKey<Item> BASES = tag("bases");
         public static final TagKey<Item> MIXER = forgeTag("mixer");
         public static final TagKey<Item> EXTRACTOR = forgeTag("extractor");
-
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(SF.MOD_ID, name));
         }
-
-        private static TagKey<Item> forgeTag(String name) {
-            return ItemTags.create(new ResourceLocation("forge", name));
-        }
-    }
+        private static TagKey<Item> forgeTag(String name) {return ItemTags.create(new ResourceLocation("forge", name));}}
 }
