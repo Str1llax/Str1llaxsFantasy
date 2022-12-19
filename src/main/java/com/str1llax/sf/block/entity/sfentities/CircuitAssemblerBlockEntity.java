@@ -45,9 +45,6 @@ public class CircuitAssemblerBlockEntity extends BlockEntity implements MenuProv
     private int progress = 0;
     private int maxProgress = 100;
 
-    private int charge = 0;
-    private int maxCharge = 10000;
-
     public CircuitAssemblerBlockEntity(BlockPos pWorldPosition, BlockState pBlockState) {
         super(SFBlockEntities.CIRCUIT_ASSEMBLER_BLOCK_ENTITY.get(), pWorldPosition, pBlockState);
             this.data = new ContainerData() {

@@ -11,7 +11,7 @@ public class SFTabs {
     public static final CreativeModeTab SFTAB = new CreativeModeTab(MOD_ID + "_tab") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFBlocks.ADVANCED_BLOCK.get());}};
     public static final CreativeModeTab SFTAB_WEAPONS = new CreativeModeTab(MOD_ID + "_weapons") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFItems.RUBY_SWORD.get());}};
     public static final CreativeModeTab SFTAB_TOOLS = new CreativeModeTab(MOD_ID + "_tools") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFItems.RUBY_PICKAXE.get());}};
-    public static final CreativeModeTab SFTAB_ARMOR = new CreativeModeTab(MOD_ID + "_armor") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFItems.RUBY_CHESTPLATE.get());}};
+    public static final CreativeModeTab SFTAB_ARMOR = new CreativeModeTab(MOD_ID + "_armor") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFItems.RUBY_HELMET.get());}};
     public static final CreativeModeTab SFTAB_FLORA = new CreativeModeTab(MOD_ID + "_flora") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFBlocks.HEVEA_SAPLING.get());}};
     public static final CreativeModeTab SFTAB_FAUNA = new CreativeModeTab(MOD_ID + "_fauna") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFBlocks.PINK_ROSE.get());}};
     public static final CreativeModeTab SFTAB_MACHINES = new CreativeModeTab(MOD_ID + "_machines") {@Override @OnlyIn(Dist.CLIENT) public ItemStack makeIcon() {return new ItemStack(SFBlocks.GENERATOR.get().asItem());}};

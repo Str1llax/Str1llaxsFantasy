@@ -11,28 +11,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class SFMenuTypes {
-    public static final DeferredRegister<MenuType<?>> MENUS =
-            DeferredRegister.create(ForgeRegistries.CONTAINERS, SF.MOD_ID);
-
-    public static final RegistryObject<MenuType<CircuitAssemblerMenu>> CIRCUIT_ASSEMBLER_MENU =
-            registerMenuType(CircuitAssemblerMenu::new, "circuit_assembler_menu");
-    public static final RegistryObject<MenuType<MixerMenu>> MIXER_MENU =
-            registerMenuType(MixerMenu::new, "mixer_menu");
-    public static final RegistryObject<MenuType<ExtractorMenu>> EXTRACTOR_MENU =
-            registerMenuType(ExtractorMenu::new, "extractor_menu");
-    public static final RegistryObject<MenuType<GeneratorMenu>> GENERATOR_MENU =
-            MENUS.register("generator_menu", () -> IForgeMenuType.create(
-                    (windowId, inv, data) -> new GeneratorMenu(windowId, data.readBlockPos(), inv, inv.player)));
-
-
-
-
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory,
-                                                                                                  String name) {
-        return MENUS.register(name, () -> IForgeMenuType.create(factory));
-    }
-
-    public static void register(IEventBus bus){
-        MENUS.register(bus);
-    }
+    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.CONTAINERS, SF.MOD_ID);
+    public static final RegistryObject<MenuType<CircuitAssemblerMenu>> CIRCUIT_ASSEMBLER_MENU = registerMenuType(CircuitAssemblerMenu::new, "circuit_assembler_menu");
+    public static final RegistryObject<MenuType<MixerMenu>> MIXER_MENU = registerMenuType(MixerMenu::new, "mixer_menu");
+    public static final RegistryObject<MenuType<ExtractorMenu>> EXTRACTOR_MENU = registerMenuType(ExtractorMenu::new, "extractor_menu");
+    public static final RegistryObject<MenuType<GeneratorMenu>> GENERATOR_MENU = MENUS.register("generator_menu", () -> IForgeMenuType.create((windowId, inv, data) -> new GeneratorMenu(windowId, data.readBlockPos(), inv, inv.player)));
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {return MENUS.register(name, () -> IForgeMenuType.create(factory));}
+    public static void register(IEventBus bus){MENUS.register(bus);}
 }

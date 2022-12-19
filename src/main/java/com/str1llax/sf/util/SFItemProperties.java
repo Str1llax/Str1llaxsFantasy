@@ -8,6 +8,7 @@ import net.minecraft.world.item.Item;
 public class SFItemProperties {
     public static void addCustomItemProperties() {
         makeBow(SFItems.RUBY_BOW.get());
+        makeBow(SFItems.CITRINE_BOW.get());
     }
 
     private static void makeBow(Item item) {
