@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "r r",
+    "rrr",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item": "sf:citrine"
+    }
+  },
+  "result": {
+    "item": "sf:citrine_chestplate",
+    "count": 1
+  }
+}

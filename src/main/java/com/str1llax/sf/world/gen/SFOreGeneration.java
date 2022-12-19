@@ -10,9 +10,7 @@ import java.util.List;
 
 public class SFOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
-        List<Holder<PlacedFeature>> base =
-                event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
-
+        List<Holder<PlacedFeature>> base = event.getGeneration().getFeatures(GenerationStep.Decoration.UNDERGROUND_ORES);
         base.add(SFPlacedFeatures.TIN_ORE_PLACED);
         base.add(SFPlacedFeatures.TITANIUM_ORE_PLACED);
         base.add(SFPlacedFeatures.VANADIUM_ORE_PLACED);
@@ -38,5 +36,6 @@ public class SFOreGeneration {
         base.add(SFPlacedFeatures.BISMUTH_ORE_PLACED);
         base.add(SFPlacedFeatures.URANIUM_ORE_PLACED);
         base.add(SFPlacedFeatures.RUBY_ORE_PLACED);
+        base.add(SFPlacedFeatures.CITRINE_ORE_PLACED);
     }
 }

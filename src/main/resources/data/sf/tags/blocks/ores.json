@@ -74,6 +74,9 @@
     "sf:deepslate_uranium_ore",
     
     "sf:ruby_ore",
-    "sf:deepslate_ruby_ore"
+    "sf:deepslate_ruby_ore",
+
+    "sf:citrine_ore",
+    "sf:deepslate_citrine_ore"
   ]
 }

@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "sf:hevea_planks"
+    "sf:hevea_planks",
+    "sf:chestnut_planks",
+    "sf:sakura_planks"
   ]
 }
