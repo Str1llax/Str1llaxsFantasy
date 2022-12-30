@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " / ",
+    "/o/",
+    " / "
+  ],
+  "key": {
+    "/": {
+      "item": "sf:blade"
+    },
+    "o": {
+      "item": "sf:plate_iron"
+    }
+  },
+  "result": {
+    "item": "sf:mixer_blade",
+    "count": 1
+  }
+}

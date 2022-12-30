@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "txt",
+    "coc",
+    "rfr"
+  ],
+  "key": {
+    "x": {
+      "item": "sf:mixer_blade"
+    },
+    "o": {
+      "item": "sf:machine_case"
+    },
+    "c": {
+      "item": "sf:circuit_iron_chip"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "t": {
+      "item": "sf:tank"
+    },
+    "f": {
+      "item": "sf:heating_element"
+    }
+  },
+  "result": {
+    "item": "sf:mixer",
+    "count": 1
+  }
+}

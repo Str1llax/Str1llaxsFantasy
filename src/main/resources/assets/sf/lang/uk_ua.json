@@ -10,6 +10,12 @@
   "itemGroup.sf_ores": "§dS§aF§r: Руды",
   "itemGroup.sf_parts": "§dS§aF§r: Детали",
 
+  "sf.jei.mixer": "Смешивание",
+  "sf.jei.chip_press": "Выдавливание чипов",
+  "sf.jei.circuit_assembler": "Сборка микросхем",
+  "sf.jei.extractor": "Экстракция",
+  "sf.jei.gem_combiner": "Объединение камней",
+
   "item.sf.example_item": "Простой предмет",
   "item.sf.advanced_item": "Продвинутый предмет",
 
@@ -121,6 +127,13 @@
   "item.sf.circuit_diamond": "Алмазная микросхема",
   "item.sf.circuit_diamond_chip": "Алмазный чип",
   "item.sf.circuit_silicon_chip": "Кремниевый чип",
+  "item.sf.blade": "Лезвие",
+  "item.sf.mixer_blade": "Лезвие миксера",
+  "item.sf.machine_case": "Корпус машины",
+  "item.sf.press_part": "Деталь пресса",
+  "item.sf.tank": "Ёмкость",
+  "item.sf.coil_copper": "Медная катушка",
+  "item.sf.heating_element": "Нагревательный элемент",
 
   "item.sf.rainbow_powder": "Радужная пыль",
   "item.sf.cast_form_for_chips": "Форма для чипов",

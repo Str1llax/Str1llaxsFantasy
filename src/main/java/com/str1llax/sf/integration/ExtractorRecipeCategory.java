@@ -1,7 +1,7 @@
 package com.str1llax.sf.integration;
 
 import com.str1llax.sf.SF;
-import com.str1llax.sf.recipe.MixerRecipe;
+import com.str1llax.sf.recipe.ExtractorRecipe;
 import com.str1llax.sf.register.SFBlocks;
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -18,25 +18,25 @@ import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nonnull;
 
-public class MixerRecipeCategory implements IRecipeCategory<MixerRecipe>{
-    public final static ResourceLocation UID = new ResourceLocation(SF.MOD_ID, "mixing");
-    public final static ResourceLocation TEXTURE = new ResourceLocation(SF.MOD_ID, "textures/gui/mixer_gui.png");
+public class ExtractorRecipeCategory implements IRecipeCategory<ExtractorRecipe>{
+    public final static ResourceLocation UID = new ResourceLocation(SF.MOD_ID, "extracting");
+    public final static ResourceLocation TEXTURE = new ResourceLocation(SF.MOD_ID, "textures/gui/extractor_gui.png");
 
     private final IDrawable background;
     private final IDrawable icon;
 
-    public MixerRecipeCategory(IGuiHelper helper) {
+    public ExtractorRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0, 0, 176, 85);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(SFBlocks.MIXER.get()));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(SFBlocks.EXTRACTOR.get()));
     }
 
     @Override
-    public RecipeType<MixerRecipe> getRecipeType() {
-        return JEISFPlugin.MIXING;
+    public RecipeType<ExtractorRecipe> getRecipeType() {
+        return JEISFPlugin.EXTRACTING;
     }
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("sf.jei.mixer");
+        return new TranslatableComponent("sf.jei.extractor");
     }
 
     @Override
@@ -50,11 +50,10 @@ public class MixerRecipeCategory implements IRecipeCategory<MixerRecipe>{
     }
 
     @Override
-    public void setRecipe(@Nonnull IRecipeLayoutBuilder builder, @Nonnull MixerRecipe recipe, @Nonnull IFocusGroup focusGroup) {
-        builder.addSlot(RecipeIngredientRole.INPUT, 62, 14).addIngredients(recipe.getIngredients().get(0));
-        builder.addSlot(RecipeIngredientRole.INPUT, 98, 14).addIngredients(recipe.getIngredients().get(1));
+    public void setRecipe(@Nonnull IRecipeLayoutBuilder builder, @Nonnull ExtractorRecipe recipe, @Nonnull IFocusGroup focusGroup) {
+        builder.addSlot(RecipeIngredientRole.INPUT, 57, 35).addIngredients(recipe.getIngredients().get(0));
 
-        builder.addSlot(RecipeIngredientRole.OUTPUT, 80, 57).addItemStack(recipe.getResultItem());
+        builder.addSlot(RecipeIngredientRole.OUTPUT, 103, 35).addItemStack(recipe.getResultItem());
     }
 
     @Override
@@ -63,7 +62,7 @@ public class MixerRecipeCategory implements IRecipeCategory<MixerRecipe>{
     }
 
     @Override
-    public Class<? extends MixerRecipe> getRecipeClass() {
+    public Class<? extends ExtractorRecipe> getRecipeClass() {
         return null;
     }
 }

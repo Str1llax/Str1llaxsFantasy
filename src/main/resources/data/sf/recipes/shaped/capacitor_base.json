@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    " r ",
+    "tit"
+  ],
+  "key": {
+    "i": {
+      "item": "sf:plate_iron"
+    },
+    "r": {
+      "item": "sf:rosin"
+    },
+    "t": {
+      "item": "sf:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "sf:capacitor_base",
+    "count": 1
+  }
+}

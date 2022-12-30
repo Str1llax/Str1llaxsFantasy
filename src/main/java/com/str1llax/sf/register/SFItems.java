@@ -32,17 +32,17 @@ public class SFItems extends Item {
     public static final RegistryObject<Item> M_HANDLE = register("m_handle",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_PARTS).stacksTo(1).fireResistant()));
     public static final RegistryObject<Item> M_BLADE = register("m_blade",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_PARTS).stacksTo(1).fireResistant()));
 
-    public static final RegistryObject<Item> CIRCUIT_SILICON_CHIP = register("circuit_silicon_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_IRON_CHIP = register("circuit_iron_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_GOLD_CHIP = register("circuit_gold_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_DIAMOND_CHIP = register("circuit_diamond_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
+    public static final RegistryObject<Item> CIRCUIT_SILICON_CHIP = register("circuit_silicon_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_IRON_CHIP = register("circuit_iron_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_GOLD_CHIP = register("circuit_gold_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_DIAMOND_CHIP = register("circuit_diamond_chip",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
-    public static final RegistryObject<Item> CAPACITOR_BASE = register("capacitor_base",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
+    public static final RegistryObject<Item> CAPACITOR_BASE = register("capacitor_base",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
-    public static final RegistryObject<Item> CIRCUIT_BASE = register("circuit_base",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_IRON = register("circuit_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_GOLD = register("circuit_gold",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CIRCUIT_DIAMOND = register("circuit_diamond",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
+    public static final RegistryObject<Item> CIRCUIT_BASE = register("circuit_base",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_IRON = register("circuit_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_GOLD = register("circuit_gold",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CIRCUIT_DIAMOND = register("circuit_diamond",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
     public static final RegistryObject<Item> PLATE_IRON = register("plate_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
     public static final RegistryObject<Item> CELL_IRON = register("cell_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
@@ -111,8 +111,19 @@ public class SFItems extends Item {
     public static final RegistryObject<Item> CRIMSON_EXTRACT = register("crimson_extract",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
     public static final RegistryObject<Item> CNT_CRIMSON_EXTRACT = register("cnt_crimson_extract",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
-    public static final RegistryObject<Item> CAST_FORM_FOR_CHIPS = register("cast_form_for_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
-    public static final RegistryObject<Item> CAST_FORM_FOR_SILICON_CHIPS = register("cast_form_for_silicon_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_MACHINES)));
+    public static final RegistryObject<Item> BLADE = register("blade",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> MIXER_BLADE = register("mixer_blade",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> MACHINE_CASE = register("machine_case",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> PRESS_PART = register("press_part",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> TANK = register("tank",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> COIL_COPPER = register("coil_copper",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> HEATING_ELEMENT = register("heating_element",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    //public static final RegistryObject<Item> ENERGY_COMPONENT = register("energy_component",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    //public static final RegistryObject<Item> ELECTRIC_MOTOR = register("electric_motor",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    //public static final RegistryObject<Item> ALLOY_TERBIUM_IRON = register("alloy_terbium_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+
+    public static final RegistryObject<Item> CAST_FORM_FOR_CHIPS = register("cast_form_for_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CAST_FORM_FOR_SILICON_CHIPS = register("cast_form_for_silicon_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
     public static final RegistryObject<Item> RAINBOW_POWDER = register("rainbow_powder",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES).stacksTo(16)));
 

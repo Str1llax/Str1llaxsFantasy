@@ -32,7 +32,8 @@ import javax.annotation.Nonnull;
 import java.util.Optional;
 
 public class MixerBlockEntity extends BlockEntity implements MenuProvider {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3){
+    public static final int slotCount = 3;
+    private final ItemStackHandler itemHandler = new ItemStackHandler(slotCount){
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();

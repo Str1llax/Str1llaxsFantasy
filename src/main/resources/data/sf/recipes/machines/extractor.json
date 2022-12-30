@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xkh",
+    "aop",
+    "tct"
+  ],
+  "key": {
+    "o": {
+      "item": "sf:machine_case"
+    },
+    "c": {
+      "item": "sf:coil_copper"
+    },
+    "k": {
+      "item": "sf:circuit_iron"
+    },
+    "a": {
+      "item": "sf:tank"
+    },
+    "p": {
+      "item": "sf:press_part"
+    },
+    "x": {
+      "item": "sf:mixer_blade"
+    },
+    "h": {
+      "item": "sf:heating_element"
+    },
+    "t": {
+      "item": "sf:tungsten_ingot"
+    }
+  },
+  "result": {
+    "item": "sf:extractor",
+    "count": 1
+  }
+}

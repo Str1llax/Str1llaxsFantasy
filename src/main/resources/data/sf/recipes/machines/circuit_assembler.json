@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "scs",
+    "uod",
+    "sbs"
+  ],
+  "key": {
+    "s": {
+      "item": "sf:silver_ingot"
+    },
+    "o": {
+      "item": "sf:machine_case"
+    },
+    "c": {
+      "item": "sf:capacitor_base"
+    },
+    "u": {
+      "item": "sf:circuit_silicon_chip"
+    },
+    "d": {
+      "item": "sf:circuit_diamond_chip"
+    },
+    "b": {
+      "item": "sf:circuit_base"
+    }
+  },
+  "result": {
+    "item": "sf:circuit_assembler",
+    "count": 1
+  }
+}

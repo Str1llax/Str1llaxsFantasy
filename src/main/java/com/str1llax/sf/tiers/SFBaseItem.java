@@ -23,7 +23,7 @@ public class SFBaseItem extends Item {
 
     public SFBaseItem(Properties props)
     {
-        this(props, SFTabs.SFTAB_TOOLS);
+        this(props, SFTabs.SFTAB_RESOURCES);
     }
 
     public SFBaseItem(Properties props, CreativeModeTab group)
@@ -74,7 +74,7 @@ public class SFBaseItem extends Item {
     @Override
     public int getBarColor(ItemStack pStack)
     {
-        // All items use the vanilla color gradient, even if they use different getBarWidth implementation
+        // All items use the vanilla color gradient, even if they use different getBarWidth implementation.
         return Mth.hsvToRgb(Math.max(0.0F, getBarWidth(pStack)/(float)MAX_BAR_WIDTH)/3.0F, 1.0F, 1.0F);
     }
 }

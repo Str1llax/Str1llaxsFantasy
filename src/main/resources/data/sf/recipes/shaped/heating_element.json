@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " l ",
+    "c/c",
+    " l "
+  ],
+  "key": {
+    "/": {
+      "item": "sf:coil_copper"
+    },
+    "c": {
+      "item": "sf:rubber"
+    },
+    "l": {
+      "item": "sf:plastic"
+    }
+  },
+  "result": {
+    "item": "sf:heating_element",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "j j",
+    "j j",
+    " j "
+  ],
+  "key": {
+    "j": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "sf:tank",
+    "count": 1
+  }
+}

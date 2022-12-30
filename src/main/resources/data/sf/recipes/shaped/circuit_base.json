@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "sf:cutters_tool"
+    },
+    {
+      "item": "sf:fiberglass"
+    },
+    {
+      "item": "sf:rosin"
+    }
+  ],
+  "result": {
+    "item": "sf:circuit_base",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "sf:extracting",
+  "ingredients": [
+    {
+      "item": "sf:hevea_sapling"
+    }
+  ],
+  "output": {
+    "item": "sf:raw_rubber"
+  }
+}

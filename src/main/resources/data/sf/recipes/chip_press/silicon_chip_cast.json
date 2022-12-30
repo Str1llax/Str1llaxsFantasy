@@ -1,0 +1,14 @@
+{
+  "type": "sf:chip_pressing",
+  "ingredients": [
+    {
+      "item": "sf:cast_form_for_silicon_chips"
+    },
+    {
+      "item": "minecraft:iron_block"
+    }
+  ],
+  "output": {
+    "item": "sf:cast_form_for_silicon_chips"
+  }
+}

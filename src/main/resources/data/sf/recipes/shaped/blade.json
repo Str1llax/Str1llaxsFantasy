@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " jj",
+    "jjj",
+    " j "
+  ],
+  "key": {
+    "j": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "sf:blade",
+    "count": 1
+  }
+}

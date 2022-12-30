@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "tot",
+    "pip",
+    "tct"
+  ],
+  "key": {
+    "i": {
+      "item": "sf:machine_case"
+    },
+    "o": {
+      "item": "sf:capacitor_base"
+    },
+    "c": {
+      "item": "sf:cast_form_for_chips"
+    },
+    "t": {
+      "item": "sf:tin_ingot"
+    },
+    "p": {
+      "item": "sf:press_part"
+    }
+  },
+  "result": {
+    "item": "sf:chip_press",
+    "count": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "iti",
+    "ttt"
+  ],
+  "key": {
+    "i": {
+      "item": "sf:plate_iron"
+    },
+    "t": {
+      "item": "sf:titanium_ingot"
+    }
+  },
+  "result": {
+    "item": "sf:press_part",
+    "count": 1
+  }
+}

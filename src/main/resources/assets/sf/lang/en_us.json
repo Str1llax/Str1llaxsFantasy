@@ -10,6 +10,12 @@
   "itemGroup.sf_ores": "§dS§aF§r: Ores",
   "itemGroup.sf_parts": "§dS§aF§r: Parts",
 
+  "sf.jei.mixer": "Mixing",
+  "sf.jei.chip_press": "Chip pressing",
+  "sf.jei.circuit_assembler": "Circuit assembling",
+  "sf.jei.extractor": "Extracting",
+  "sf.jei.gem_combiner": "Gem combining",
+
   "item.sf.example_item": "Example Item",
   "item.sf.advanced_item": "Advanced Item",
 
@@ -120,6 +126,13 @@
   "item.sf.circuit_diamond": "Diamond circuit",
   "item.sf.circuit_diamond_chip": "Diamond chip",
   "item.sf.circuit_silicon_chip": "Silicon chip",
+  "item.sf.blade": "Blade",
+  "item.sf.mixer_blade": "Mixer blade",
+  "item.sf.machine_case": "Machine case",
+  "item.sf.press_part": "Press part",
+  "item.sf.tank": "Tank",
+  "item.sf.coil_copper": "Copper coil",
+  "item.sf.heating_element": "Heating element",
 
   "item.sf.rainbow_powder": "Rainbow powder",
   "item.sf.cast_form_for_chips": "Cast form for chips",

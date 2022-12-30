@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "u h",
+    "sss",
+    "c c"
+  ],
+  "key": {
+    "c": {
+      "item": "minecraft:cobblestone"
+    },
+    "s": {
+      "item": "minecraft:stone"
+    },
+    "h": {
+      "item": "sf:hammer_tool"
+    },
+    "u": {
+      "item": "sf:cutters_tool"
+    }
+  },
+  "result": {
+    "item": "sf:gem_combiner",
+    "count": 1
+  }
+}
