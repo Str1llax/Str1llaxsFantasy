@@ -38,9 +38,11 @@
   "tooltip.sf.hammer_tool.tooltip": "Нажми §eSHIFT§r для большей информации!",
   "tooltip.sf.cutters_tool.tooltip.shift": "Чик-чик и готово!",
   "tooltip.sf.cutters_tool.tooltip": "Нажми §eSHIFT§r для большей информации!",
-  "tooltip.sf.ruby_sword.tooltip": "Какой-то древний меч с небольшими магическими способностями!",
+  "tooltip.sf.magic_sword.tooltip": "Какой-то древний меч с небольшими магическими способностями!",
   "tooltip.sf.sakura.tooltip.shift": "В реальной жизни древесина §dСакуры §rкоричневая, поэтому я сделал её §dРОЗОВОЙ§r, чтобы она не была скучной.",
   "tooltip.sf.sakura.tooltip": "Нажми §dSHIFT§r для большей информации!",
+  "tooltip.sf.machinet.tooltip": "§4Механизмы работают без энергии в этой версии",
+  "tooltip.sf.machinet.tooltip.shift": "Нажми §4SHIFT§r для большей информации!",
 
   "item.sf.advanced_item.no_valuables": "Не найдено руд!",
 
@@ -67,6 +69,30 @@
   "item.sf.citrine_leggings": "§6Цитриновые§r поножи",
   "item.sf.citrine_boots": "§6Цитриновые§r ботинки",
   "item.sf.citrine_bow": "§6Цитриновый§r лук",
+
+  "item.sf.amethyst": "§dАметист§r",
+  "item.sf.amethyst_sword": "§dАметистовый§r меч",
+  "item.sf.amethyst_pickaxe": "§dАметистовая§r кирка",
+  "item.sf.amethyst_axe": "§dАметистовый§r топор",
+  "item.sf.amethyst_shovel": "§dАметистовая§r лопата",
+  "item.sf.amethyst_hoe": "§dАметистовая§r мотыга",
+  "item.sf.amethyst_helmet": "§dАметистовый§r шлем",
+  "item.sf.amethyst_chestplate": "§dАметистовый§r нагрудник",
+  "item.sf.amethyst_leggings": "§dАметистовые§r поножи",
+  "item.sf.amethyst_boots": "§dАметистовые§r ботинки",
+  "item.sf.amethyst_bow": "§dАметистовый§r лук",
+
+  "item.sf.amethryne": "§dАмет§eрин§r",
+  "item.sf.amethryne_sword": "§dАмет§eриновый§r меч",
+  "item.sf.amethryne_pickaxe": "§dАмет§eриновая§r кирка",
+  "item.sf.amethryne_axe": "§dАмет§eриновый§r топор",
+  "item.sf.amethryne_shovel": "§dАмет§eриновая§r лопата",
+  "item.sf.amethryne_hoe": "§dАмет§eриновая§r мотыга",
+  "item.sf.amethryne_helmet": "§dАмет§eриновый§r шлем",
+  "item.sf.amethryne_chestplate": "§dАмет§eриновый§r нагрудник",
+  "item.sf.amethryne_leggings": "§dАмет§eриновые§r поножи",
+  "item.sf.amethryne_boots": "§dАмет§eриновые§r ботинки",
+  "item.sf.amethryne_bow": "§dАмет§eриновый§r лук",
 
   "item.sf.mighty_iron_ingot": "Несокрушимый железный слиток",
   "item.sf.crimson_energy_ingot": "Багровый энергетический слиток",
@@ -229,6 +255,9 @@
   "block.sf.citrine_ore": "§6Цитрииновая§r руда",
   "block.sf.deepslate_citrine_ore": "§6Цитриноносный§r глубинный сланец",
 
+  "block.sf.amethyst_block": "§dАметистовый§r блок",
+  "block.sf.amethryne_block": "§dАметри§eновый§r блок",
+
   "block.sf.hevea_log": "Бревно Гевеи",
   "block.sf.hevea_planks": "Доски из Гевеи",
   "block.sf.hevea_stairs": "Ступеньки из Гевеи",
@@ -284,5 +313,7 @@
   "block.sf.circuit_assembler": "Сборщик микросхем",
   "block.sf.mixer": "Смешиватель",
   "block.sf.extractor": "Экстрактор",
+  "block.sf.chip_press": "Пресс для чипов",
+  "block.sf.gem_combiner": "Объединитель камней",
   "block.sf.generator": "Генератор"
 }

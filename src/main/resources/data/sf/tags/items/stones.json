@@ -3,7 +3,9 @@
   "values": [
     "minecraft:diamond",
     "minecraft:emerald",
+    "sf:amethyst",
     "sf:ruby",
-    "sf:citrine"
+    "sf:citrine",
+    "sf:amethryne"
   ]
 }

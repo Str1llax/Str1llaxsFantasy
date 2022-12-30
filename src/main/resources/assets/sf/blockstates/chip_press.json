@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf:block/chip_press",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "sf:block/chip_press",
+      "y": 90
+
+    },
+    "facing=west": {
+      "model": "sf:block/chip_press",
+      "y": 270
+
+    },
+    "facing=south": {
+      "model": "sf:block/chip_press",
+      "y": 180
+
+    }
+  }
+}

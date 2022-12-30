@@ -48,10 +48,7 @@ public class SF {
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.ADVANCED_BLOCK.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.MEAT_GRINDER.get(), RenderType.cutout());
 
-       ItemBlockRenderTypes.setRenderLayer(SFBlocks.CIRCUIT_ASSEMBLER.get(), RenderType.cutout());
-       ItemBlockRenderTypes.setRenderLayer(SFBlocks.MIXER.get(), RenderType.cutout());
-       ItemBlockRenderTypes.setRenderLayer(SFBlocks.GENERATOR.get(), RenderType.cutout());
-       ItemBlockRenderTypes.setRenderLayer(SFBlocks.EXTRACTOR.get(), RenderType.cutout());
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.GEM_COMBINER.get(), RenderType.cutout());
 
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.CABLE_IRON.get(), RenderType.cutout());
 
@@ -77,6 +74,8 @@ public class SF {
        MenuScreens.register(SFMenuTypes.CIRCUIT_ASSEMBLER_MENU.get(), CircuitAssemblerScreen::new);
        MenuScreens.register(SFMenuTypes.MIXER_MENU.get(), MixerScreen::new);
        MenuScreens.register(SFMenuTypes.EXTRACTOR_MENU.get(), ExtractorScreen::new);
+       MenuScreens.register(SFMenuTypes.CHIP_PRESS_MENU.get(), ChipPressScreen::new);
+       MenuScreens.register(SFMenuTypes.GEM_COMBINER_MENU.get(), GemCombinerScreen::new);
        MenuScreens.register(SFMenuTypes.GENERATOR_MENU.get(), GeneratorScreen::new);
 
        SFItemProperties.addCustomItemProperties();

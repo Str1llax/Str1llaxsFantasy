@@ -1,0 +1,6 @@
+{
+  "parent": "sf:item/amethryne_bow",
+  "textures": {
+    "layer0": "sf:item/amethryne_bow_pulling_1"
+  }
+}

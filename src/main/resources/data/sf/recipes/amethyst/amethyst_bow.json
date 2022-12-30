@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " rc",
+    "/ c",
+    " rc"
+  ],
+  "key": {
+    "r": {
+      "item": "sf:amethyst"
+    },
+    "c": {
+      "item": "minecraft:string"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sf:amethyst_bow",
+    "count": 1
+  }
+}

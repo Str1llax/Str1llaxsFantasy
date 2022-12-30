@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "r r",
+    "r r"
+  ],
+  "key": {
+    "r": {
+      "item": "sf:amethyst"
+    }
+  },
+  "result": {
+    "item": "sf:amethyst_leggings",
+    "count": 1
+  }
+}

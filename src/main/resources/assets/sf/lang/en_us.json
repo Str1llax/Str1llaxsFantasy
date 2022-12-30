@@ -38,10 +38,11 @@
   "tooltip.sf.hammer_tool.tooltip": "Press §eSHIFT§r for more Information!",
   "tooltip.sf.cutters_tool.tooltip.shift": "Can cut ur PP!",
   "tooltip.sf.cutters_tool.tooltip": "Press §eSHIFT§r for more Information!",
-  "tooltip.sf.ruby_sword.tooltip": "Some kind of ancient sword with small magical abilities!",
-  "tooltip.sf.citrine_sword.tooltip": "Some kind of ancient sword with small magical abilities!",
+  "tooltip.sf.magic_sword.tooltip": "Some kind of ancient sword with small magical abilities!",
   "tooltip.sf.sakura.tooltip.shift": "In real life, §dSakura's§r wood is brown, so I made it §dPINK§r so it wouldn't be boring",
   "tooltip.sf.sakura.tooltip": "Press §dSHIFT§r for more Information!",
+  "tooltip.sf.machinet.tooltip": "§4Machines work without energy in this version",
+  "tooltip.sf.machinet.tooltip.shift": "Press §4SHIFT§r for more Information!",
 
   "item.sf.advanced_item.no_valuables": "No valuables found!",
 
@@ -68,6 +69,30 @@
   "item.sf.citrine_leggings": "§6Citrine§r Leggings",
   "item.sf.citrine_boots": "§6Citrine§r Boots",
   "item.sf.citrine_bow": "§6Citrine§r Bow",
+
+  "item.sf.amethyst": "§dAmethyst§r",
+  "item.sf.amethyst_sword": "§dAmethyst§r Sword",
+  "item.sf.amethyst_pickaxe": "§dAmethyst§r Pickaxe",
+  "item.sf.amethyst_axe": "§dAmethyst§r Axe",
+  "item.sf.amethyst_shovel": "§dAmethyst§r Shovel",
+  "item.sf.amethyst_hoe": "§dAmethyst§r Hoe",
+  "item.sf.amethyst_helmet": "§dAmethyst§r Helmet",
+  "item.sf.amethyst_chestplate": "§dAmethyst§r Chestplate",
+  "item.sf.amethyst_leggings": "§dAmethyst§r Leggings",
+  "item.sf.amethyst_boots": "§dAmethyst§r Boots",
+  "item.sf.amethyst_bow": "§dAmethyst§r Bow",
+
+  "item.sf.amethryne": "§dAmeth§eryne§r",
+  "item.sf.amethryne_sword": "§dAmeth§eryne§r Sword",
+  "item.sf.amethryne_pickaxe": "§dAmeth§eryne§r Pickaxe",
+  "item.sf.amethryne_axe": "§dAmeth§eryne§r Axe",
+  "item.sf.amethryne_shovel": "§dAmeth§eryne§r Shovel",
+  "item.sf.amethryne_hoe": "§dAmeth§eryne§r Hoe",
+  "item.sf.amethryne_helmet": "§dAmeth§eryne§r Helmet",
+  "item.sf.amethryne_chestplate": "§dAmeth§eryne§r Chestplate",
+  "item.sf.amethryne_leggings": "§dAmeth§eryne§r Leggings",
+  "item.sf.amethryne_boots": "§dAmeth§eryne§r Boots",
+  "item.sf.amethryne_bow": "§dAmeth§eryne§r Bow",
 
   "item.sf.mighty_iron_ingot": "Mighty iron ingot",
   "item.sf.crimson_energy_ingot": "Crimson energy ingot",
@@ -230,6 +255,9 @@
   "block.sf.citrine_ore": "§6Citrine§r ore",
   "block.sf.deepslate_citrine_ore": "Deepslate §6Citrine§r ore",
 
+  "block.sf.amethyst_block": "§dAmethyst§r block",
+  "block.sf.amethryne_block": "§dAmeth§eryne§r block",
+
   "block.sf.hevea_log": "Hevea Log",
   "block.sf.hevea_planks": "Hevea Planks",
   "block.sf.hevea_stairs": "Hevea Stairs",
@@ -285,5 +313,7 @@
   "block.sf.circuit_assembler": "Circuit Assembler",
   "block.sf.mixer": "Mixing machine",
   "block.sf.extractor": "Extractor",
+  "block.sf.chip_press": "Chip Press",
+  "block.sf.gem_combiner": "Gem combiner",
   "block.sf.generator": "Generator"
 }

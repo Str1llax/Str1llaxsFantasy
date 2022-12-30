@@ -12,13 +12,8 @@ import org.jetbrains.annotations.NotNull;
 
 
 public class MixerScreen extends AbstractContainerScreen<MixerMenu> {
-    private static final ResourceLocation TEXTURE =
-            new ResourceLocation(SF.MOD_ID, "textures/gui/mixer_gui.png");
-
-    public MixerScreen(MixerMenu menu, Inventory inv, Component component) {
-        super(menu, inv, component);
-    }
-
+    private static final ResourceLocation TEXTURE = new ResourceLocation(SF.MOD_ID, "textures/gui/mixer_gui.png");
+    public MixerScreen(MixerMenu menu, Inventory inv, Component component) {super(menu, inv, component);}
     @Override
     protected void renderBg(@NotNull PoseStack pPoseStack, float pPartialTick, int pMouseX, int pMouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
@@ -26,15 +21,9 @@ public class MixerScreen extends AbstractContainerScreen<MixerMenu> {
         RenderSystem.setShaderTexture(0, TEXTURE);
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
-
         this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
-
-        if(menu.isCrafting()) {
-            blit(pPoseStack, x + 83, y + 37, 176, 0, 10, menu.getScaledProgress());
-        }
+        if(menu.isCrafting()) {blit(pPoseStack, x + 83, y + 37, 176, 0, 10, menu.getScaledProgress());}
     }
-
-
     @Override
     public void render(@NotNull PoseStack pPoseStack, int mouseX, int mouseY, float delta) {
         renderBackground(pPoseStack);

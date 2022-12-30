@@ -3,6 +3,7 @@
   "values": [
     "sf:circuit_assembler",
     "sf:mixer",
-    "sf:extractor"
+    "sf:extractor",
+    "sf:gem_combiner"
   ]
 }

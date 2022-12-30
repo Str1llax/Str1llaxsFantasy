@@ -1,0 +1,14 @@
+{
+  "type": "sf:chip_pressing",
+  "ingredients": [
+    {
+      "item": "sf:cast_form_for_silicon_chips"
+    },
+    {
+      "item": "sf:silicon"
+    }
+  ],
+  "output": {
+    "item": "sf:circuit_silicon_chip"
+  }
+}

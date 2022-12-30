@@ -13,13 +13,15 @@ import net.minecraft.world.level.Level;
 
 import java.util.Map;
 
-public class ModArmorItem extends ArmorItem {
+public class SFArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
-                    .put(SFArmorMaterials.RUBY,
-                            new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 1)).build();
+                    .put(SFArmorMaterials.RUBY, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 1))
+                    .put(SFArmorMaterials.AMETHYST, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 1))
+                    .put(SFArmorMaterials.CITRINE, new MobEffectInstance(MobEffects.ABSORPTION, 1, 1))
+                    .put(SFArmorMaterials.AMETHRYNE, new MobEffectInstance(MobEffects.REGENERATION, 1, 1)).build();
 
-    public ModArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public SFArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
     }
 

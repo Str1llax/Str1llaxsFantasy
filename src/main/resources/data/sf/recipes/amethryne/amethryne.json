@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "sf:amethryne_block"
+      }
+    ],
+    "result": {
+      "item": "sf:amethryne",
+      "count": 9
+    }
+
+}

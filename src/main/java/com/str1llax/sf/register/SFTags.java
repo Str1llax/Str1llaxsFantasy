@@ -20,6 +20,8 @@ public class SFTags {
         public static final TagKey<Item> METALS = tag("metals");
         public static final TagKey<Item> CATALYSTS = tag("catalysts");
         public static final TagKey<Item> CHIPS = tag("chips");
+        public static final TagKey<Item> CHIPI = tag("chipi");
+        public static final TagKey<Item> CASTS = tag("casts");
         public static final TagKey<Item> CAPACITORS = tag("capacitors");
         public static final TagKey<Item> BASES = tag("bases");
         public static final TagKey<Item> MIXER = forgeTag("mixer");

@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "sf:block/gem_combiner",
+      "y": 0
+    },
+    "facing=east": {
+      "model": "sf:block/gem_combiner",
+      "y": 90
+
+    },
+    "facing=west": {
+      "model": "sf:block/gem_combiner",
+      "y": 270
+
+    },
+    "facing=south": {
+      "model": "sf:block/gem_combiner",
+      "y": 180
+
+    }
+  }
+}

@@ -21,7 +21,7 @@ public class RubySwordItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.ruby_sword.tooltip"));
+            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.magic_sword.tooltip"));
     }
 
     @Override

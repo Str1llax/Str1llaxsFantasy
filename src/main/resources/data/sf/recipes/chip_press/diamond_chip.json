@@ -1,0 +1,14 @@
+{
+  "type": "sf:chip_pressing",
+  "ingredients": [
+    {
+      "item": "sf:cast_form_for_chips"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "output": {
+    "item": "sf:circuit_diamond_chip"
+  }
+}

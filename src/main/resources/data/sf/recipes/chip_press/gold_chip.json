@@ -1,0 +1,14 @@
+{
+  "type": "sf:chip_pressing",
+  "ingredients": [
+    {
+      "item": "sf:cast_form_for_chips"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "output": {
+    "item": "sf:circuit_gold_chip"
+  }
+}

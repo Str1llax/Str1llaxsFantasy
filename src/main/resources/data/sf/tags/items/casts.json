@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "sf:cast_form_for_chips",
+    "sf:cast_form_for_silicon_chips"
+  ]
+}
