@@ -49,6 +49,7 @@
   "tooltip.sf.sakura.tooltip": "Press §dSHIFT§r for more Information!",
   "tooltip.sf.machinet.tooltip": "§4Machines work without energy in this version",
   "tooltip.sf.machinet.tooltip.shift": "Press §4SHIFT§r for more Information!",
+  "tooltip.sf.cast": "Can be found at the Weaponsmith's house",
 
   "item.sf.advanced_item.no_valuables": "No valuables found!",
 

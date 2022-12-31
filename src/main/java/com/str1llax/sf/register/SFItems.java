@@ -122,8 +122,8 @@ public class SFItems extends Item {
     //public static final RegistryObject<Item> ELECTRIC_MOTOR = register("electric_motor",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
     //public static final RegistryObject<Item> ALLOY_TERBIUM_IRON = register("alloy_terbium_iron",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
 
-    public static final RegistryObject<Item> CAST_FORM_FOR_CHIPS = register("cast_form_for_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
-    public static final RegistryObject<Item> CAST_FORM_FOR_SILICON_CHIPS = register("cast_form_for_silicon_chips",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
+    public static final RegistryObject<Item> CAST_FORM_FOR_CHIPS = register("cast_form_for_chips",CastFormForChips::new);
+    public static final RegistryObject<Item> CAST_FORM_FOR_SILICON_CHIPS = register("cast_form_for_silicon_chips",CastFormForSiliconChips::new);
 
     public static final RegistryObject<Item> RAINBOW_POWDER = register("rainbow_powder",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES).stacksTo(16)));
 

@@ -23,7 +23,7 @@ public class SFBaseItem extends Item {
 
     public SFBaseItem(Properties props)
     {
-        this(props, SFTabs.SFTAB_RESOURCES);
+        this(props, SFTabs.SFTAB_TOOLS);
     }
 
     public SFBaseItem(Properties props, CreativeModeTab group)

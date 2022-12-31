@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:chests/village/village_weaponsmith"
+    }
+  ],
+  "addition": "sf:cast_form_for_chips",
+  "type": "sf:cast_form_for_chip_in_village"
+}

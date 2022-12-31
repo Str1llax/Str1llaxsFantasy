@@ -49,6 +49,7 @@
   "tooltip.sf.sakura.tooltip": "Нажми §dSHIFT§r для большей информации!",
   "tooltip.sf.machinet.tooltip": "§4Механизмы работают без энергии в этой версии",
   "tooltip.sf.machinet.tooltip.shift": "Нажми §4SHIFT§r для большей информации!",
+  "tooltip.sf.cast": "Может быть найдено дома у оружейника",
 
   "item.sf.advanced_item.no_valuables": "Не найдено руд!",
 
