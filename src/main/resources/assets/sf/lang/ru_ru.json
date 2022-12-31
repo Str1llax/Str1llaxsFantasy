@@ -16,8 +16,8 @@
   "sf.jei.extractor": "Экстракция",
   "sf.jei.gem_combiner": "Объединение камней",
 
-  "item.sf.example_item": "Простой предмет",
-  "item.sf.advanced_item": "Продвинутый предмет",
+  "item.sf.example_item": "§4[TEST]§rПростой предмет",
+  "item.sf.advanced_item": "§4[TEST]§rПродвинутый предмет",
 
   "item.sf.flour": "Мука",
   "item.sf.dough": "Тесто",
@@ -209,8 +209,8 @@
   "item.sf.raw_uranium": "Рудный Уран",
   "item.sf.uranium_ingot": "Урановый слиток",
 
-  "block.sf.example_block": "Простой блок",
-  "block.sf.advanced_block": "Продвинутый блок",
+  "block.sf.example_block": "§4[TEST]§rПростой блок",
+  "block.sf.advanced_block": "§4[TEST]§rПродвинутый блок",
 
   "block.sf.tin_ore": "Оловянная руда",
   "block.sf.deepslate_tin_ore": "Оловоносный глубинный сланец",

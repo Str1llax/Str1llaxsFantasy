@@ -16,8 +16,8 @@
   "sf.jei.extractor": "Extracting",
   "sf.jei.gem_combiner": "Gem combining",
 
-  "item.sf.example_item": "Example Item",
-  "item.sf.advanced_item": "Advanced Item",
+  "item.sf.example_item": "§4[TEST]§rExample Item",
+  "item.sf.advanced_item": "§4[TEST]§rAdvanced Item",
 
   "item.sf.flour": "Flour",
   "item.sf.dough": "Dough",
@@ -209,8 +209,8 @@
   "item.sf.raw_uranium": "Raw Uranium",
   "item.sf.uranium_ingot": "Uranium ingot",
 
-  "block.sf.example_block": "Example Block",
-  "block.sf.advanced_block": "Advanced Block",
+  "block.sf.example_block": "§4[TEST]§rExample Block",
+  "block.sf.advanced_block": "§4[TEST]§rAdvanced Block",
 
   "block.sf.tin_ore": "Tin ore",
   "block.sf.deepslate_tin_ore": "Deepslate Tin ore",
