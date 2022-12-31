@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "sf:stripped_sakura_wood"
+      "tag": "sf:sakura_logs"
     }
   ],
   "result": {

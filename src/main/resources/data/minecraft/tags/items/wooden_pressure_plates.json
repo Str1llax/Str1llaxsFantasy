@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "sf:hevea_pressure_plate",
+    "sf:chestnut_pressure_plate",
+    "sf:sakura_pressure_plate"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#sf:hevea_logs",
+    "#sf:chestnut_logs",
+    "#sf:sakura_logs"
+  ]
+}

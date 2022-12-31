@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "sf:hevea_log",
+    "sf:hevea_wood",
+    "sf:stripped_hevea_log",
+    "sf:stripped_hevea_wood"
+  ]
+}
