@@ -7,6 +7,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
@@ -16,10 +17,11 @@ import org.jetbrains.annotations.Nullable;
 public class CableIron extends Block {
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
-    public static final VoxelShape NORTH = Shapes.box(0.375, 0.375, 0, 0.625, 0.625, 1);
-    public static final VoxelShape SOUTH = Shapes.box(0.375, 0.375, 0, 0.625, 0.625, 1);
-    public static final VoxelShape WEST = Shapes.box(0, 0.375, 0.375, 1, 0.625, 0.625);
-    public static final VoxelShape EAST = Shapes.box(0, 0.375, 0.375, 1, 0.625, 0.625);
+    public static final BooleanProperty CONNECTED = BooleanProperty.create("connected");
+    public static final VoxelShape NORTH_NOT_CONNECTED = Shapes.box(0.375, 0.375, 0, 0.625, 0.625, 1);
+    public static final VoxelShape SOUTH_NOT_CONNECTED = Shapes.box(0.375, 0.375, 0, 0.625, 0.625, 1);
+    public static final VoxelShape WEST_NOT_CONNECTED = Shapes.box(0, 0.375, 0.375, 1, 0.625, 0.625);
+    public static final VoxelShape EAST_NOT_CONNECTED = Shapes.box(0, 0.375, 0.375, 1, 0.625, 0.625);
 
     public CableIron(Properties properties) {
         super(properties);
@@ -30,13 +32,13 @@ public class CableIron extends Block {
         switch (state.getValue(FACING)) {
 
             default:
-                return NORTH;
+                return NORTH_NOT_CONNECTED;
             case SOUTH:
-                return SOUTH;
+                return SOUTH_NOT_CONNECTED;
             case WEST:
-                return WEST;
+                return WEST_NOT_CONNECTED;
             case EAST:
-                return EAST;
+                return EAST_NOT_CONNECTED;
         }
     }
 

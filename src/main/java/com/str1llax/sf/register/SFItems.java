@@ -18,6 +18,7 @@ public class SFItems extends Item {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS,SF.MOD_ID);
     public static final RegistryObject<Item> EXAMPLE_ITEM = register("example_item",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB)));
     public static final RegistryObject<Item> ADVANCED_ITEM = register("advanced_item",() -> new AdvancedItem(new Item.Properties().tab(SFTabs.SFTAB).stacksTo(8).fireResistant().food(new FoodProperties.Builder().alwaysEat().nutrition(10).saturationMod(5.0f).effect(() -> new MobEffectInstance(MobEffects.GLOWING,6000,2),1f).build())));
+    public static final RegistryObject<Item> WIP = register("wip",() -> new WIPItem(new Item.Properties().tab(SFTabs.SFTAB)));
 
     public static final RegistryObject<Item> HAMMER_TOOL = register("hammer_tool",HammerTool::new);
     public static final RegistryObject<Item> CUTTERS_TOOL = register("cutters_tool",CuttersTool::new);
@@ -96,6 +97,8 @@ public class SFItems extends Item {
     public static final RegistryObject<Item> AMETHRYNE_CHESTPLATE = register("amethryne_chestplate",() -> new ArmorItem(SFArmorMaterials.AMETHRYNE,EquipmentSlot.CHEST,new Item.Properties().tab(SFTabs.SFTAB_ARMOR)));
     public static final RegistryObject<Item> AMETHRYNE_LEGGINGS = register("amethryne_leggings",() -> new ArmorItem(SFArmorMaterials.AMETHRYNE,EquipmentSlot.LEGS,new Item.Properties().tab(SFTabs.SFTAB_ARMOR)));
     public static final RegistryObject<Item> AMETHRYNE_BOOTS = register("amethryne_boots",() -> new ArmorItem(SFArmorMaterials.AMETHRYNE,EquipmentSlot.FEET,new Item.Properties().tab(SFTabs.SFTAB_ARMOR)));
+
+    public static final RegistryObject<Item> MAGMA_CHARM = register("magma_charm",() -> new MagmaCharm(SFArmorMaterials.MAGMA_CHARM,EquipmentSlot.CHEST,new Item.Properties().setNoRepair().fireResistant().tab(SFTabs.SFTAB_ARMOR)));
 
     public static final RegistryObject<Item> ROSIN = register("rosin",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));
     public static final RegistryObject<Item> SILICON = register("silicon",() -> new Item(new Item.Properties().tab(SFTabs.SFTAB_RESOURCES)));

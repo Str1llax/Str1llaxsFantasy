@@ -50,6 +50,10 @@
   "tooltip.sf.machinet.tooltip": "§4Механизмы работают без энергии в этой версии",
   "tooltip.sf.machinet.tooltip.shift": "Нажми §4SHIFT§r для большей информации!",
   "tooltip.sf.cast": "Может быть найдено дома у оружейника",
+  "tooltip.sf.wip": "WIP - работа в процессе(в разработке).",
+  "tooltip.sf.shift": "Нажми §eSHIFT§r для большей информации!",
+  "tooltip.sf.magma_charm": "Необычный магмовый нагрудник с невероятными магическими способностями! Старинный артефакт. Имеет малую прочность, но зато полностью защищает от лавы. Можно найти в разрушенных порталах.",
+
 
   "item.sf.advanced_item.no_valuables": "Не найдено руд!",
 
@@ -100,6 +104,8 @@
   "item.sf.amethryne_leggings": "§dАмет§eриновые§r поножи",
   "item.sf.amethryne_boots": "§dАмет§eриновые§r ботинки",
   "item.sf.amethryne_bow": "§dАмет§eриновый§r лук",
+
+  "item.sf.magma_charm": "§6Очарование магмы",
 
   "item.sf.mighty_iron_ingot": "Несокрушимый железный слиток",
   "item.sf.crimson_energy_ingot": "Багровый энергетический слиток",
@@ -208,6 +214,8 @@
   "item.sf.uranium": "Уран",
   "item.sf.raw_uranium": "Рудный Уран",
   "item.sf.uranium_ingot": "Урановый слиток",
+
+  "item.sf.wip": "§4[§2WIP§4]",
 
   "block.sf.example_block": "§4[TEST]§rПростой блок",
   "block.sf.advanced_block": "§4[TEST]§rПродвинутый блок",
@@ -323,11 +331,11 @@
   "block.sf.pink_rose": "Розовая роза",
   "block.sf.potted_pink_rose": "Посаженная розовая роза",
 
-  "block.sf.meat_grinder": "Мясорубка",
-  "block.sf.circuit_assembler": "Сборщик микросхем",
-  "block.sf.mixer": "Смешиватель",
-  "block.sf.extractor": "Экстрактор",
-  "block.sf.chip_press": "Пресс для чипов",
+  "block.sf.meat_grinder": "§4[§2WIP§4]§r Мясорубка",
+  "block.sf.circuit_assembler": "§4[§2WIP§4]§r Сборщик микросхем",
+  "block.sf.mixer": "§4[§2WIP§4]§r Смешиватель",
+  "block.sf.extractor": "§4[§2WIP§4]§r Экстрактор",
+  "block.sf.chip_press": "§4[§2WIP§4]§r Пресс для чипов",
   "block.sf.gem_combiner": "Объединитель камней",
-  "block.sf.generator": "Генератор"
+  "block.sf.generator": "§4[§2WIP§4]§r Генератор"
 }

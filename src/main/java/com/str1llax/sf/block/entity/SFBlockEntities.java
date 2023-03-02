@@ -1,7 +1,6 @@
 package com.str1llax.sf.block.entity;
 
 import com.str1llax.sf.SF;
-import com.str1llax.sf.block.ChipPress;
 import com.str1llax.sf.block.entity.sfentities.*;
 import com.str1llax.sf.register.SFBlocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;

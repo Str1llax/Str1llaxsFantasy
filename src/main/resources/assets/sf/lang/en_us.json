@@ -50,6 +50,10 @@
   "tooltip.sf.machinet.tooltip": "§4Machines work without energy in this version",
   "tooltip.sf.machinet.tooltip.shift": "Press §4SHIFT§r for more Information!",
   "tooltip.sf.cast": "Can be found at the Weaponsmith's house",
+  "tooltip.sf.wip": "WIP - Work In Progress.",
+  "tooltip.sf.shift": "Press §eSHIFT§r for more information!",
+  "tooltip.sf.magma_charm": "An unusual magma chestplate with incredible magical powers! An ancient artifact. It has low durability, but fully protects you form lava. Can be found in the ruined portals.",
+
 
   "item.sf.advanced_item.no_valuables": "No valuables found!",
 
@@ -100,6 +104,8 @@
   "item.sf.amethryne_leggings": "§dAmeth§eryne§r Leggings",
   "item.sf.amethryne_boots": "§dAmeth§eryne§r Boots",
   "item.sf.amethryne_bow": "§dAmeth§eryne§r Bow",
+
+  "item.sf.magma_charm": "§6Magma Charm",
 
   "item.sf.mighty_iron_ingot": "Mighty iron ingot",
   "item.sf.crimson_energy_ingot": "Crimson energy ingot",
@@ -208,6 +214,8 @@
   "item.sf.uranium": "Uranium",
   "item.sf.raw_uranium": "Raw Uranium",
   "item.sf.uranium_ingot": "Uranium ingot",
+
+  "item.sf.wip": "§4[§2WIP§4]",
 
   "block.sf.example_block": "§4[TEST]§rExample Block",
   "block.sf.advanced_block": "§4[TEST]§rAdvanced Block",
@@ -323,11 +331,11 @@
   "block.sf.pink_rose": "Pink Rose",
   "block.sf.potted_pink_rose": "Potted Pink Rose",
 
-  "block.sf.meat_grinder": "Meat Grinder",
-  "block.sf.circuit_assembler": "Circuit Assembler",
-  "block.sf.mixer": "Mixing machine",
-  "block.sf.extractor": "Extractor",
-  "block.sf.chip_press": "Chip Press",
+  "block.sf.meat_grinder": "§4[§2WIP§4]§r Meat Grinder",
+  "block.sf.circuit_assembler": "§4[§2WIP§4]§r Circuit Assembler",
+  "block.sf.mixer": "§4[§2WIP§4]§r Mixing machine",
+  "block.sf.extractor": "§4[§2WIP§4]§r Extractor",
+  "block.sf.chip_press": "§4[§2WIP§4]§r Chip Press",
   "block.sf.gem_combiner": "Gem combiner",
-  "block.sf.generator": "Generator"
+  "block.sf.generator": "§4[§2WIP§4]§r Generator"
 }
