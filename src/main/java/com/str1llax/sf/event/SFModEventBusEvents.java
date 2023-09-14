@@ -33,4 +33,5 @@ public class SFModEventBusEvents {
         Registry.register(Registry.RECIPE_TYPE, MixerRecipe.Type.ID, MixerRecipe.Type.INSTANCE);
         Registry.register(Registry.RECIPE_TYPE, ExtractorRecipe.Type.ID, ExtractorRecipe.Type.INSTANCE);
     }
+
 }

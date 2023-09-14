@@ -29,9 +29,12 @@
   "item.sf.fist_energy": "§6Energy blast",
   "item.sf.fist_energy2": "§bPlasma blast",
   "item.sf.fist_energy3": "§cBloody blast",
+  "item.sf.quantum_axe": "§dQuantum Axe",
 
   "tooltip.sf.muramasa.tooltip.shift": "§k aaa§4THE TRUE POWER!§f§k aaa",
   "tooltip.sf.muramasa.tooltip": "Press §4SHIFT§r for more Information!",
+  "tooltip.sf.quantum_axe.tooltip.shift": "§aV§be§dr§ay §bp§do§aw§be§dr§af§bu§dl §ai§bt§de§am§b!",
+  "tooltip.sf.quantum_axe.tooltip": "Press §dSHIFT§r for more Information!",
   "tooltip.sf.fist_energy.tooltip.shift": "§6Energy§r accumulated in a clot and released",
   "tooltip.sf.fist_energy.tooltip": "Press §6SHIFT§r for more Information!",
   "tooltip.sf.fist_energy2.tooltip.shift": "§bPlasma§r accumulated in a clot and released",

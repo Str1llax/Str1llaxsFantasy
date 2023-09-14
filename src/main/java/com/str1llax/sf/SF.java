@@ -20,6 +20,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import software.bernie.geckolib3.GeckoLib;
 
 
 @Mod(SF.MOD_ID)
@@ -40,6 +41,8 @@ public class SF {
 
        bus.addListener(this::setup);
        bus.addListener(this::clientSetup);
+
+       GeckoLib.initialize();
 
        MinecraftForge.EVENT_BUS.register(this);
    }

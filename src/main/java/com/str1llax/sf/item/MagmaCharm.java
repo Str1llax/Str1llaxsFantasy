@@ -14,15 +14,24 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
+import software.bernie.geckolib3.core.IAnimatable;
+import software.bernie.geckolib3.core.PlayState;
+import software.bernie.geckolib3.core.builder.AnimationBuilder;
+import software.bernie.geckolib3.core.controller.AnimationController;
+import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
+import software.bernie.geckolib3.core.manager.AnimationData;
+import software.bernie.geckolib3.core.manager.AnimationFactory;
+import software.bernie.geckolib3.item.GeoArmorItem;
 
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 
-public class MagmaCharm extends ArmorItem {
+public class MagmaCharm extends GeoArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(SFArmorMaterials.MAGMA_CHARM, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1, 1)).build();
+    private AnimationFactory factory = new AnimationFactory(this);
 
     public MagmaCharm(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);
@@ -83,4 +92,21 @@ public class MagmaCharm extends ArmorItem {
         ArmorItem breastplate = ((ArmorItem)player.getInventory().getArmor(2).getItem());
 
         return breastplate.getMaterial() == material;
-    }}
+    }
+
+    @Override
+    public void registerControllers(AnimationData data) {
+        data.addAnimationController(new AnimationController<MagmaCharm>(this, "controller",
+                20, this::predicate));
+    }
+
+    @Override
+    public AnimationFactory getFactory() {
+        return this.factory;
+    }
+
+    private <P extends IAnimatable> PlayState predicate(AnimationEvent<P> event) {
+        event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", true));
+        return PlayState.CONTINUE;
+    }
+}
