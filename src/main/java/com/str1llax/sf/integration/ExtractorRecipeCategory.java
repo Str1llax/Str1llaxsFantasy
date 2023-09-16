@@ -12,7 +12,6 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -36,7 +35,7 @@ public class ExtractorRecipeCategory implements IRecipeCategory<ExtractorRecipe>
     }
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("sf.jei.extractor");
+        return Component.translatable("sf.jei.extractor");
     }
 
     @Override
@@ -56,12 +55,10 @@ public class ExtractorRecipeCategory implements IRecipeCategory<ExtractorRecipe>
         builder.addSlot(RecipeIngredientRole.OUTPUT, 103, 35).addItemStack(recipe.getResultItem());
     }
 
-    @Override
     public ResourceLocation getUid() {
         return null;
     }
 
-    @Override
     public Class<? extends ExtractorRecipe> getRecipeClass() {
         return null;
     }

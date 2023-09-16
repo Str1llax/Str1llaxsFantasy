@@ -7,6 +7,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
@@ -18,7 +19,7 @@ public enum SFArmorMaterials implements ArmorMaterial {
     CITRINE("citrine",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F,0.0F, ()-> Ingredient.of(SFItems.CITRINE.get())),
     AMETHYST("amethyst",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
-            2.0F,0.0F, ()-> Ingredient.of(SFItems.AMETHYST.get())),
+            2.0F,0.0F, ()-> Ingredient.of(Items.AMETHYST_SHARD)),
     AMETHRYNE("amethryne",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F,0.0F, ()-> Ingredient.of(SFItems.AMETHRYNE.get())),
     MAGMA_CHARM("magma_charm",2,new int[] {2, 2, 2, 2},2, SoundEvents.ARMOR_EQUIP_LEATHER,

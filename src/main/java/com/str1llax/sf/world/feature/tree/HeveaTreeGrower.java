@@ -2,6 +2,8 @@ package com.str1llax.sf.world.feature.tree;
 
 import com.str1llax.sf.world.feature.SFConfiguredFeatures;
 import net.minecraft.core.Holder;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.NotNull;
@@ -14,5 +16,11 @@ public class HeveaTreeGrower extends AbstractTreeGrower {
     @Override
     protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull Random random, boolean b) {
         return SFConfiguredFeatures.HEVEA_TREE;
+    }
+
+    @Nullable
+    @Override
+    protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+        return null;
     }
 }

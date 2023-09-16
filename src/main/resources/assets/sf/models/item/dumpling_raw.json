@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "sf:item/dumplings"
+    "layer0": "sf:item/dumpling_raw"
   },
   "display": {
     "thirdperson_righthand": {

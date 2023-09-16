@@ -12,15 +12,17 @@ import com.str1llax.sf.util.SFItemProperties;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import software.bernie.geckolib3.GeckoLib;
+import software.bernie.geckolib.GeckoLib;
 
 
 @Mod(SF.MOD_ID)
@@ -45,6 +47,7 @@ public class SF {
        GeckoLib.initialize();
 
        MinecraftForge.EVENT_BUS.register(this);
+       bus.addListener(this::addCreative);
    }
 
    private void clientSetup(final FMLClientSetupEvent event){
@@ -82,6 +85,13 @@ public class SF {
        MenuScreens.register(SFMenuTypes.GENERATOR_MENU.get(), GeneratorScreen::new);
 
        SFItemProperties.addCustomItemProperties();
+   }
+   private void addCreative(BuildCreativeModeTabContentsEvent event){
+       if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS){
+           event.accept(SFItems.DOUGH);
+           event.accept(SFItems.DUMPLING_RAW);
+           event.accept(SFItems.DUMPLING);
+       }
    }
    private void setup(final FMLCommonSetupEvent event){
        event.enqueueWork(() -> ((FlowerPotBlock) Blocks.FLOWER_POT).addPlant(SFBlocks.PINK_ROSE.getId(), SFBlocks.POTTED_PINK_ROSE));

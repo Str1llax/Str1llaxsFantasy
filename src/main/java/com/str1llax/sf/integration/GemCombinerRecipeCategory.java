@@ -12,7 +12,6 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -36,7 +35,7 @@ public class GemCombinerRecipeCategory implements IRecipeCategory<GemCombinerRec
     }
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("sf.jei.gem_combiner");
+        return Component.translatable("sf.jei.gem_combiner");
     }
 
     @Override
@@ -57,12 +56,10 @@ public class GemCombinerRecipeCategory implements IRecipeCategory<GemCombinerRec
         builder.addSlot(RecipeIngredientRole.OUTPUT, 116, 32).addItemStack(recipe.getResultItem());
     }
 
-    @Override
     public ResourceLocation getUid() {
         return null;
     }
 
-    @Override
     public Class<? extends GemCombinerRecipe> getRecipeClass() {
         return null;
     }

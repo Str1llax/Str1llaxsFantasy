@@ -5,6 +5,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.str1llax.sf.SF;
 import com.str1llax.sf.screen.renderer.EnergyInfoArea;
 import com.str1llax.sf.util.SFMouseUtil;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
@@ -29,6 +30,22 @@ public class ExtractorScreen extends AbstractContainerScreen<ExtractorMenu> {
         assignEnergyInfoArea();
     }
 
+    @Override
+    protected void renderBg(GuiGraphics pGuiGraphics, float pPartialTick, int pMouseX, int pMouseY) {
+        RenderSystem.setShader(GameRenderer::getPositionTexShader);
+        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
+        RenderSystem.setShaderTexture(0, TEXTURE);
+        int x = (width - imageWidth) / 2;
+        int y = (height - imageHeight) / 2;
+
+        this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
+
+        renderProgressArrow(pPoseStack, x, y);
+        renderEnergyAreaTooltips(pPoseStack, pMouseX, pMouseY, x, y);
+        energyInfoArea.draw(pPoseStack);
+
+    }
+
     private void assignEnergyInfoArea() {
         int x = (width - imageWidth) / 2;
         int y = (height - imageHeight) / 2;
@@ -49,22 +66,6 @@ public class ExtractorScreen extends AbstractContainerScreen<ExtractorMenu> {
             renderTooltip(pPoseStack, energyInfoArea.getTooltips(),
                     Optional.empty(), pMouseX - x, pMouseY - y);
         }
-    }
-
-
-    @Override
-    protected void renderBg(@NotNull PoseStack pPoseStack, float pPartialTick, int pMouseX, int pMouseY) {
-        RenderSystem.setShader(GameRenderer::getPositionTexShader);
-        RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
-        RenderSystem.setShaderTexture(0, TEXTURE);
-        int x = (width - imageWidth) / 2;
-        int y = (height - imageHeight) / 2;
-
-        this.blit(pPoseStack, x, y, 0, 0, imageWidth, imageHeight);
-
-        renderProgressArrow(pPoseStack, x, y);
-        renderEnergyAreaTooltips(pPoseStack, pMouseX, pMouseY, x, y);
-        energyInfoArea.draw(pPoseStack);
     }
 
     private void renderProgressArrow(PoseStack pPoseStack, int x, int y) {

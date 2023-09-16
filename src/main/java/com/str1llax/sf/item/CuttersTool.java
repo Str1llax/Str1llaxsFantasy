@@ -1,11 +1,10 @@
 package com.str1llax.sf.item;
 
-import com.str1llax.sf.register.SFTabs;
 import com.str1llax.sf.tiers.SFBaseItem;
 import com.str1llax.sf.util.SFUtils;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
@@ -18,15 +17,15 @@ import java.util.List;
 public class CuttersTool extends SFBaseItem
 {
     public CuttersTool() {
-        super(new Properties().defaultDurability(72).tab(SFTabs.SFTAB_TOOLS));
+        super(new Properties().defaultDurability(72));
     }
 
     @Override
     public void appendHoverText(@NotNull ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.cutters_tool.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.cutters_tool.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.cutters_tool.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.cutters_tool.tooltip"));
         }
     }
 
@@ -35,7 +34,7 @@ public class CuttersTool extends SFBaseItem
     public ItemStack getContainerItem(@Nonnull ItemStack stack)
     {
         ItemStack container = stack.copy();
-        if(container.hurt(1, SFUtils.RAND , null))
+        if(container.hurt(1, (RandomSource) SFUtils.RAND, null))
             return ItemStack.EMPTY;
         else
             return container;

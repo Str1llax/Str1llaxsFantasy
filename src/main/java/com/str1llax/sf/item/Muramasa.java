@@ -39,9 +39,9 @@ public class Muramasa extends SwordItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.muramasa.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.muramasa.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.muramasa.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.muramasa.tooltip"));
         }
     }
     @Override

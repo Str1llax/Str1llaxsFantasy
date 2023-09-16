@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.str1llax.sf.util.SFArmorMaterials;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -21,7 +20,7 @@ public class SFArmorItem extends ArmorItem {
                     .put(SFArmorMaterials.CITRINE, new MobEffectInstance(MobEffects.ABSORPTION, 1, 1))
                     .put(SFArmorMaterials.AMETHRYNE, new MobEffectInstance(MobEffects.REGENERATION, 1, 1)).build();
 
-    public SFArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public SFArmorItem(ArmorMaterial material, Type slot, Properties settings) {
         super(material, slot, settings);
     }
 

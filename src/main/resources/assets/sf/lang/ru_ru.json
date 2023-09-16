@@ -1,14 +1,8 @@
 {
   "itemGroup.sf_tab": "§dS§aF§r: Главная",
-  "itemGroup.sf_flora": "§dS§aF§r: Флора",
-  "itemGroup.sf_fauna": "§dS§aF§r: Фауна",
-  "itemGroup.sf_weapons": "§dS§aF§r: Оружие",
-  "itemGroup.sf_tools": "§dS§aF§r: Инструменты",
-  "itemGroup.sf_armor": "§dS§aF§r: Броня",
+  "itemGroup.sf_weapons": "§dS§aF§r: Снаряжение",
   "itemGroup.sf_resources": "§dS§aF§r: Ресурсы",
-  "itemGroup.sf_machines": "§dS§aF§r: Машины",
-  "itemGroup.sf_ores": "§dS§aF§r: Руды",
-  "itemGroup.sf_parts": "§dS§aF§r: Детали",
+  "itemGroup.sf_blocks": "§dS§aF§r: Блоки",
 
   "sf.jei.mixer": "Смешивание",
   "sf.jei.chip_press": "Выдавливание чипов",
@@ -22,8 +16,8 @@
   "item.sf.flour": "Мука",
   "item.sf.dough": "Тесто",
 
+  "item.sf.dumpling_raw": "Сырой Пельмень",
   "item.sf.dumpling": "Пельмень",
-  "item.sf.dumplings": "Пельмени",
 
   "item.sf.muramasa": "§4Мурамаса",
   "item.sf.fist_energy": "§6Энергетический заряд",

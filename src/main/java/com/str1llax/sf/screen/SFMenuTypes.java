@@ -11,7 +11,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class SFMenuTypes {
-    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.CONTAINERS, SF.MOD_ID);
+    public static final DeferredRegister<MenuType<?>> MENUS = DeferredRegister.create(ForgeRegistries.MENU_TYPES, SF.MOD_ID);
     public static final RegistryObject<MenuType<CircuitAssemblerMenu>> CIRCUIT_ASSEMBLER_MENU = registerMenuType(CircuitAssemblerMenu::new, "circuit_assembler_menu");
     public static final RegistryObject<MenuType<MixerMenu>> MIXER_MENU = registerMenuType(MixerMenu::new, "mixer_menu");
     public static final RegistryObject<MenuType<ExtractorMenu>> EXTRACTOR_MENU = registerMenuType(ExtractorMenu::new, "extractor_menu");

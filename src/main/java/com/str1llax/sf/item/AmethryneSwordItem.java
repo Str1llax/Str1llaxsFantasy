@@ -1,7 +1,6 @@
 package com.str1llax.sf.item;
 
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -21,7 +20,7 @@ public class AmethryneSwordItem extends SwordItem {
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.magic_sword.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.magic_sword.tooltip"));
     }
 
     @Override

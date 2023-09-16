@@ -2,7 +2,6 @@ package com.str1llax.sf.item;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
@@ -38,7 +37,7 @@ public class DataTabletItem extends Item {
                                 TooltipFlag pIsAdvanced) {
         if(pStack.hasTag()) {
             String currentOre = pStack.getTag().getString("sf.last_ore");
-            pTooltipComponents.add(new TextComponent(currentOre));
+            pTooltipComponents.add(Component.literal(currentOre));
         }
 
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);

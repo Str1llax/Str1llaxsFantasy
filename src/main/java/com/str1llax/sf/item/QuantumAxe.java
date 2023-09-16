@@ -2,7 +2,6 @@ package com.str1llax.sf.item;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
@@ -20,9 +19,9 @@ public class QuantumAxe extends AxeItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.quantum_axe.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.quantum_axe.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.quantum_axe.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.quantum_axe.tooltip"));
         }
     }
 }

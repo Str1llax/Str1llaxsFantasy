@@ -12,7 +12,6 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -36,7 +35,7 @@ public class CircuitAssemblerRecipeCategory implements IRecipeCategory<CircuitAs
     }
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("sf.jei.circuit_assembler");
+        return Component.translatable("sf.jei.circuit_assembler");
     }
 
     @Override
@@ -60,12 +59,10 @@ public class CircuitAssemblerRecipeCategory implements IRecipeCategory<CircuitAs
         builder.addSlot(RecipeIngredientRole.OUTPUT, 80, 57).addItemStack(recipe.getResultItem());
     }
 
-    @Override
     public ResourceLocation getUid() {
         return null;
     }
 
-    @Override
     public Class<? extends CircuitAssemblerRecipe> getRecipeClass() {
         return null;
     }

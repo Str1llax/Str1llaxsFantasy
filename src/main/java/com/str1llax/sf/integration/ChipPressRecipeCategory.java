@@ -12,7 +12,6 @@ import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.RecipeType;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -36,7 +35,7 @@ public class ChipPressRecipeCategory implements IRecipeCategory<ChipPressRecipe>
     }
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("sf.jei.chip_press");
+        return Component.translatable("sf.jei.chip_press");
     }
 
     @Override
@@ -57,12 +56,10 @@ public class ChipPressRecipeCategory implements IRecipeCategory<ChipPressRecipe>
         builder.addSlot(RecipeIngredientRole.OUTPUT, 109, 36).addItemStack(recipe.getResultItem());
     }
 
-    @Override
     public ResourceLocation getUid() {
         return null;
     }
 
-    @Override
     public Class<? extends ChipPressRecipe> getRecipeClass() {
         return null;
     }

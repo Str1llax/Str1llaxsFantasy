@@ -4,8 +4,7 @@ import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
-import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,7 +19,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -37,9 +35,9 @@ public class FistEnergy extends SwordItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.fist_energy.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.fist_energy.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.fist_energy.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.fist_energy.tooltip"));
         }
     }
     @Override

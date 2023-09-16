@@ -1,8 +1,6 @@
 package com.str1llax.sf.item;
 
-import com.str1llax.sf.register.SFTabs;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -13,10 +11,10 @@ import java.util.List;
 
 public class CastFormForSiliconChips extends Item {
     public CastFormForSiliconChips() {
-        super(new Item.Properties().stacksTo(1).tab(SFTabs.SFTAB_RESOURCES));
+        super(new Item.Properties().stacksTo(1));
     }
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
-        pTooltipComponents.add(new TranslatableComponent("tooltip.sf.cast"));
+        pTooltipComponents.add(Component.translatable("tooltip.sf.cast"));
     }
 }

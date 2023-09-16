@@ -46,9 +46,9 @@ public class AdvancedItem extends Item
     @Override
     public void appendHoverText(ItemStack pStack, @javax.annotation.Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.advanced_item.tooltip.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.advanced_item.tooltip.shift"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.advanced_item.tooltip"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.advanced_item.tooltip"));
         }
     }
 
@@ -78,8 +78,8 @@ public class AdvancedItem extends Item
             }
 
             if(!foundBlock) {
-                player.sendMessage(new TranslatableComponent("item.sf.advanced_item.no_valuables"),
-                        player.getUUID());
+                assert player != null;
+                player.sendSystemMessage(Component.translatable("item.sf.advanced_item.no_valuables"));
             }
         }
 
@@ -101,9 +101,9 @@ public class AdvancedItem extends Item
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block blockBelow) {
-        player.sendMessage(new TextComponent(
+        player.sendSystemMessage(Component.translatable(
                 "Found " + blockBelow.asItem().getRegistryName().toString() + " at "
-                        + "(X:" + blockPos.getX() + ", Y:" + blockPos.getY() + ", Z:" + blockPos.getZ() + ")"), player.getUUID());
+                        + "(X:" + blockPos.getX() + ", Y:" + blockPos.getY() + ", Z:" + blockPos.getZ() + ")"));
     }
 
     private boolean isValuableBlock(Block block) {

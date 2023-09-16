@@ -1,14 +1,8 @@
 {
   "itemGroup.sf_tab": "§dS§aF§r: General",
-  "itemGroup.sf_flora": "§dS§aF§r: Flora",
-  "itemGroup.sf_fauna": "§dS§aF§r: Fauna",
-  "itemGroup.sf_weapons": "§dS§aF§r: Weapons",
-  "itemGroup.sf_tools": "§dS§aF§r: Tools",
-  "itemGroup.sf_armor": "§dS§aF§r: Armor",
+  "itemGroup.sf_weapons": "§dS§aF§r: Equipment",
   "itemGroup.sf_resources": "§dS§aF§r: Resources",
-  "itemGroup.sf_machines": "§dS§aF§r: Machines",
-  "itemGroup.sf_ores": "§dS§aF§r: Ores",
-  "itemGroup.sf_parts": "§dS§aF§r: Parts",
+  "itemGroup.sf_ores": "§dS§aF§r: Blocks",
 
   "sf.jei.mixer": "Mixing",
   "sf.jei.chip_press": "Chip pressing",
@@ -22,8 +16,8 @@
   "item.sf.flour": "Flour",
   "item.sf.dough": "Dough",
 
+  "item.sf.dumpling_raw": "Raw Dumpling",
   "item.sf.dumpling": "Dumpling",
-  "item.sf.dumplings": "Dumpling",
 
   "item.sf.muramasa": "§4Muramasa",
   "item.sf.fist_energy": "§6Energy blast",

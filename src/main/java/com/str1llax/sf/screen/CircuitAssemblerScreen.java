@@ -3,6 +3,7 @@ package com.str1llax.sf.screen;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.str1llax.sf.SF;
+import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
@@ -19,7 +20,7 @@ public class CircuitAssemblerScreen extends AbstractContainerScreen<CircuitAssem
     }
 
     @Override
-    protected void renderBg(PoseStack pPoseStack, float pPartialTick, int pMouseX, int pMouseY) {
+    protected void renderBg(GuiGraphics pGuiGraphics, float pPartialTick, int pMouseX, int pMouseY) {
         RenderSystem.setShader(GameRenderer::getPositionTexShader);
         RenderSystem.setShaderColor(1.0F, 1.0F, 1.0F, 1.0F);
         RenderSystem.setShaderTexture(0, TEXTURE);
@@ -31,8 +32,8 @@ public class CircuitAssemblerScreen extends AbstractContainerScreen<CircuitAssem
         if(menu.isCrafting()) {
             blit(pPoseStack, x + 85, y + 40, 176, 0, 6, menu.getScaledProgress());
         }
-    }
 
+    }
 
     @Override
     public void render(PoseStack pPoseStack, int mouseX, int mouseY, float delta) {

@@ -12,7 +12,7 @@ import net.minecraft.world.item.crafting.RecipeType;
 
 import javax.annotation.Nonnull;
 
-public class SFBaseItem extends Item {
+public abstract class SFBaseItem extends Item {
     private int burnTime = -1;
     private boolean isHidden = false;
 
@@ -23,12 +23,12 @@ public class SFBaseItem extends Item {
 
     public SFBaseItem(Properties props)
     {
-        this(props, SFTabs.SFTAB_TOOLS);
+        this(props, SFTabs.SFTAB_WEAPONS.get());
     }
 
     public SFBaseItem(Properties props, CreativeModeTab group)
     {
-        super(props.tab(group));
+        super(props);
     }
 
     public SFBaseItem setBurnTime(int burnTime)
@@ -77,4 +77,9 @@ public class SFBaseItem extends Item {
         // All items use the vanilla color gradient, even if they use different getBarWidth implementation.
         return Mth.hsvToRgb(Math.max(0.0F, getBarWidth(pStack)/(float)MAX_BAR_WIDTH)/3.0F, 1.0F, 1.0F);
     }
+
+    @Nonnull
+    public abstract ItemStack getContainerItem(@Nonnull ItemStack stack);
+
+    public abstract boolean hasContainerItem(@Nonnull ItemStack stack);
 }

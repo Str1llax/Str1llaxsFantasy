@@ -9,10 +9,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterial;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -27,25 +24,24 @@ import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 
-public class MagmaCharm extends GeoArmorItem implements IAnimatable {
+public class MagmaCharm extends GeArmorItem implements IAnimatable {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(SFArmorMaterials.MAGMA_CHARM, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 1, 1)).build();
     private AnimationFactory factory = new AnimationFactory(this);
 
-    public MagmaCharm(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
+    public MagmaCharm(ArmorMaterial material, EquipmentSlot.Type slot, Item.Properties settings) {
         super(material, slot, settings);
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()) {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.magma_charm"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.magma_charm"));
         } else {
-            pTooltipComponents.add(new TranslatableComponent("tooltip.sf.shift"));
+            pTooltipComponents.add(Component.translatable("tooltip.sf.shift"));
         }
     }
-    @Override
     public void onArmorTick(ItemStack stack, Level world, Player player) {
         if(!world.isClientSide()) {
             if(hasFullSuitOfArmorOn(player)) {
