@@ -139,7 +139,7 @@ public class SFItems extends Item {
     public static final RegistryObject<SwordItem> FIST_ENERGY3 = register("fist_energy3",() -> new FistEnergy3(SFTiers.FIST_ENERGY,99,0.4f,new Item.Properties().tab(SFTabs.SFTAB_WEAPONS).stacksTo(1).fireResistant().setNoRepair().durability(1)));
 
     public static final RegistryObject<SwordItem> MURAMASA = register("muramasa",() -> new Muramasa(SFTiers.MURAMASA,3000,6.0f,new Item.Properties().tab(SFTabs.SFTAB_WEAPONS).stacksTo(1).fireResistant().durability(666666)));
-
+    public static final RegistryObject<Item> QUANTUM_AXE = register("quantum_axe", () -> new QuantumAxe(SFTiers.QUANTUM, 5.0F, -3.0F,new Item.Properties().tab(SFTabs.SFTAB_TOOLS)));
      public SFItems(Properties properties) {super(properties);}
     private static <T extends Item> RegistryObject<T> register(final String name,final Supplier<T> item) {return ITEMS.register(name,item);}
 }

@@ -37,15 +37,25 @@ public class SFFlammableRotatedPillarBlock extends RotatedPillarBlock {
     public @Nullable BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
         if(context.getItemInHand().getItem() instanceof AxeItem) {
             //HEVEA
-            if(state.is(SFBlocks.HEVEA_LOG.get())) {return SFBlocks.STRIPPED_HEVEA_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));}
-            if(state.is(SFBlocks.HEVEA_WOOD.get())){return SFBlocks.STRIPPED_HEVEA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));}
+            if(state.is(SFBlocks.HEVEA_LOG.get())) {
+                return SFBlocks.STRIPPED_HEVEA_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(SFBlocks.HEVEA_WOOD.get())){
+                return SFBlocks.STRIPPED_HEVEA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
             //CHESTNUT
-            if(state.is(SFBlocks.CHESTNUT_LOG.get())) {return SFBlocks.STRIPPED_CHESTNUT_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));}
-            if(state.is(SFBlocks.CHESTNUT_WOOD.get())){return SFBlocks.STRIPPED_CHESTNUT_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(SFBlocks.CHESTNUT_LOG.get())) {
+                return SFBlocks.STRIPPED_CHESTNUT_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(SFBlocks.CHESTNUT_WOOD.get())){
+                return SFBlocks.STRIPPED_CHESTNUT_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
             //SAKURA
-            if(state.is(SFBlocks.SAKURA_LOG.get())) {return SFBlocks.STRIPPED_SAKURA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));}
-            if(state.is(SFBlocks.SAKURA_WOOD.get())){return SFBlocks.STRIPPED_SAKURA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            if(state.is(SFBlocks.SAKURA_LOG.get())) {
+                return SFBlocks.STRIPPED_SAKURA_LOG.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
+            }
+            if(state.is(SFBlocks.SAKURA_WOOD.get())){
+                return SFBlocks.STRIPPED_SAKURA_WOOD.get().defaultBlockState().setValue(AXIS, state.getValue(AXIS));
             }
         }
 
