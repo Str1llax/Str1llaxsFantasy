@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "item": "sf:cucumber"
+      }
+    ],
+    "result": {
+      "item": "sf:cucumber_seeds",
+      "count": 3
+    }
+
+}

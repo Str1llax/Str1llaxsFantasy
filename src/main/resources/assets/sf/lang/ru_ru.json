@@ -25,10 +25,14 @@
   "item.sf.dumpling": "Пельмень",
   "item.sf.dumplings": "Пельмени",
 
+  "item.sf.cucumber_seeds": "Семена огурца",
+  "item.sf.cucumber": "Огурец",
+
   "item.sf.muramasa": "§4Мурамаса",
   "item.sf.fist_energy": "§6Энергетический заряд",
   "item.sf.fist_energy2": "§bПлазменный заряд",
   "item.sf.fist_energy3": "§cКровавый заряд",
+  "item.sf.quantum_axe": "§dКвантовый топор",
 
   "tooltip.sf.muramasa.tooltip.shift": "§k aaa§4 НАСТОЯЩАЯ СИЛА!§f§k aaa",
   "tooltip.sf.muramasa.tooltip": "Нажми §4SHIFT§r для большей информации!",
@@ -52,8 +56,7 @@
   "tooltip.sf.cast": "Может быть найдено дома у оружейника",
   "tooltip.sf.wip": "WIP - работа в процессе(в разработке).",
   "tooltip.sf.shift": "Нажми §eSHIFT§r для большей информации!",
-  "tooltip.sf.magma_charm": "Необычный магмовый нагрудник с невероятными магическими способностями! Старинный артефакт. Имеет малую прочность, но зато полностью защищает от лавы. Можно найти в разрушенных порталах.",
-
+  "tooltip.sf.magma_charm": "Древний артефакт. Имеет малую прочность, но зато полностью защищает от лавы. Можно найти в разрушенных порталах.",
 
   "item.sf.advanced_item.no_valuables": "Не найдено руд!",
 
@@ -93,17 +96,17 @@
   "item.sf.amethyst_boots": "§dАметистовые§r ботинки",
   "item.sf.amethyst_bow": "§dАметистовый§r лук",
 
-  "item.sf.amethryne": "§dАмет§eрин§r",
-  "item.sf.amethryne_sword": "§dАмет§eриновый§r меч",
-  "item.sf.amethryne_pickaxe": "§dАмет§eриновая§r кирка",
-  "item.sf.amethryne_axe": "§dАмет§eриновый§r топор",
-  "item.sf.amethryne_shovel": "§dАмет§eриновая§r лопата",
-  "item.sf.amethryne_hoe": "§dАмет§eриновая§r мотыга",
-  "item.sf.amethryne_helmet": "§dАмет§eриновый§r шлем",
-  "item.sf.amethryne_chestplate": "§dАмет§eриновый§r нагрудник",
-  "item.sf.amethryne_leggings": "§dАмет§eриновые§r поножи",
-  "item.sf.amethryne_boots": "§dАмет§eриновые§r ботинки",
-  "item.sf.amethryne_bow": "§dАмет§eриновый§r лук",
+  "item.sf.ametrine": "§dАмет§eрин§r",
+  "item.sf.ametrine_sword": "§dАмет§eриновый§r меч",
+  "item.sf.ametrine_pickaxe": "§dАмет§eриновая§r кирка",
+  "item.sf.ametrine_axe": "§dАмет§eриновый§r топор",
+  "item.sf.ametrine_shovel": "§dАмет§eриновая§r лопата",
+  "item.sf.ametrine_hoe": "§dАмет§eриновая§r мотыга",
+  "item.sf.ametrine_helmet": "§dАмет§eриновый§r шлем",
+  "item.sf.ametrine_chestplate": "§dАмет§eриновый§r нагрудник",
+  "item.sf.ametrine_leggings": "§dАмет§eриновые§r поножи",
+  "item.sf.ametrine_boots": "§dАмет§eриновые§r ботинки",
+  "item.sf.ametrine_bow": "§dАмет§eриновый§r лук",
 
   "item.sf.magma_charm": "§6Очарование магмы",
 
@@ -278,7 +281,7 @@
   "block.sf.deepslate_citrine_ore": "§6Цитриноносный§r глубинный сланец",
 
   "block.sf.amethyst_block": "§dАметистовый§r блок",
-  "block.sf.amethryne_block": "§dАметри§eновый§r блок",
+  "block.sf.ametrine_block": "§dАметри§eновый§r блок",
 
   "block.sf.hevea_log": "Бревно Гевеи",
   "block.sf.hevea_planks": "Доски из Гевеи",

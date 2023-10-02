@@ -25,6 +25,9 @@
   "item.sf.dumpling": "Dumpling",
   "item.sf.dumplings": "Dumpling",
 
+  "item.sf.cucumber_seeds": "Cucumber Seeds",
+  "item.sf.cucumber": "Cucumber",
+
   "item.sf.muramasa": "§4Muramasa",
   "item.sf.fist_energy": "§6Energy blast",
   "item.sf.fist_energy2": "§bPlasma blast",
@@ -55,8 +58,7 @@
   "tooltip.sf.cast": "Can be found at the Weaponsmith's house",
   "tooltip.sf.wip": "WIP - Work In Progress.",
   "tooltip.sf.shift": "Press §eSHIFT§r for more information!",
-  "tooltip.sf.magma_charm": "An unusual magma chestplate with incredible magical powers! An ancient artifact. It has low durability, but fully protects you form lava. Can be found in the ruined portals.",
-
+  "tooltip.sf.magma_charm": "An ancient artifact. It has low durability, but fully protects you form lava. Can be found in the ruined portals.",
 
   "item.sf.advanced_item.no_valuables": "No valuables found!",
 
@@ -96,17 +98,17 @@
   "item.sf.amethyst_boots": "§dAmethyst§r Boots",
   "item.sf.amethyst_bow": "§dAmethyst§r Bow",
 
-  "item.sf.amethryne": "§dAmeth§eryne§r",
-  "item.sf.amethryne_sword": "§dAmeth§eryne§r Sword",
-  "item.sf.amethryne_pickaxe": "§dAmeth§eryne§r Pickaxe",
-  "item.sf.amethryne_axe": "§dAmeth§eryne§r Axe",
-  "item.sf.amethryne_shovel": "§dAmeth§eryne§r Shovel",
-  "item.sf.amethryne_hoe": "§dAmeth§eryne§r Hoe",
-  "item.sf.amethryne_helmet": "§dAmeth§eryne§r Helmet",
-  "item.sf.amethryne_chestplate": "§dAmeth§eryne§r Chestplate",
-  "item.sf.amethryne_leggings": "§dAmeth§eryne§r Leggings",
-  "item.sf.amethryne_boots": "§dAmeth§eryne§r Boots",
-  "item.sf.amethryne_bow": "§dAmeth§eryne§r Bow",
+  "item.sf.ametrine": "§dAmet§erine§r",
+  "item.sf.ametrine_sword": "§dAmet§erine§r Sword",
+  "item.sf.ametrine_pickaxe": "§dAmet§erine§r Pickaxe",
+  "item.sf.ametrine_axe": "§dAmet§erine§r Axe",
+  "item.sf.ametrine_shovel": "§dAmet§erine§r Shovel",
+  "item.sf.ametrine_hoe": "§dAmet§erine§r Hoe",
+  "item.sf.ametrine_helmet": "§dAmet§erine§r Helmet",
+  "item.sf.ametrine_chestplate": "§dAmet§erine§r Chestplate",
+  "item.sf.ametrine_leggings": "§dAmet§erine§r Leggings",
+  "item.sf.ametrine_boots": "§dAmet§erine§r Boots",
+  "item.sf.ametrine_bow": "§dAmet§erine§r Bow",
 
   "item.sf.magma_charm": "§6Magma Charm",
 
@@ -281,7 +283,7 @@
   "block.sf.deepslate_citrine_ore": "Deepslate §6Citrine§r ore",
 
   "block.sf.amethyst_block": "§dAmethyst§r block",
-  "block.sf.amethryne_block": "§dAmeth§eryne§r block",
+  "block.sf.ametrine_block": "§dAmet§erine§r block",
 
   "block.sf.hevea_log": "Hevea Log",
   "block.sf.hevea_planks": "Hevea Planks",

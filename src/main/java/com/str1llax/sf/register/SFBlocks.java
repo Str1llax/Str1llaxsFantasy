@@ -34,7 +34,15 @@ public class SFBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)),
                 object -> () -> new BlockItem(object.get(),new Item.Properties().tab(SFTabs.SFTAB)));
     public static final RegistryObject<Block> ADVANCED_BLOCK = register("advanced_block",
-            () -> new AdvancedBlock(BlockBehaviour.Properties.of(Material.METAL,MaterialColor.COLOR_PURPLE).strength(3.0f).sound(SoundType.METAL).requiresCorrectToolForDrops().emissiveRendering((state,getter,pos) -> {return true;}).lightLevel(state -> 0).dynamicShape()),
+            () -> new AdvancedBlock(BlockBehaviour.Properties.of(Material.METAL,MaterialColor.COLOR_PURPLE)
+                    .strength(3.0f)
+                    .sound(SoundType.METAL)
+                    .requiresCorrectToolForDrops()
+                    .emissiveRendering((state,getter,pos) -> {
+                        return true;
+                    })
+                    .lightLevel(state -> 0)
+                    .dynamicShape()),
                 object -> () -> new BlockItem(object.get(),new Item.Properties().tab(SFTabs.SFTAB)));
 
     public static final RegistryObject<Block> PINK_ROSE = register("pink_rose",
@@ -43,6 +51,8 @@ public class SFBlocks {
     public static final RegistryObject<Block> POTTED_PINK_ROSE = registerBlockWithoutBlockItem("potted_pink_rose",
             () -> new FlowerPotBlock(null,SFBlocks.PINK_ROSE,BlockBehaviour.Properties.copy(Blocks.POTTED_DANDELION).noOcclusion()));
 
+    public static final RegistryObject<Block> CUCUMBER_PLANT = registerBlockWithoutBlockItem("cucumber_plant",
+            () -> new CucumberPlantBlock(BlockBehaviour.Properties.copy(Blocks.CARROTS).noOcclusion()));
     public static final RegistryObject<Block> HEVEA_LOG = register("hevea_log",
             () -> new SFFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)),
                 object -> () -> new BlockItem(object.get(),new Item.Properties().tab(SFTabs.SFTAB_FLORA)));

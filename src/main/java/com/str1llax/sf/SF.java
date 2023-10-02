@@ -73,6 +73,8 @@ public class SF {
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_LEAVES.get(), RenderType.cutout());
        ItemBlockRenderTypes.setRenderLayer(SFBlocks.SAKURA_SAPLING.get(), RenderType.cutout());
 
+       ItemBlockRenderTypes.setRenderLayer(SFBlocks.CUCUMBER_PLANT.get(), RenderType.cutout());
+
 
        MenuScreens.register(SFMenuTypes.CIRCUIT_ASSEMBLER_MENU.get(), CircuitAssemblerScreen::new);
        MenuScreens.register(SFMenuTypes.MIXER_MENU.get(), MixerScreen::new);

@@ -92,17 +92,17 @@
   "item.sf.amethyst_boots": "§dАметистовые§r ботинки",
   "item.sf.amethyst_bow": "§dАметистовый§r лук",
 
-  "item.sf.amethryne": "§dАмет§eрин§r",
-  "item.sf.amethryne_sword": "§dАмет§eриновый§r меч",
-  "item.sf.amethryne_pickaxe": "§dАмет§eриновая§r кирка",
-  "item.sf.amethryne_axe": "§dАмет§eриновый§r топор",
-  "item.sf.amethryne_shovel": "§dАмет§eриновая§r лопата",
-  "item.sf.amethryne_hoe": "§dАмет§eриновая§r мотыга",
-  "item.sf.amethryne_helmet": "§dАмет§eриновый§r шлем",
-  "item.sf.amethryne_chestplate": "§dАмет§eриновый§r нагрудник",
-  "item.sf.amethryne_leggings": "§dАмет§eриновые§r поножи",
-  "item.sf.amethryne_boots": "§dАмет§eриновые§r ботинки",
-  "item.sf.amethryne_bow": "§dАмет§eриновый§r лук",
+  "item.sf.ametrine": "§dАмет§eрин§r",
+  "item.sf.ametrine_sword": "§dАмет§eриновый§r меч",
+  "item.sf.ametrine_pickaxe": "§dАмет§eриновая§r кирка",
+  "item.sf.ametrine_axe": "§dАмет§eриновый§r топор",
+  "item.sf.ametrine_shovel": "§dАмет§eриновая§r лопата",
+  "item.sf.ametrine_hoe": "§dАмет§eриновая§r мотыга",
+  "item.sf.ametrine_helmet": "§dАмет§eриновый§r шлем",
+  "item.sf.ametrine_chestplate": "§dАмет§eриновый§r нагрудник",
+  "item.sf.ametrine_leggings": "§dАмет§eриновые§r поножи",
+  "item.sf.ametrine_boots": "§dАмет§eриновые§r ботинки",
+  "item.sf.ametrine_bow": "§dАмет§eриновый§r лук",
 
   "item.sf.magma_charm": "§6Очарование магмы",
 
@@ -277,7 +277,7 @@
   "block.sf.deepslate_citrine_ore": "§6Цитриноносный§r глубинный сланец",
 
   "block.sf.amethyst_block": "§dАметистовый§r блок",
-  "block.sf.amethryne_block": "§dАметри§eновый§r блок",
+  "block.sf.ametrine_block": "§dАметри§eновый§r блок",
 
   "block.sf.hevea_log": "Бревно Гевеи",
   "block.sf.hevea_planks": "Доски из Гевеи",
