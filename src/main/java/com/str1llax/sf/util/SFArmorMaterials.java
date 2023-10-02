@@ -19,8 +19,8 @@ public enum SFArmorMaterials implements ArmorMaterial {
             2.0F,0.0F, ()-> Ingredient.of(SFItems.CITRINE.get())),
     AMETHYST("amethyst",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
             2.0F,0.0F, ()-> Ingredient.of(SFItems.AMETHYST.get())),
-    AMETHRYNE("amethryne",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
-            2.0F,0.0F, ()-> Ingredient.of(SFItems.AMETHRYNE.get())),
+    AMETRINE("ametrine",33,new int[] {3, 6, 8, 3},10, SoundEvents.ARMOR_EQUIP_DIAMOND,
+            2.0F,0.0F, ()-> Ingredient.of(SFItems.AMETRINE.get())),
     MAGMA_CHARM("magma_charm",2,new int[] {2, 2, 2, 2},2, SoundEvents.ARMOR_EQUIP_LEATHER,
             0.0F,0.0F, ()-> Ingredient.EMPTY);
 

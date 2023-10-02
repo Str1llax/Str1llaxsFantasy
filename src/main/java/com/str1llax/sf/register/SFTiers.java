@@ -15,5 +15,5 @@ public final class SFTiers {
     public static final ForgeTier RUBY = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(SFItems.RUBY.get()));
     public static final ForgeTier CITRINE = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(SFItems.CITRINE.get()));
     public static final ForgeTier AMETHYST = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(SFItems.CITRINE.get()));
-    public static final ForgeTier AMETHRYNE = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(SFItems.AMETHRYNE.get()));
+    public static final ForgeTier AMETRINE = new ForgeTier(3, 1561, 8.0F, 3.0F, 10, BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(SFItems.AMETRINE.get()));
 }

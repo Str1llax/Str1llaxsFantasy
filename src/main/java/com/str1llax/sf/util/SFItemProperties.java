@@ -10,7 +10,7 @@ public class SFItemProperties {
         makeBow(SFItems.RUBY_BOW.get());
         makeBow(SFItems.CITRINE_BOW.get());
         makeBow(SFItems.AMETHYST_BOW.get());
-        makeBow(SFItems.AMETHRYNE_BOW.get());
+        makeBow(SFItems.AMETRINE_BOW.get());
     }
     private static void makeBow(Item item) {
         ItemProperties.register(item, new ResourceLocation("pull"), (stack, level, useItemRemainingTicks, i) -> {

@@ -19,7 +19,7 @@ public class SFArmorItem extends ArmorItem {
                     .put(SFArmorMaterials.RUBY, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 1, 1))
                     .put(SFArmorMaterials.AMETHYST, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1, 1))
                     .put(SFArmorMaterials.CITRINE, new MobEffectInstance(MobEffects.ABSORPTION, 1, 1))
-                    .put(SFArmorMaterials.AMETHRYNE, new MobEffectInstance(MobEffects.REGENERATION, 1, 1)).build();
+                    .put(SFArmorMaterials.AMETRINE, new MobEffectInstance(MobEffects.REGENERATION, 1, 1)).build();
 
     public SFArmorItem(ArmorMaterial material, EquipmentSlot slot, Properties settings) {
         super(material, slot, settings);

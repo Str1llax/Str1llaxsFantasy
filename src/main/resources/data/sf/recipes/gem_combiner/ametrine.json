@@ -1,0 +1,14 @@
+{
+  "type": "sf:gem_combining",
+  "ingredients": [
+    {
+      "item": "sf:amethyst"
+    },
+    {
+      "item": "sf:citrine"
+    }
+  ],
+  "output": {
+    "item": "sf:ametrine"
+  }
+}

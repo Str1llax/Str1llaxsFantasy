@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rr",
+    "r/",
+    " /"
+  ],
+  "key": {
+    "r": {
+      "item": "sf:ametrine"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "sf:ametrine_axe",
+    "count": 1
+  }
+}
